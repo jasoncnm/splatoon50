@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "befdf26b52e7969a",
+    "type": "split",
+    "children": [
+      {
+        "id": "654ed9de40df25ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7797fae507c5d0cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "021c38036421a480",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1f4ab0de78aa6b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82a6e78fa8a531ba",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "264b81e9d8d22761",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "bb59b74bb5111dff",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "3d07c58138bb7793",
+    "type": "split",
+    "children": [
+      {
+        "id": "5dd08f6f6d1571ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "34697529c268bd1a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
+            }
+          },
+          {
+            "id": "6fc4370703d0927b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
+            }
+          },
+          {
+            "id": "1d2cb5720b60b15b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "43294f1851eee3c8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7797fae507c5d0cc",
+  "lastOpenFiles": [
+    "Library/ShaderCache.db-journal",
+    "Temp/UnityTempFile-6119b2bfd431862498b6a3d65ad0a56c",
+    "Temp/UnityTempFile-ac8b01d297a4cdc4b9095726900e68eb",
+    "Temp/UnityTempFile-3e158ec9e704ff84da9c22f5138d8fc8",
+    "Temp/UnityTempFile-be177bbc417d65a4a9f98f7a203a8b54",
+    "Temp/UnityTempFile-01adeb2b039936142b67790771aff96f",
+    "Temp/UnityTempFile-b80d8bbdea784fa4899f1902744dec89",
+    "Temp/UnityTempFile-8d2c072769e26484bb6776a17c9e49e1",
+    "Temp/UnityTempFile-3d3dbc1f7e8cb1949a1975862a91ff6a",
+    "Temp/UnityTempFile-f4f8976366db7d44a8204493fc299e4d",
+    "Temp/ADB-Refreshda03fa26beb18cd4e80014e5f95b98c5",
+    "Library/PackageCache/com.unity.cinemachine/Samples~/2D Samples/2D Platformer/Environment/Sprites/TileGround.png",
+    "Library/PackageCache/com.unity.cinemachine/Samples~/2D Samples/2D Platformer/Environment/Sprites/TileGroundTop.png",
+    "Library/PackageCache/com.unity.cinemachine/Samples~/2D Samples/2D Platformer/Environment/Sprites/TileFloatingRightEdge.png",
+    "Library/PackageCache/com.unity.cinemachine/Samples~/2D Samples/2D Platformer/Environment/Sprites/TileFloatingLeftEdge.png",
+    "Library/PackageCache/com.unity.cinemachine/Samples~/2D Samples/2D Platformer/Environment/Sprites/TileFloatingMiddle.png",
+    "Library/PackageCache/com.unity.cinemachine/Editor/EditorResources/Icons/Light/TrackedObjectOffset.png",
+    "Library/PackageCache/com.unity.cinemachine/Editor/EditorResources/Icons/Light/FOV.png",
+    "Library/PackageCache/com.unity.cinemachine/Editor/EditorResources/Icons/Light/CmSplineRollTool@256.png",
+    "Library/PackageCache/com.unity.cinemachine/Editor/EditorResources/Icons/Light/FollowOffset.png",
+    "Library/PackageCache/com.unity.cinemachine/Editor/EditorResources/Icons/Light/FarNearClip.png",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/includes/shot-composition.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/includes/binding-modes.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/whats-new.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/ui-ref.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/ui-ref-pre-built-cameras.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/ThirdPersonCameras.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/setup-apply-noise.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/TableOfContents.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/SimplePlayerController.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/setup-timeline.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/setup-procedural-behavior.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/setup-multiple-cameras.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/setup-follow-camera.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/setup-cinemachine-environment.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/samples-tutorials.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/samples-import.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/Reference.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/preview-and-author-in-first-person.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/KnownIssues.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/InstallationAndUpgrade.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/InputSystemComponents.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/index.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/FreeLookCameras.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/handles.md",
+    "Library/PackageCache/com.unity.cinemachine/Documentation~/GroupingTargets.md"
+  ]
+}
