@@ -7,7 +7,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float moveSpeed = 15f, acceleration = 10f;
 
     [SerializeField] Transform gunEndPointTr;
+
     Rigidbody2D rb2D;
+
+
 
     public Transform aim { get; private set; }
 
@@ -16,6 +19,7 @@ public class PlayerController : MonoBehaviour
     {
         public Vector3 gunEndPointPos;
         public Vector3 shootPos;
+        public Vector3 shootDir;
     }
 
     float velPower = 0.7f;
@@ -60,11 +64,19 @@ public class PlayerController : MonoBehaviour
 
     public void OnShoot()
     {
+
+        Vector3 endPointPos = gunEndPointTr.position;
+        Vector3 shootPos = Util.GetMouseWorldPosition();
+        Vector3 shootDir = shootPos - endPointPos;
+
         shoot?.Invoke(this, new OnShootEventArgs
         {
-            gunEndPointPos = gunEndPointTr.position,
-            shootPos = Util.GetMouseWorldPosition()
+            gunEndPointPos = endPointPos,
+            shootPos = shootPos,
+            shootDir = shootDir
         });
+
+
     }
 
 

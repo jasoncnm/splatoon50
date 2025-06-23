@@ -6,4 +6,14 @@ public class Util : MonoBehaviour
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);
     }
+
+    public static float GetAngleFromDirectionalVector(Vector3 dir)
+    {
+        Vector3 norm = dir.normalized;
+        float angle = Mathf.Atan2(norm.y, norm.x) * Mathf.Rad2Deg;
+
+        return angle;
+
+    }
+
 }

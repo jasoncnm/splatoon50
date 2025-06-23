@@ -1,13 +1,19 @@
 using MoreMountains.Feedbacks;
 using UnityEngine;
-using static UnityEngine.Rendering.GPUSort;
-
+using System.Collections.Generic;
 public class WeaponManager : MonoBehaviour
 {
 
-    [SerializeField] PlayerController playerController;
+    PlayerController playerController;
 
-    [SerializeField] MMFeedbacks shootFeedback;
+    MMF_Player shootFeedback;
+
+
+    private void Awake()
+    {
+        playerController = FindAnyObjectByType<PlayerController>();
+        shootFeedback = playerController.transform.GetComponentInChildren<MMF_Player>();
+    }
 
     private void OnEnable()
     {
@@ -22,7 +28,21 @@ public class WeaponManager : MonoBehaviour
 
     void OnPlayerShoot(object sender, PlayerController.OnShootEventArgs args)
     {
-        shootFeedback?.PlayFeedbacks(args.gunEndPointPos); 
+        //Debug.DrawLine(args.gunEndPointPos, args.shootPos, Color.white, .1f);
+        shootFeedback?.PlayFeedbacks(args.gunEndPointPos);
+
     }
+
+    public void SetBullet(ParticleSystem system)
+    {
+        MMF_Particles mmf_p = shootFeedback.GetFeedbackOfType<MMF_Particles>();
+
+        if (mmf_p != null)
+        {
+            mmf_p.BoundParticleSystem = system;
+        }
+
+    }
+
 
 }
