@@ -8,12 +8,14 @@ public class WeaponManager : MonoBehaviour
 
     MMF_Player shootFeedback;
 
+    ParticleSystem bulletParticles = null;
 
     private void Awake()
     {
         playerController = FindAnyObjectByType<PlayerController>();
         shootFeedback = playerController.transform.GetComponentInChildren<MMF_Player>();
     }
+
 
     private void OnEnable()
     {
@@ -28,10 +30,14 @@ public class WeaponManager : MonoBehaviour
 
     void OnPlayerShoot(object sender, PlayerController.OnShootEventArgs args)
     {
-        //Debug.DrawLine(args.gunEndPointPos, args.shootPos, Color.white, .1f);
-        shootFeedback?.PlayFeedbacks(args.gunEndPointPos);
+        if (bulletParticles != null)
+        {
+            shootFeedback?.PlayFeedbacks(args.gunEndPointPos);
+        }
 
     }
+
+
 
     public void SetBullet(ParticleSystem system)
     {
@@ -39,6 +45,7 @@ public class WeaponManager : MonoBehaviour
 
         if (mmf_p != null)
         {
+            bulletParticles = system;
             mmf_p.BoundParticleSystem = system;
         }
 
