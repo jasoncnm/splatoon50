@@ -3,9 +3,14 @@ using UnityEngine.AI;
 
 public class EnemyNavigator : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    Transform target;
 
     NavMeshAgent agent;
+
+    private void Awake()
+    {
+        target = FindAnyObjectByType<GameManager>().player;
+    }
 
     private void Start()
     {
