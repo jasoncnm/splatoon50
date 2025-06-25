@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI scoreText;
 
 
+    public Transform player;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Cursor.lockState = CursorLockMode.Confined;
