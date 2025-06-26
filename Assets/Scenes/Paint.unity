@@ -1544,7 +1544,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 11400000, guid: c09fa0216ddcaa0448019b0bf162e10f, type: 2}
-  progressBar: {fileID: 1726504471}
 --- !u!114 &728551059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,6 +1557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 143241890}
+  healthBar: {fileID: 1726504471}
   gameScore: 0
   player: {fileID: 1240993475}
 --- !u!114 &728551060
@@ -34719,6 +34719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7727285851439360598, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35052,7 +35056,7 @@ GameObject:
   - component: {fileID: 1726504470}
   - component: {fileID: 1726504471}
   m_Layer: 5
-  m_Name: HorizontalBar
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35101,7 +35105,7 @@ MonoBehaviour:
   MinimumBarFillValue: 0
   MaximumBarFillValue: 1
   SetInitialFillValueOnStart: 1
-  InitialFillValue: 0.8
+  InitialFillValue: 1
   BarDirection: 0
   FillMode: 0
   TimeScale: 0
