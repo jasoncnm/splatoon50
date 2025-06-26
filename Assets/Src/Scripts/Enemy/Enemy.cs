@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            GameManager.instance.healthBar.Minus10Percent();
+            GameManager.instance.OnPlayerHit();
             Destroy(gameObject);
         }
     }

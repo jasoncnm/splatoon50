@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour
     public MMProgressBar healthBar;
 
     public int gameScore = 0;
-    
+
+    public float playerHealth = 1f;
+
     public Transform player;
 
     private void Awake()
@@ -33,16 +35,31 @@ public class GameManager : MonoBehaviour
         scoreText.text = gameScore.ToString();
     }
 
+    public void OnPlayerHit()
+    {
+        float amount = (playerHealth - 0.1f);
+        SetHealth(amount);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
-            healthBar.Plus10Percent();
+            float amount = (playerHealth + 0.1f);
+            SetHealth(amount);
         }
         else if (Input.GetKeyDown(KeyCode.O))
         {
-            healthBar.Minus10Percent();
+            float amount = (playerHealth - 0.1f);
+            SetHealth(amount);
         }
+    }
+
+    void SetHealth(float amount)
+    {
+        playerHealth = amount;
+        playerHealth = Mathf.Clamp(playerHealth, 0f, 1f);
+        GameManager.instance.healthBar.UpdateBar01(playerHealth);
     }
 
 }
