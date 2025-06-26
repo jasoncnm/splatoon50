@@ -10,15 +10,10 @@ public class WeaponManager : MonoBehaviour
 
     ParticleSystem bulletParticles = null;
 
-    private void Awake()
-    {
-        playerController = FindAnyObjectByType<PlayerController>();
-        shootFeedback = playerController.transform.GetComponentInChildren<MMF_Player>();
-    }
-
-
     private void OnEnable()
     {
+        playerController = GameManager.instance.player.GetComponent<PlayerController>();
+        shootFeedback = playerController.transform.GetComponentInChildren<MMF_Player>();
         playerController.shoot += OnPlayerShoot;
     }
 
@@ -32,6 +27,7 @@ public class WeaponManager : MonoBehaviour
     {
         if (bulletParticles != null)
         {
+            SplatterSpawner.instance.Spawn();
             shootFeedback?.PlayFeedbacks(args.gunEndPointPos);
         }
 

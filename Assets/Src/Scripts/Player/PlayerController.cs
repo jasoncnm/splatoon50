@@ -1,3 +1,4 @@
+using MoreMountains.Tools;
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
@@ -8,9 +9,11 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Transform gunEndPointTr;
 
+    [SerializeField] LayerMask splatterMask;
+
     Rigidbody2D rb2D;
 
-
+    new SpriteRenderer renderer;
 
     public Transform aim { get; private set; }
 
@@ -25,8 +28,11 @@ public class PlayerController : MonoBehaviour
     float velPower = 0.7f;
     float turnSmoothTime = 0.01f;
 
+    bool _CanShoot = true;
+
     private void Start()
     {
+        renderer = transform.GetComponent<SpriteRenderer>();
         aim = transform;
         rb2D = transform.GetComponent<Rigidbody2D>();
     }
@@ -65,19 +71,49 @@ public class PlayerController : MonoBehaviour
     public void OnShoot()
     {
 
-        Vector3 endPointPos = gunEndPointTr.position;
-        Vector3 shootPos = Util.GetMouseWorldPosition();
-        Vector3 shootDir = shootPos - endPointPos;
-
-        shoot?.Invoke(this, new OnShootEventArgs
+        if (_CanShoot)
         {
-            gunEndPointPos = endPointPos,
-            shootPos = shootPos,
-            shootDir = shootDir
-        });
 
+            Vector3 endPointPos = gunEndPointTr.position;
+            Vector3 shootPos = Util.GetMouseWorldPosition();
+            Vector3 shootDir = shootPos - endPointPos;
+
+            shoot?.Invoke(this, new OnShootEventArgs
+            {
+                gunEndPointPos = endPointPos,
+                shootPos = shootPos,
+                shootDir = shootDir
+            });
+
+        }
+    }
+
+    public void OnDash()
+    {
+        Color normal = renderer.color;
+        Color transparent = new Color(normal.r, normal.g, normal.b, 0.5f);
+       
+        RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.up, .1f, splatterMask);
+        if (hit2D)
+        {
+            _CanShoot = false;
+            Debug.Log("Can Dash");
+            renderer.color = transparent;
+        }
+        else
+        {
+            OnExitDash();
+        }
 
     }
 
+    public void OnExitDash()
+    {
+        _CanShoot = true;
+        Color normal = renderer.color;
+        Color opegue = new Color(normal.r, normal.g, normal.b, 1f);
+        renderer.color = opegue;
+
+    }
 
 }

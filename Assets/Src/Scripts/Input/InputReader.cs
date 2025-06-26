@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -21,6 +22,8 @@ public class InputReader : ScriptableObject
     public event UnityAction interactEvent;
     public event UnityAction interactCancelledEvent;
 
+    public event UnityAction dashEvent;
+    public event UnityAction dashCancelledEvent;
 
     InputAction shootAction;
     InputAction aimAction;
@@ -28,6 +31,7 @@ public class InputReader : ScriptableObject
     InputAction pauseAction;
     InputAction unPauseAction;
     InputAction interactAction;
+    InputAction dashAction;
     
     private void OnEnable()
     {
@@ -37,6 +41,11 @@ public class InputReader : ScriptableObject
         unPauseAction = asset.FindAction("UnPause", true);
         interactAction = asset.FindAction("Interact", true);
         shootAction = asset.FindAction("Shoot", true);
+        dashAction = asset.FindAction("Dash", true);
+
+        dashAction.started += OnDash;
+        dashAction.performed += OnDash;
+        dashAction.canceled += OnDash;
 
         shootAction.started += OnShoot;
         shootAction.performed += OnShoot;
@@ -62,7 +71,7 @@ public class InputReader : ScriptableObject
         interactAction.performed += OnInteract;
         interactAction.canceled += OnInteract;
 
-
+        dashAction.Enable();
         shootAction.Enable();
         aimAction.Enable();
         moveAction.Enable();
@@ -77,6 +86,9 @@ public class InputReader : ScriptableObject
         aimAction.performed -= Onaim;
         aimAction.canceled -= Onaim;
 
+        dashAction.started -= OnDash;
+        dashAction.performed -= OnDash;
+        dashAction.canceled -= OnDash;
 
         moveAction.started -= OnMove;
         moveAction.performed -= OnMove;
@@ -98,12 +110,26 @@ public class InputReader : ScriptableObject
         shootAction.performed -= OnShoot;
         shootAction.canceled -= OnShoot;
 
+        dashAction.Disable();
         shootAction.Disable();
         aimAction.Disable();
         moveAction.Disable();
         pauseAction.Disable();
         unPauseAction.Disable();
         interactAction.Disable();
+    }
+
+    void OnDash(InputAction.CallbackContext context)
+    {
+        if (dashEvent != null && context.started)
+        {
+            dashEvent.Invoke();
+        }
+
+        if (dashCancelledEvent != null && context.canceled)
+        {
+            dashCancelledEvent.Invoke();
+        }
     }
 
     void OnShoot(InputAction.CallbackContext context)

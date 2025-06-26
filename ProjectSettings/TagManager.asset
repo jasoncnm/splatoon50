@@ -6,6 +6,7 @@ TagManager:
   tags:
   - obstacle
   - AimPoint
+  - Splatter
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Enemies
   - Walls
   - Background
-  - 
+  - Splatter
   - 
   - 
   - 

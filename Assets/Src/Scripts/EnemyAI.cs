@@ -9,7 +9,7 @@ public class EnemyNavigator : MonoBehaviour
 
     private void Awake()
     {
-        target = FindAnyObjectByType<GameManager>().player;
+        target = GameManager.instance.player;
     }
 
     private void Start()
