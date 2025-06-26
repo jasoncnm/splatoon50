@@ -1,3 +1,4 @@
+using MoreMountains.Tools;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,12 +6,14 @@ public class InputManager : MonoBehaviour
 {
     public InputReader input;
 
+    [SerializeField] MMProgressBar progressBar;
+
     PlayerController playerController;
     CameraController camController;
 
     Vector2 moveDirection;
 
-    public bool _DashHolding = false;
+    public bool _DashHolding { get; private set; } = false;
 
     private void OnEnable()
     {
@@ -62,6 +65,16 @@ public class InputManager : MonoBehaviour
         {
             playerController.OnDash();
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            progressBar.Plus10Percent();
+        }
+        else if (Input.GetKeyDown(KeyCode.O))
+        {
+            progressBar.Minus10Percent();
+        }
+
     }
 
     void FixedUpdateEnd()
