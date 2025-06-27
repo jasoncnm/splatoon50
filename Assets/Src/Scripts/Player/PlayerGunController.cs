@@ -10,6 +10,7 @@ public class PlayerGunController : MonoBehaviour
 
     ParticleSystem bulletParticles = null;
 
+
     private void OnEnable()
     {
         playerController = GetComponent<PlayerController>();

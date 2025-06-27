@@ -5,7 +5,7 @@ using UnityEngine.InputSystem.XR;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 15f, acceleration = 10f;
+    [SerializeField] float moveSpeed = 15f, acceleration = 10f, fireRate = 0.3f;
 
     [SerializeField] Transform gunEndPointTr;
 
@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
 
     float velPower = 0.7f;
     float turnSmoothTime = 0.01f;
+    float nextShootTime = 0f;
+
 
     public bool _Dashing { get; private set; } = false;
 
@@ -71,7 +73,7 @@ public class PlayerController : MonoBehaviour
     public void OnShoot()
     {
 
-        if (!_Dashing)
+        if (!_Dashing && Time.time > nextShootTime)
         {
 
             Vector3 endPointPos = gunEndPointTr.position;
@@ -84,7 +86,7 @@ public class PlayerController : MonoBehaviour
                 shootPos = shootPos,
                 shootDir = shootDir
             });
-
+            nextShootTime = Time.time + fireRate;
         }
     }
 

@@ -13,12 +13,13 @@ public class InputManager : MonoBehaviour
     Vector2 moveDirection;
 
     public bool _DashHolding { get; private set; } = false;
-
+    public bool _ShootHolding { get; private set; } = false;
 
     private void OnEnable()
     {
         input.moveEvent += OnMove;
         input.shootEvent += OnShoot;
+        input.shootCancelledEvent += OnShootCancel;
         input.dashEvent += OnDash;
         input.dashCancelledEvent += OnDashCancel;
     }
@@ -27,6 +28,7 @@ public class InputManager : MonoBehaviour
     {
         input.moveEvent -= OnMove;
         input.shootEvent -= OnShoot;
+        input.shootCancelledEvent -= OnShootCancel;
         input.dashEvent -= OnDash;
         input.dashCancelledEvent -= OnDashCancel;
     }
@@ -44,7 +46,12 @@ public class InputManager : MonoBehaviour
 
     void OnShoot()
     {
-        playerController.OnShoot();
+        _ShootHolding = true;
+    }
+
+    void OnShootCancel()
+    {
+        _ShootHolding = false;
     }
 
     void OnMove(Vector2 movement)
@@ -64,6 +71,11 @@ public class InputManager : MonoBehaviour
         if (_DashHolding)
         {
             playerController.OnDash();
+        }
+
+        if (_ShootHolding)
+        {
+            playerController.OnShoot();
         }
 
     }
