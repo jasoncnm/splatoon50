@@ -7,15 +7,13 @@ public class EnemyNavigator : MonoBehaviour
 
     Transform target;
     NavMeshAgent agent;
-    bool isChasing = false;
+    public bool isChasing { get; private set; } = false;
 
-    private void Awake()
-    {
-        target = GameManager.instance.player;
-    }
 
     private void Start()
     {
+
+        target = GameManager.instance.player;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -40,6 +38,17 @@ public class EnemyNavigator : MonoBehaviour
         {
             StopChasing();
         }
+
+        LookAtPlayer();
+
+    }
+
+    void LookAtPlayer()
+    {
+        Vector3 lookDir = target.position - transform.position;
+        float angle = Util.GetAngleFromDirectionalVector(lookDir);
+
+        transform.rotation = Quaternion.Euler(0, 0, angle);
     }
 
     private void StartChasing()

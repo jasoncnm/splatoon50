@@ -6,7 +6,6 @@ public class SplatterSpawner : MonoBehaviour
 
     public static SplatterSpawner instance;
 
-    
 
     private void Awake()
     {

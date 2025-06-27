@@ -1,19 +1,19 @@
 using MoreMountains.Feedbacks;
 using UnityEngine;
 using System.Collections.Generic;
-public class WeaponManager : MonoBehaviour
+public class PlayerGunController : MonoBehaviour
 {
 
     PlayerController playerController;
 
-    MMF_Player shootFeedback;
+    MMF_Player playerShootFeedback;
 
     ParticleSystem bulletParticles = null;
 
     private void OnEnable()
     {
-        playerController = GameManager.instance.player.GetComponent<PlayerController>();
-        shootFeedback = playerController.transform.GetComponentInChildren<MMF_Player>();
+        playerController = GetComponent<PlayerController>();
+        playerShootFeedback = transform.GetComponentInChildren<MMF_Player>();
         playerController.shoot += OnPlayerShoot;
     }
 
@@ -28,7 +28,7 @@ public class WeaponManager : MonoBehaviour
         if (bulletParticles != null)
         {
             SplatterSpawner.instance.Spawn();
-            shootFeedback?.PlayFeedbacks(args.gunEndPointPos);
+            playerShootFeedback?.PlayFeedbacks(args.gunEndPointPos);
         }
 
     }
@@ -37,7 +37,7 @@ public class WeaponManager : MonoBehaviour
 
     public void SetBullet(ParticleSystem system)
     {
-        MMF_Particles mmf_p = shootFeedback.GetFeedbackOfType<MMF_Particles>();
+        MMF_Particles mmf_p = playerShootFeedback.GetFeedbackOfType<MMF_Particles>();
 
         if (mmf_p != null)
         {

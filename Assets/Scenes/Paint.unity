@@ -255,63 +255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143241888}
   m_CullTransparentMesh: 1
---- !u!1001 &182378682
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -8.875
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5257826288433640013, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091813866577608782, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
-      propertyPath: m_Name
-      value: Splatter
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5f144f096a0851444bc24431eb4d7b6b, type: 3}
 --- !u!1 &362363284
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,7 +728,7 @@ MonoBehaviour:
     - rid: 4596503409475977287
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -820542727
         Label: Sound
         OriginalLabel: Sound
@@ -1559,6 +1502,7 @@ MonoBehaviour:
   scoreText: {fileID: 143241890}
   healthBar: {fileID: 1726504471}
   gameScore: 0
+  playerHealth: 1
   player: {fileID: 1240993475}
 --- !u!114 &728551060
 MonoBehaviour:
@@ -1572,7 +1516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e4099fb25efa12419e2b37d08abd374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 7074086331511542764, guid: 1ae4a3ee923836f4c8e82d2efde2ee76, type: 3}
+  enemyPrefab: {fileID: 8538867056373346805, guid: 20494584dc3a0d4409c7a1950417c837, type: 3}
   spawnInterval: 5
   useCameraBounds: 1
   spawnAreaSize: {x: 10, y: 10}
@@ -34338,12 +34282,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3654471321893638447, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
   m_PrefabInstance: {fileID: 1556301181}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1285481404 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3571831242181780987, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-  m_PrefabInstance: {fileID: 4626199625580369864}
+--- !u!1 &1283715263 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7727285851439360598, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
+  m_PrefabInstance: {fileID: 1556301181}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &1283715268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283715263}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4bc7226bd9152df4082fdc771217a34a, type: 3}
@@ -34501,7 +34451,7 @@ MonoBehaviour:
     - rid: 0
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: 1563303219
         Label: Sound
         OriginalLabel: Sound
@@ -34663,13 +34613,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 795009346378259436, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1218407710437006972, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
-      propertyPath: splatterMask.m_Bits
-      value: 2048
+    - target: {fileID: 502535729048800854, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
+      propertyPath: managedReferences[3645679805691592973].MoveToPosition
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3654471321893638447, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34711,22 +34657,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4149236744381259065, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7727285851439360598, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727285851439360598, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7727285851439360598, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1283715268}
   m_SourcePrefab: {fileID: 100100000, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
 --- !u!198 &1556301182 stripped
 ParticleSystem:
@@ -34767,7 +34708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300, y: -22.399994}
+  m_AnchoredPosition: {x: 300, y: -22.399963}
   m_SizeDelta: {x: 80, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1574522591
@@ -36332,7 +36273,7 @@ MonoBehaviour:
     - rid: 1779414934241935544
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -968316917
         Label: Sound
         OriginalLabel: Sound
@@ -37849,7 +37790,7 @@ MonoBehaviour:
     - rid: 0
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -1647899312
         Label: Sound
         OriginalLabel: Sound
@@ -37985,7 +37926,11 @@ PrefabInstance:
     - target: {fileID: 2214422620238805063, guid: 9103a60759845284f9023168bf405627, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1285481404}
+      objectReference: {fileID: 1283715268}
+    - target: {fileID: 2214422620238805063, guid: 9103a60759845284f9023168bf405627, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetBullet
+      objectReference: {fileID: 0}
     - target: {fileID: 2214422620238805063, guid: 9103a60759845284f9023168bf405627, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -38079,63 +38024,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9103a60759845284f9023168bf405627, type: 3}
---- !u!1001 &4626199625580369864
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3451759255176184380, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_Name
-      value: WeaponManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4764458890547404930, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9d091c920eedc694eb2b715dbf79d0a9, type: 3}
 --- !u!1001 &8296451346950429271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38147,7 +38035,11 @@ PrefabInstance:
     - target: {fileID: 7737839436631925278, guid: fc40913af28c78245941fddb2571db8c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1285481404}
+      objectReference: {fileID: 1283715268}
+    - target: {fileID: 7737839436631925278, guid: fc40913af28c78245941fddb2571db8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetBullet
+      objectReference: {fileID: 0}
     - target: {fileID: 7737839436631925278, guid: fc40913af28c78245941fddb2571db8c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -38253,5 +38145,3 @@ SceneRoots:
   - {fileID: 711592702}
   - {fileID: 883972695}
   - {fileID: 728551057}
-  - {fileID: 4626199625580369864}
-  - {fileID: 182378682}

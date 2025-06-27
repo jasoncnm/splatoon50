@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform gunEndPointTr;
 
     [SerializeField] LayerMask splatterMask;
-
+    
     Rigidbody2D rb2D;
 
     new SpriteRenderer renderer;
@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     float velPower = 0.7f;
     float turnSmoothTime = 0.01f;
 
-    bool _CanShoot = true;
+    public bool _Dashing { get; private set; } = false;
 
     private void Start()
     {
@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
     public void OnShoot()
     {
 
-        if (_CanShoot)
+        if (!_Dashing)
         {
 
             Vector3 endPointPos = gunEndPointTr.position;
@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
         RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.up, .1f, splatterMask);
         if (hit2D)
         {
-            _CanShoot = false;
+            _Dashing = true;
             Debug.Log("Can Dash");
             renderer.color = transparent;
         }
@@ -109,11 +109,16 @@ public class PlayerController : MonoBehaviour
 
     public void OnExitDash()
     {
-        _CanShoot = true;
+        _Dashing = false;
         Color normal = renderer.color;
         Color opegue = new Color(normal.r, normal.g, normal.b, 1f);
         renderer.color = opegue;
 
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        GameManager.instance.OnPlayerHit();
     }
 
 }
