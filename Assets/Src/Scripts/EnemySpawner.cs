@@ -1,80 +1,109 @@
 using UnityEngine;
+using UnityEngine.Tilemaps;
+using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Enemy Settings")]
     public GameObject enemyPrefab;
     public float spawnInterval = 5f;
+    public int enemiesPerBatch = 2;
     
-    [Header("Spawn Area")]
-    public bool useCameraBounds = true;
-    public Vector2 spawnAreaSize = new Vector2(10f, 10f);  // Used if not using camera bounds
+    [Header("Tilemap Settings")]
+    public Tilemap spawnTilemap;
+    public TileBase[] spawnableTiles;
 
-    private Camera gameCamera;
+    private List<Vector3> validSpawnPositions = new List<Vector3>();
     private float spawnTimer;
 
     void Start()
     {
-        gameCamera = Camera.main;
-        spawnTimer = spawnInterval;
+        if (spawnTilemap == null)
+        {
+            Debug.LogError("Spawn Tilemap not assigned!");
+            return;
+        }
+
+        CacheValidSpawnPositions();
+        spawnTimer = spawnInterval;  // Spawn first batch immediately
     }
 
     void Update()
     {
+        if (validSpawnPositions.Count == 0) return;
+        
         spawnTimer += Time.deltaTime;
         
         if (spawnTimer >= spawnInterval)
         {
-            SpawnEnemyPair();
+            SpawnEnemyBatch();
             spawnTimer = 0f;
         }
     }
 
-    void SpawnEnemyPair()
+    void CacheValidSpawnPositions()
     {
-        // Spawn first enemy
-        Instantiate(enemyPrefab, GetRandomSpawnPosition(), Quaternion.identity);
-        
-        // Spawn second enemy at different position
-        Instantiate(enemyPrefab, GetRandomSpawnPosition(), Quaternion.identity);
-    }
+        validSpawnPositions.Clear();
+        BoundsInt bounds = spawnTilemap.cellBounds;
 
-    Vector2 GetRandomSpawnPosition()
-    {
-        if (useCameraBounds && gameCamera != null)
+        foreach (Vector3Int position in bounds.allPositionsWithin)
         {
-            return GetRandomPositionInCameraView();
+            if (spawnTilemap.HasTile(position))
+            {
+                TileBase tile = spawnTilemap.GetTile(position);
+                
+                foreach (TileBase spawnableTile in spawnableTiles)
+                {
+                    if (tile == spawnableTile)
+                    {
+                        Vector3 worldPosition = spawnTilemap.GetCellCenterWorld(position);
+                        validSpawnPositions.Add(worldPosition);
+                        break;
+                    }
+                }
+            }
         }
-        return GetRandomPositionInFixedArea();
-    }
 
-    Vector2 GetRandomPositionInCameraView()
-    {
-        float cameraHeight = 2f * gameCamera.orthographicSize;
-        float cameraWidth = cameraHeight * gameCamera.aspect;
-
-        return new Vector2(
-            Random.Range(gameCamera.transform.position.x - cameraWidth/2, gameCamera.transform.position.x + cameraWidth/2),
-            Random.Range(gameCamera.transform.position.y - cameraHeight/2, gameCamera.transform.position.y + cameraHeight/2)
-        );
-    }
-
-    Vector2 GetRandomPositionInFixedArea()
-    {
-        Vector2 center = transform.position;
-        return new Vector2(
-            Random.Range(center.x - spawnAreaSize.x/2, center.x + spawnAreaSize.x/2),
-            Random.Range(center.y - spawnAreaSize.y/2, center.y + spawnAreaSize.y/2)
-        );
-    }
-
-    // Visualize spawn area in Scene view
-    void OnDrawGizmosSelected()
-    {
-        if (!useCameraBounds)
+        if (validSpawnPositions.Count == 0)
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireCube(transform.position, spawnAreaSize);
+            Debug.LogWarning("No valid spawn positions found! Check your tilemap and spawnable tiles.");
+        }
+    }
+
+    void SpawnEnemyBatch()
+    {
+        if (validSpawnPositions.Count == 0 || enemiesPerBatch <= 0) return;
+        
+        // Create a list to track positions we've used this batch
+        List<Vector3> usedPositions = new List<Vector3>();
+        
+        for (int i = 0; i < Mathf.Min(enemiesPerBatch, validSpawnPositions.Count); i++)
+        {
+            Vector3 spawnPosition;
+            int attempts = 0;
+            const int maxAttempts = 10;  // Prevent infinite loops
+            
+            // Try to find a unique position
+            do
+            {
+                spawnPosition = validSpawnPositions[Random.Range(0, validSpawnPositions.Count)];
+                attempts++;
+            } 
+            while (usedPositions.Contains(spawnPosition) && attempts < maxAttempts);
+            
+            Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+            usedPositions.Add(spawnPosition);
+        }
+        
+        // If we need more enemies than available positions, spawn duplicates
+        if (enemiesPerBatch > validSpawnPositions.Count)
+        {
+            int extraSpawns = enemiesPerBatch - validSpawnPositions.Count;
+            for (int i = 0; i < extraSpawns; i++)
+            {
+                Vector3 spawnPosition = validSpawnPositions[Random.Range(0, validSpawnPositions.Count)];
+                Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+            }
         }
     }
 }
