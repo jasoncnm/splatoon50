@@ -26,7 +26,9 @@ public class ShootingEnemy : Enemy
         {
             if (Time.time > nextShootTime)
             {
-                ShootPlayer();
+                if (!GameManager.instance.player.GetComponent<PlayerController>()._Dashing)
+                    ShootPlayer();
+                
                 nextShootTime = Time.time + fireRate;
             }
         }

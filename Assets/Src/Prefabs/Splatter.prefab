@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5257826288433640013}
   - component: {fileID: 8323326915745767861}
   - component: {fileID: 6238407294541383844}
+  - component: {fileID: -2055095862333688830}
   m_Layer: 11
   m_Name: Splatter
   m_TagString: Splatter
@@ -28,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 3, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.75, z: 0.25}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 16056a173378ef8428e41768d3fca135, type: 3}
-  m_Color: {r: 0.5849253, g: 0.5132312, b: 0.9433962, a: 1}
+  m_Color: {r: 0.7724521, g: 0.735315, b: 0.9622642, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_SpriteSortPoint: 0
 --- !u!70 &6238407294541383844
 CapsuleCollider2D:
@@ -125,3 +126,15 @@ CapsuleCollider2D:
   m_Offset: {x: -0.07762996, y: 0.27579874}
   m_Size: {x: 3.8227153, y: 3.0845845}
   m_Direction: 0
+--- !u!114 &-2055095862333688830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6091813866577608782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a802846c84df63244a60eb84e549324f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

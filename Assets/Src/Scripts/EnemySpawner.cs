@@ -10,6 +10,8 @@ public class EnemySpawner : MonoBehaviour
     public bool useCameraBounds = true;
     public Vector2 spawnAreaSize = new Vector2(10f, 10f);  // Used if not using camera bounds
 
+    public LayerMask backgroundMask;
+
     private Camera gameCamera;
     private float spawnTimer;
 
@@ -33,10 +35,36 @@ public class EnemySpawner : MonoBehaviour
     void SpawnEnemyPair()
     {
         // Spawn first enemy
-        Instantiate(enemyPrefab, GetRandomSpawnPosition(), Quaternion.identity);
+
+        Instantiate(enemyPrefab, GetSpawnablePosition(), Quaternion.identity);
+
+        // Spawn second enemy at differen
+        Instantiate(enemyPrefab, GetSpawnablePosition(), Quaternion.identity);
+    }
+
+    Vector2 GetSpawnablePosition()
+    {
+        Vector2 position = GetRandomSpawnPosition();
+
+        if (CanSpawn(position)) return position;
+
+        return GetSpawnablePosition();
+
+    }
+
+    bool CanSpawn(Vector2 pos)
+    {
+        bool result = true;
+
+        RaycastHit2D hit2D = Physics2D.Raycast(pos, Vector2.down, 0.01f, backgroundMask);
+
+        if (hit2D)
+        {
+            result = false;
+        }
+
+        return result;
         
-        // Spawn second enemy at different position
-        Instantiate(enemyPrefab, GetRandomSpawnPosition(), Quaternion.identity);
     }
 
     Vector2 GetRandomSpawnPosition()

@@ -6,7 +6,6 @@ public class SplatterSpawner : MonoBehaviour
 
     public static SplatterSpawner instance;
 
-
     private void Awake()
     {
         instance = this;
@@ -18,7 +17,9 @@ public class SplatterSpawner : MonoBehaviour
 
         Quaternion rot = Quaternion.Euler(0, 0, spawnAngle - 90f);
 
-        Instantiate(splatter, transform.position, rot);
+        Transform tr = Instantiate(splatter, transform.position, rot);
+
+
     }
 
 }

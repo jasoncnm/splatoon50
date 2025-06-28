@@ -29,8 +29,10 @@ public class EnemyNavigator : MonoBehaviour
         Vector2 targetPos = target.position;
         float distance = Vector2.Distance(enemyPos, targetPos);
 
+        bool playerIsDashing = GameManager.instance.player.GetComponent<PlayerController>()._Dashing;
+
         // Handle chasing state
-        if (distance >= chaseRange)
+        if (distance >= chaseRange && !playerIsDashing)
         {
             StartChasing();
         }
@@ -39,8 +41,8 @@ public class EnemyNavigator : MonoBehaviour
             StopChasing();
         }
 
-        LookAtPlayer();
 
+        if (!playerIsDashing) LookAtPlayer();
     }
 
     void LookAtPlayer()
