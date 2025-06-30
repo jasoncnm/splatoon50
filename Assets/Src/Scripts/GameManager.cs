@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        gameScore = 0;
         Cursor.lockState = CursorLockMode.Confined;
     }
 
@@ -41,19 +42,6 @@ public class GameManager : MonoBehaviour
         SetHealth(amount);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            float amount = (playerHealth + 0.1f);
-            SetHealth(amount);
-        }
-        else if (Input.GetKeyDown(KeyCode.O))
-        {
-            float amount = (playerHealth - 0.1f);
-            SetHealth(amount);
-        }
-    }
 
     void SetHealth(float amount)
     {

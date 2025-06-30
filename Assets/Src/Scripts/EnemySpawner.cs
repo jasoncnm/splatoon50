@@ -38,17 +38,15 @@ public class EnemySpawner : MonoBehaviour
 
         Instantiate(enemyPrefab, GetSpawnablePosition(), Quaternion.identity);
 
-        // Spawn second enemy at differen
-        Instantiate(enemyPrefab, GetSpawnablePosition(), Quaternion.identity);
     }
 
     Vector2 GetSpawnablePosition()
     {
         Vector2 position = GetRandomSpawnPosition();
 
-        if (CanSpawn(position)) return position;
+        while (!CanSpawn(position)) position = GetRandomSpawnPosition(); ;
 
-        return GetSpawnablePosition();
+        return position;
 
     }
 
@@ -56,9 +54,9 @@ public class EnemySpawner : MonoBehaviour
     {
         bool result = true;
 
-        RaycastHit2D hit2D = Physics2D.Raycast(pos, Vector2.down, 0.01f, backgroundMask);
+        Collider2D collider = Physics2D.OverlapBox(pos, enemyPrefab.GetComponent<Collider2D>().bounds.extents, 0, backgroundMask);
 
-        if (hit2D)
+        if (collider)
         {
             result = false;
         }

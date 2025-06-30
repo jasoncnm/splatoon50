@@ -8,7 +8,7 @@ public class PlayerGunController : MonoBehaviour
 
     MMF_Player playerShootFeedback;
 
-    ParticleSystem bulletParticles = null;
+    [SerializeField] ParticleSystem bulletParticles = null;
 
 
     private void OnEnable()

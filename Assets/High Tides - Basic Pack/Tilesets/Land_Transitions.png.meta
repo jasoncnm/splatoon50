@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Land_Transitions_0: 1637551429442548155
+      Land_Transitions_1: 967813600522052794
+      Land_Transitions_2: -2970505297046128726
+      Land_Transitions_3: -4079253017055385000
+      Land_Transitions_4: -4567854251183831447
+      Land_Transitions_5: 1686058559848262720
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -7,6 +7,9 @@ public class EnemyNavigator : MonoBehaviour
 
     Transform target;
     NavMeshAgent agent;
+
+    Transform Aim;
+
     public bool isChasing { get; private set; } = false;
 
 
@@ -17,6 +20,7 @@ public class EnemyNavigator : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        Aim = transform.Find("Aim");
     }
 
     private void Update()
@@ -32,9 +36,9 @@ public class EnemyNavigator : MonoBehaviour
         bool playerIsDashing = GameManager.instance.player.GetComponent<PlayerController>()._Dashing;
 
         // Handle chasing state
-        if (distance >= chaseRange && !playerIsDashing)
+        if (distance >= chaseRange)
         {
-            StartChasing();
+            StartChasing(playerIsDashing);
         }
         else if (isChasing)
         {
@@ -47,20 +51,33 @@ public class EnemyNavigator : MonoBehaviour
 
     void LookAtPlayer()
     {
-        Vector3 lookDir = target.position - transform.position;
-        float angle = Util.GetAngleFromDirectionalVector(lookDir);
+        Vector3 lookDir = target.position - Aim.position;
+        float targetAngle = Util.GetAngleFromDirectionalVector(lookDir);
+        float vel = 0;
+        float angle = Mathf.SmoothDampAngle(Aim.rotation.eulerAngles.z, targetAngle, ref vel, 0.1f);
 
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        Aim.rotation = Quaternion.Euler(0, 0, targetAngle);
+
+        if (isChasing) transform.GetComponent<AnimationController>().PlayMoveAnimation(lookDir.normalized);
+
     }
 
-    private void StartChasing()
+    private void StartChasing(bool playerIsDashing)
     {
         if (!isChasing)
         {
             isChasing = true;
             agent.isStopped = false; // Resume agent movement
         }
-        agent.SetDestination(target.position);
+
+        if (playerIsDashing)
+        {
+            agent.SetDestination(target.GetComponent<PlayerController>().positionBeforeDash);
+        }
+        else
+        {
+            agent.SetDestination(target.position);
+        }
     }
 
     private void StopChasing()

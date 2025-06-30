@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Surfing_Water_Particles_0: 6424960421988959149
+      Surfing_Water_Particles_1: 7556619887662105249
+      Surfing_Water_Particles_2: -6010739350633423244
+      Surfing_Water_Particles_3: -2315720307047997077
+      Surfing_Water_Particles_4: -2503053380780841079
+      Surfing_Water_Particles_5: -7730066225107244843
+      Surfing_Water_Particles_6: 239823372242086615
+      Surfing_Water_Particles_7: 980562038156216966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

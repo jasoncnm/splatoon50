@@ -322,7 +322,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mixed_Land_to_Sea_Transitions_0: -5596556714669220623
+      Mixed_Land_to_Sea_Transitions_1: -3105830263349497387
+      Mixed_Land_to_Sea_Transitions_2: 6963909805087900152
+      Mixed_Land_to_Sea_Transitions_3: -1583751235925798482
+      Mixed_Land_to_Sea_Transitions_4: -1953313160546272036
+      Mixed_Land_to_Sea_Transitions_5: -59848405429303344
+      Mixed_Land_to_Sea_Transitions_6: 3460356754708469000
+      Mixed_Land_to_Sea_Transitions_7: 5273634387460655302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

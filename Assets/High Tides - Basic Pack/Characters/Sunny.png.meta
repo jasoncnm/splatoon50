@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sunny_0: 1750847918288461579
+      Sunny_1: 7604666517635837491
+      Sunny_10: -6949569633309133036
+      Sunny_11: 5774702037305411109
+      Sunny_12: 2511055706252499228
+      Sunny_13: -1740415684384804556
+      Sunny_14: -8905562322848328197
+      Sunny_15: 1506097279854168097
+      Sunny_2: -1869511255188263625
+      Sunny_3: -8144531169175783282
+      Sunny_4: 3997174720607647755
+      Sunny_5: -5122542614778282473
+      Sunny_6: 2020437667938036644
+      Sunny_7: 1767998129273503060
+      Sunny_8: 7061483957359944758
+      Sunny_9: -4282036199602853342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

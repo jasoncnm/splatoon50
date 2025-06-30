@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     
     Rigidbody2D rb2D;
 
-    new SpriteRenderer renderer;
+    SpriteRenderer[] renderers;
+
 
     public Transform aim { get; private set; }
 
@@ -32,10 +33,16 @@ public class PlayerController : MonoBehaviour
 
     public bool _Dashing { get; private set; } = false;
 
+
+    public Vector3 positionBeforeDash { get; private set; }
+
     private void Start()
     {
-        renderer = transform.GetComponent<SpriteRenderer>();
-        aim = transform;
+
+        renderers = GetComponentsInChildren<SpriteRenderer>();
+
+        positionBeforeDash = transform.position;
+        aim = transform.Find("Aim");
         rb2D = transform.GetComponent<Rigidbody2D>();
     }
 
@@ -58,13 +65,15 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        Vector3 aimDir = (mousePos - transform.position).normalized;
+        Vector3 aimDir = (mousePos - aim.position).normalized;
 
         float turnVelo = 0f;
 
         float targetangle = Mathf.Atan2(aimDir.y, aimDir.x) * Mathf.Rad2Deg;
-        float angle = Mathf.SmoothDampAngle(transform.eulerAngles.z, targetangle, ref turnVelo, turnSmoothTime);
+        float angle = Mathf.SmoothDampAngle(aim.eulerAngles.z, targetangle, ref turnVelo, turnSmoothTime);
 
+        if (rb2D.linearVelocity.magnitude < 0.1f) GetComponent<AnimationController>().PlayIdelAnimation(aimDir);
+        else GetComponent<AnimationController>().PlayMoveAnimation(aimDir);
 
         aim.eulerAngles = new Vector3(0, 0, angle);
 
@@ -92,15 +101,19 @@ public class PlayerController : MonoBehaviour
 
     public void OnDash()
     {
-        Color normal = renderer.color;
-        Color transparent = new Color(normal.r, normal.g, normal.b, 0.5f);
-       
         RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.up, .1f, splatterMask);
         if (hit2D)
         {
+            if (!_Dashing) positionBeforeDash = transform.position;
             _Dashing = true;
             Debug.Log("Can Dash");
-            renderer.color = transparent;
+
+            foreach (SpriteRenderer renderer in renderers)
+            {
+                Color normal = renderer.color;
+                Color transparent = new Color(normal.r, normal.g, normal.b, 0.5f);
+                renderer.color = transparent;
+            }
         }
         else
         {
@@ -112,10 +125,13 @@ public class PlayerController : MonoBehaviour
     public void OnExitDash()
     {
         _Dashing = false;
-        Color normal = renderer.color;
-        Color opegue = new Color(normal.r, normal.g, normal.b, 1f);
-        renderer.color = opegue;
 
+        foreach (SpriteRenderer renderer in renderers)
+        {
+            Color normal = renderer.color;
+            Color opegue = new Color(normal.r, normal.g, normal.b, 1f);
+            renderer.color = opegue;
+        }
     }
 
     private void OnParticleCollision(GameObject other)

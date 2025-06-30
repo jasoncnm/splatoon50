@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ruby_0: 7774493202208912350
+      Ruby_1: -71519779025370795
+      Ruby_10: 6050169372102920505
+      Ruby_11: 587220461558880079
+      Ruby_12: 2141911616304843423
+      Ruby_13: 6324911709803476464
+      Ruby_14: -7711193675917232718
+      Ruby_15: 4327880199788987027
+      Ruby_2: -6231713192252961761
+      Ruby_3: 7301505857440752111
+      Ruby_4: -3572580776053935678
+      Ruby_5: 8575330016216986265
+      Ruby_6: 1863344262216987493
+      Ruby_7: 1202568287336138134
+      Ruby_8: 6104928358520259494
+      Ruby_9: 4614836112593150797
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

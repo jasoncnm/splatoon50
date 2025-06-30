@@ -522,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Surfboards_0: 1129031018401096933
+      Surfboards_1: -3493315256599477852
+      Surfboards_10: -2116556097376445043
+      Surfboards_11: 8759311163610098033
+      Surfboards_12: 7877697052486615517
+      Surfboards_13: 3225489879894004691
+      Surfboards_14: -5413934182554410701
+      Surfboards_15: -2236391856995458564
+      Surfboards_2: 6339820287708449005
+      Surfboards_3: -1844234035914909671
+      Surfboards_4: 818692377584204366
+      Surfboards_5: -8416868584812382880
+      Surfboards_6: -798352463453933834
+      Surfboards_7: -7035132946947990224
+      Surfboards_8: 7105104590140247863
+      Surfboards_9: 8923549340093769573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

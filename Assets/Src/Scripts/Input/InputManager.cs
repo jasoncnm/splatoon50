@@ -68,6 +68,11 @@ public class InputManager : MonoBehaviour
 
     private void Update()
     {
+
+
+        playerController.Rotate();
+
+
         if (_DashHolding)
         {
             playerController.OnDash();
@@ -95,7 +100,7 @@ public class InputManager : MonoBehaviour
         FixedUpdateStart();
 
         playerController.Move(moveDirection);
-        playerController.Rotate();
+
 
         FixedUpdateEnd();
     }
