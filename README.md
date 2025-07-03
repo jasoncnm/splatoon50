@@ -137,12 +137,12 @@ User Interface
  - Game will end when player has no health left
 
 Project timeline
-1. Weapons (non-upgraded)
-2. Enemy
-3. Drone
-4. Spawn algorithm
-5. Level system (UI included)
-6. Upgrade weapons
-7. Shop (coin system)
-8. Menu
-9. Ads
+1. Weapons (non-upgraded) |Jason
+2. Enemy |Chris
+3. Drone |Jason
+4. Spawn algorithm |Chris
+5. Level system (UI included) |Chris
+6. Upgrade weapons |Jason
+7. Shop (coin system) |Chris
+8. Menu |Jason
+9. Ads |Chris
