@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         gameScore = 0;
         Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
     }
 
     public void AddScore()

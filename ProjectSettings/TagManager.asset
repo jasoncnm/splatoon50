@@ -7,6 +7,7 @@ TagManager:
   - obstacle
   - AimPoint
   - Splatter
+  - bullet
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Walls
   - Background
   - Splatter
-  - 
+  - bullet
   - 
   - 
   - 

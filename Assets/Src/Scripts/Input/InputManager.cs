@@ -87,7 +87,7 @@ public class InputManager : MonoBehaviour
 
     void FixedUpdateEnd()
     {
-
+        playerController.FixedUpdateEnd();
     }
 
     void FixedUpdateStart()

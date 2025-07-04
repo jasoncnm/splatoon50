@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: 176327d90f0b58142956e9d2d8d73d67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7803320739515085289
+    second: outdoor tilemap_0
+  - first:
+      213: -3834391256115741903
+    second: outdoor tilemap_1
+  - first:
+      213: 7068300105804296572
+    second: outdoor tilemap_2
+  - first:
+      213: -519321115451477290
+    second: outdoor tilemap_3
+  - first:
+      213: -7834800159512827340
+    second: outdoor tilemap_4
+  - first:
+      213: -3446854462182630389
+    second: outdoor tilemap_5
+  - first:
+      213: 3961818078574965977
+    second: outdoor tilemap_6
+  - first:
+      213: -8028839097377382316
+    second: outdoor tilemap_7
+  - first:
+      213: -6704498290531631912
+    second: outdoor tilemap_8
+  - first:
+      213: 91767156095034919
+    second: outdoor tilemap_9
+  - first:
+      213: 3466312116467190895
+    second: outdoor tilemap_10
+  - first:
+      213: -93727173660777023
+    second: outdoor tilemap_11
+  - first:
+      213: -3442885769280885925
+    second: outdoor tilemap_12
+  - first:
+      213: -4698193244943978121
+    second: outdoor tilemap_13
+  - first:
+      213: 3870325629569252339
+    second: outdoor tilemap_14
+  - first:
+      213: -7848024652370124086
+    second: outdoor tilemap_15
+  - first:
+      213: -8622794621906153810
+    second: outdoor tilemap_16
+  - first:
+      213: 937018062519335177
+    second: outdoor tilemap_17
+  - first:
+      213: 4833519405682348807
+    second: outdoor tilemap_18
+  - first:
+      213: -2393726758377095241
+    second: outdoor tilemap_19
+  - first:
+      213: 64524938409356291
+    second: outdoor tilemap_20
+  - first:
+      213: -6099749429182306735
+    second: outdoor tilemap_21
+  - first:
+      213: -5240596271782733801
+    second: outdoor tilemap_22
+  - first:
+      213: 6167187516256169558
+    second: outdoor tilemap_23
+  - first:
+      213: -2902363676583880730
+    second: outdoor tilemap_24
+  - first:
+      213: 49439391577048569
+    second: outdoor tilemap_25
+  - first:
+      213: 8601876670147628949
+    second: outdoor tilemap_26
+  - first:
+      213: -8179130558325865405
+    second: outdoor tilemap_27
+  - first:
+      213: -2027296760659739448
+    second: outdoor tilemap_28
+  - first:
+      213: -4312824593852900247
+    second: outdoor tilemap_29
+  - first:
+      213: -515818827883401369
+    second: outdoor tilemap_30
+  - first:
+      213: 3666163618039654008
+    second: outdoor tilemap_31
+  - first:
+      213: 5981603396390970074
+    second: outdoor tilemap_32
+  - first:
+      213: -6272145757109113661
+    second: outdoor tilemap_33
+  - first:
+      213: -7115669093281797794
+    second: outdoor tilemap_34
+  - first:
+      213: -8187752967304896844
+    second: outdoor tilemap_35
+  - first:
+      213: -6242048294546595632
+    second: outdoor tilemap_36
+  - first:
+      213: 6091017434862808668
+    second: outdoor tilemap_37
+  - first:
+      213: 8181239155630916437
+    second: outdoor tilemap_38
+  - first:
+      213: 1289971180167015722
+    second: outdoor tilemap_39
+  - first:
+      213: 5364686620876984419
+    second: outdoor tilemap_40
+  - first:
+      213: 3748660748778535621
+    second: outdoor tilemap_41
+  - first:
+      213: 743794049017753662
+    second: outdoor tilemap_42
+  - first:
+      213: -2043340582123498700
+    second: outdoor tilemap_43
+  - first:
+      213: -68292580023450850
+    second: outdoor tilemap_44
+  - first:
+      213: 6466513610493584557
+    second: outdoor tilemap_45
+  - first:
+      213: 3480824920646705475
+    second: outdoor tilemap_46
+  - first:
+      213: -3237305046277901463
+    second: outdoor tilemap_47
+  - first:
+      213: 5064143586160928738
+    second: outdoor tilemap_48
+  - first:
+      213: -7235817232843584670
+    second: outdoor tilemap_49
+  - first:
+      213: -444013365501500832
+    second: outdoor tilemap_50
+  - first:
+      213: 6480030130531987090
+    second: outdoor tilemap_51
+  - first:
+      213: 3086670575691923772
+    second: outdoor tilemap_52
+  - first:
+      213: -3227162698583056536
+    second: outdoor tilemap_53
+  - first:
+      213: -7676235758635533819
+    second: outdoor tilemap_54
+  - first:
+      213: -1868078934690126051
+    second: outdoor tilemap_55
+  - first:
+      213: 3480869538057061167
+    second: outdoor tilemap_56
+  - first:
+      213: -5560378925633876517
+    second: outdoor tilemap_57
+  - first:
+      213: 5477825822184372156
+    second: outdoor tilemap_58
+  - first:
+      213: -6485745002978785165
+    second: outdoor tilemap_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: outdoor tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 287
+        width: 114
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e13c3b6ed6fa4c60800000000000000
+      internalID: 7803320739515085289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 335
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b7b51d77189cac0800000000000000
+      internalID: -3834391256115741903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 330
+        width: 50
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71325c2f75a71260800000000000000
+      internalID: 7068300105804296572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 369
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2b72d62300bc8f0800000000000000
+      internalID: -519321115451477290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 373
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a6016f3c2354390800000000000000
+      internalID: -7834800159512827340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_5
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 361
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c522df0205a20d0800000000000000
+      internalID: -3446854462182630389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_6
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 313
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d47e264d843bf630800000000000000
+      internalID: 3961818078574965977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450ad0a2165d39090800000000000000
+      internalID: -8028839097377382316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_8
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 357
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dcf5a3a356d4f2a0800000000000000
+      internalID: -6704498290531631912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_9
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 339
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726a7150eb5064100800000000000000
+      internalID: 91767156095034919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_10
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 321
+        width: 42
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cc8ae2180da1030800000000000000
+      internalID: 3466312116467190895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_11
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 321
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5e524d1a303bef0800000000000000
+      internalID: -93727173660777023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_12
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 327
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5be3cf42a96830d0800000000000000
+      internalID: -3442885769280885925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 321
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77179f4c22aacceb0800000000000000
+      internalID: -4698193244943978121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 321
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fbb09b77a826b530800000000000000
+      internalID: 3870325629569252339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 327
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac268f6c827361390800000000000000
+      internalID: -7848024652370124086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 261
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae82261afda55880800000000000000
+      internalID: -8622794621906153810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_17
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 287
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 909f69c96f4f00d00800000000000000
+      internalID: 937018062519335177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_18
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 261
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70357a65a4c141340800000000000000
+      internalID: 4833519405682348807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_19
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 287
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bff59d1236c7ced0800000000000000
+      internalID: -2393726758377095241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 272
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c2b01f61d35e000800000000000000
+      internalID: 64524938409356291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_21
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 271
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15662b64636595ba0800000000000000
+      internalID: -6099749429182306735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_22
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 271
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7185729e479a547b0800000000000000
+      internalID: -5240596271782733801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_23
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 257
+        width: 98
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e2ca1fe50469550800000000000000
+      internalID: 6167187516256169558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e798301d9bb8b7d0800000000000000
+      internalID: -2902363676583880730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_25
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 256
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f58cdc5dd4afa000800000000000000
+      internalID: 49439391577048569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_26
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 259
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f8eddb141006770800000000000000
+      internalID: 8601876670147628949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_27
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 259
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344c1739714ed7e80800000000000000
+      internalID: -8179130558325865405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_28
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 259
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc739656589dd3e0800000000000000
+      internalID: -2027296760659739448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_29
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 240
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c54d8d1e4c524c0800000000000000
+      internalID: -4312824593852900247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_30
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 240
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f2d8b428177d8f0800000000000000
+      internalID: -515818827883401369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_31
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 177
+        width: 100
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876e6bde264d0e230800000000000000
+      internalID: 3666163618039654008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_32
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 208
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2672dd89ce20350800000000000000
+      internalID: 5981603396390970074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_33
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 244
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cca9084aacd4f8a0800000000000000
+      internalID: -6272145757109113661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_34
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 244
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5966bbf8a0104d90800000000000000
+      internalID: -7115669093281797794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_35
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 244
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be142b8e024f5e80800000000000000
+      internalID: -8187752967304896844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_36
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 243
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d0a7bcd52acf59a0800000000000000
+      internalID: -6242048294546595632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_37
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 243
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e65bdd514a78450800000000000000
+      internalID: 6091017434862808668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_38
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 553c5ed7aa9998170800000000000000
+      internalID: 8181239155630916437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2da85c24f5e6e110800000000000000
+      internalID: 1289971180167015722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_40
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 175
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360d9a0fe02337a40800000000000000
+      internalID: 5364686620876984419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_41
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 193
+        width: 10
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5caf46af61be50430800000000000000
+      internalID: 3748660748778535621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_42
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 193
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30b0cd2fbc725a00800000000000000
+      internalID: 743794049017753662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 71
+        width: 100
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 433936f019894a3e0800000000000000
+      internalID: -2043340582123498700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_44
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 135
+        width: 82
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1348e2a2406d0ff0800000000000000
+      internalID: -68292580023450850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_45
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 160
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4e2b02edbadb950800000000000000
+      internalID: 6466513610493584557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_46
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 160
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3416978b2df5e4030800000000000000
+      internalID: 3480824920646705475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_47
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 147
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963b60f5638c213d0800000000000000
+      internalID: -3237305046277901463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_48
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 128
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7e1b8b2c3774640800000000000000
+      internalID: 5064143586160928738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_49
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 128
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b45b05096359b90800000000000000
+      internalID: -7235817232843584670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_50
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 131
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062e1c1523c86d9f0800000000000000
+      internalID: -444013365501500832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_51
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 15
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29eef203211bde950800000000000000
+      internalID: 6480030130531987090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_52
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 47
+        width: 114
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3184c2e88e06da20800000000000000
+      internalID: 3086670575691923772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_53
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 112
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fd096bf90d633d0800000000000000
+      internalID: -3227162698583056536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_54
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ab06a7f38887590800000000000000
+      internalID: -7676235758635533819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_55
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 111
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17a76d3b104316e0800000000000000
+      internalID: -1868078934690126051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_56
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 92
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f238e5507688e4030800000000000000
+      internalID: 3480869538057061167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 111
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd4609c3d095d2b0800000000000000
+      internalID: -5560378925633876517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_58
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7f2c00095250c40800000000000000
+      internalID: 5477825822184372156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: outdoor tilemap_59
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 31
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3784fa168410ef5a0800000000000000
+      internalID: -6485745002978785165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      outdoor tilemap_0: 7803320739515085289
+      outdoor tilemap_1: -3834391256115741903
+      outdoor tilemap_10: 3466312116467190895
+      outdoor tilemap_11: -93727173660777023
+      outdoor tilemap_12: -3442885769280885925
+      outdoor tilemap_13: -4698193244943978121
+      outdoor tilemap_14: 3870325629569252339
+      outdoor tilemap_15: -7848024652370124086
+      outdoor tilemap_16: -8622794621906153810
+      outdoor tilemap_17: 937018062519335177
+      outdoor tilemap_18: 4833519405682348807
+      outdoor tilemap_19: -2393726758377095241
+      outdoor tilemap_2: 7068300105804296572
+      outdoor tilemap_20: 64524938409356291
+      outdoor tilemap_21: -6099749429182306735
+      outdoor tilemap_22: -5240596271782733801
+      outdoor tilemap_23: 6167187516256169558
+      outdoor tilemap_24: -2902363676583880730
+      outdoor tilemap_25: 49439391577048569
+      outdoor tilemap_26: 8601876670147628949
+      outdoor tilemap_27: -8179130558325865405
+      outdoor tilemap_28: -2027296760659739448
+      outdoor tilemap_29: -4312824593852900247
+      outdoor tilemap_3: -519321115451477290
+      outdoor tilemap_30: -515818827883401369
+      outdoor tilemap_31: 3666163618039654008
+      outdoor tilemap_32: 5981603396390970074
+      outdoor tilemap_33: -6272145757109113661
+      outdoor tilemap_34: -7115669093281797794
+      outdoor tilemap_35: -8187752967304896844
+      outdoor tilemap_36: -6242048294546595632
+      outdoor tilemap_37: 6091017434862808668
+      outdoor tilemap_38: 8181239155630916437
+      outdoor tilemap_39: 1289971180167015722
+      outdoor tilemap_4: -7834800159512827340
+      outdoor tilemap_40: 5364686620876984419
+      outdoor tilemap_41: 3748660748778535621
+      outdoor tilemap_42: 743794049017753662
+      outdoor tilemap_43: -2043340582123498700
+      outdoor tilemap_44: -68292580023450850
+      outdoor tilemap_45: 6466513610493584557
+      outdoor tilemap_46: 3480824920646705475
+      outdoor tilemap_47: -3237305046277901463
+      outdoor tilemap_48: 5064143586160928738
+      outdoor tilemap_49: -7235817232843584670
+      outdoor tilemap_5: -3446854462182630389
+      outdoor tilemap_50: -444013365501500832
+      outdoor tilemap_51: 6480030130531987090
+      outdoor tilemap_52: 3086670575691923772
+      outdoor tilemap_53: -3227162698583056536
+      outdoor tilemap_54: -7676235758635533819
+      outdoor tilemap_55: -1868078934690126051
+      outdoor tilemap_56: 3480869538057061167
+      outdoor tilemap_57: -5560378925633876517
+      outdoor tilemap_58: 5477825822184372156
+      outdoor tilemap_59: -6485745002978785165
+      outdoor tilemap_6: 3961818078574965977
+      outdoor tilemap_7: -8028839097377382316
+      outdoor tilemap_8: -6704498290531631912
+      outdoor tilemap_9: 91767156095034919
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

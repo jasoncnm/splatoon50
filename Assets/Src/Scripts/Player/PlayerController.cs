@@ -15,6 +15,9 @@ public class PlayerController : MonoBehaviour
 
     SpriteRenderer[] renderers;
 
+    Vector2 contactNormal;
+
+    Animator playerAnimator;
 
     public Transform aim { get; private set; }
 
@@ -26,7 +29,6 @@ public class PlayerController : MonoBehaviour
         public Vector3 shootDir;
     }
 
-    float velPower = 0.7f;
     float turnSmoothTime = 0.01f;
     float nextShootTime = 0f;
 
@@ -36,9 +38,15 @@ public class PlayerController : MonoBehaviour
 
     public Vector3 positionBeforeDash { get; private set; }
 
+    public void FixedUpdateEnd()
+    {
+        contactNormal = Vector2.zero;
+    }
+
+
     private void Start()
     {
-
+        playerAnimator = transform.Find("GFX").GetComponent<Animator>();
         renderers = GetComponentsInChildren<SpriteRenderer>();
 
         positionBeforeDash = transform.position;
@@ -48,17 +56,32 @@ public class PlayerController : MonoBehaviour
 
     public void Move(Vector2 direction)
     {
-        Vector2 targetVelocity = direction * moveSpeed;
-        Vector2 VelocityDiff = targetVelocity - rb2D.linearVelocity;
 
-        float accelRate = acceleration;
+        float dot = Vector2.Dot(direction, contactNormal);
 
-        Vector2 force = new Vector3(
-            Mathf.Pow(Mathf.Abs(VelocityDiff.x) * accelRate, velPower) * Mathf.Sign(VelocityDiff.x),
-            Mathf.Pow(Mathf.Abs(VelocityDiff.y) * accelRate, velPower) * Mathf.Sign(VelocityDiff.y)
-            );
+        Vector2 targetdir = direction;
 
-        rb2D.AddForce(force);
+        if (direction.magnitude < 0.01f)
+        {
+            playerAnimator.SetBool("Move", false);
+        }
+        else
+        {
+            playerAnimator.SetBool("Move", true);
+        }
+
+
+        if (dot < 0)
+        {
+            targetdir -= dot * contactNormal;
+        }
+
+        targetdir = targetdir.normalized;
+
+        Vector2 targetVelocity = targetdir * moveSpeed;
+
+        rb2D.linearVelocity = targetVelocity;
+
     }
 
     public void Rotate()
@@ -71,12 +94,22 @@ public class PlayerController : MonoBehaviour
 
         float targetangle = Mathf.Atan2(aimDir.y, aimDir.x) * Mathf.Rad2Deg;
         float angle = Mathf.SmoothDampAngle(aim.eulerAngles.z, targetangle, ref turnVelo, turnSmoothTime);
-
-        if (rb2D.linearVelocity.magnitude < 0.1f) GetComponent<AnimationController>().PlayIdelAnimation(aimDir);
-        else GetComponent<AnimationController>().PlayMoveAnimation(aimDir);
-
+                        
         aim.eulerAngles = new Vector3(0, 0, angle);
 
+        SpriteRenderer playerSprite = transform.Find("GFX").GetComponent<SpriteRenderer>();
+        SpriteRenderer gunSprite = aim.GetChild(0).GetComponentInChildren<SpriteRenderer>();
+
+        if (aimDir.x < 0)
+        {
+            gunSprite.flipY = true;
+            playerSprite.flipX = true;
+        }
+        else
+        {
+            gunSprite.flipY = false;
+            playerSprite.flipX = false;
+        }
     }
 
     public void OnShoot()
@@ -87,7 +120,9 @@ public class PlayerController : MonoBehaviour
 
             Vector3 endPointPos = gunEndPointTr.position;
             Vector3 shootPos = Util.GetMouseWorldPosition();
-            Vector3 shootDir = shootPos - endPointPos;
+            Vector3 shootDir = shootPos - aim.position;
+
+            shootDir = new Vector3(shootDir.x, shootDir.y, 0);
 
             shoot?.Invoke(this, new OnShootEventArgs
             {
@@ -137,6 +172,28 @@ public class PlayerController : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         GameManager.instance.OnPlayerHit();
+    }
+
+    void EvaluateCollision(Collision2D collision)
+    {
+        contactNormal = collision.contacts[0].normal;
+
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        EvaluateCollision(collision);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        EvaluateCollision(collision);
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        contactNormal = Vector2.zero;
     }
 
 }

@@ -8,7 +8,12 @@ public class PlayerGunController : MonoBehaviour
 
     MMF_Player playerShootFeedback;
 
-    [SerializeField] ParticleSystem bulletParticles = null;
+    BulletSpawner bulletSpawner;
+    
+    private void Start()
+    {
+        bulletSpawner = transform.Find("Aim").GetComponentInChildren<BulletSpawner>();
+    }
 
 
     private void OnEnable()
@@ -26,27 +31,8 @@ public class PlayerGunController : MonoBehaviour
 
     void OnPlayerShoot(object sender, PlayerController.OnShootEventArgs args)
     {
-        if (bulletParticles != null)
-        {
-            SplatterSpawner.instance.Spawn();
-            playerShootFeedback?.PlayFeedbacks(args.gunEndPointPos);
-        }
+        playerShootFeedback?.PlayFeedbacks(args.gunEndPointPos);
+        bulletSpawner.SpawnBulllet(args.gunEndPointPos, args.shootDir);
 
     }
-
-
-
-    public void SetBullet(ParticleSystem system)
-    {
-        MMF_Particles mmf_p = playerShootFeedback.GetFeedbackOfType<MMF_Particles>();
-
-        if (mmf_p != null)
-        {
-            bulletParticles = system;
-            mmf_p.BoundParticleSystem = system;
-        }
-
-    }
-
-
 }
