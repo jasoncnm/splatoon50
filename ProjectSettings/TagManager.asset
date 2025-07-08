@@ -8,6 +8,7 @@ TagManager:
   - AimPoint
   - Splatter
   - bullet
+  - Enemies
   layers:
   - Default
   - TransparentFX

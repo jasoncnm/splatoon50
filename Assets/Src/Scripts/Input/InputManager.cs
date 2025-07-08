@@ -10,10 +10,6 @@ public class InputManager : MonoBehaviour
     PlayerController playerController;
     CameraController camController;
 
-    Vector2 moveDirection;
-
-    public bool _DashHolding { get; private set; } = false;
-    public bool _ShootHolding { get; private set; } = false;
 
     private void OnEnable()
     {
@@ -35,28 +31,26 @@ public class InputManager : MonoBehaviour
 
     void OnDash()
     {
-        _DashHolding = true;
+        playerController.DashSetup();
     }
 
     void OnDashCancel()
     {
-        playerController.OnExitDash();
-        _DashHolding = false;
     }
 
     void OnShoot()
     {
-        _ShootHolding = true;
+        playerController.OnShootStart();
     }
 
     void OnShootCancel()
     {
-        _ShootHolding = false;
+        playerController.OnShootEnd();
     }
 
     void OnMove(Vector2 movement)
     {
-        moveDirection = movement;
+        playerController.MoveSetup(movement);
     }
 
     private void Start()
@@ -65,45 +59,6 @@ public class InputManager : MonoBehaviour
         camController = Camera.main.GetComponent<CameraController>();
     }
 
-
-    private void Update()
-    {
-
-
-        playerController.Rotate();
-
-
-        if (_DashHolding)
-        {
-            playerController.OnDash();
-        }
-
-        if (_ShootHolding)
-        {
-            playerController.OnShoot();
-        }
-
-    }
-
-    void FixedUpdateEnd()
-    {
-        playerController.FixedUpdateEnd();
-    }
-
-    void FixedUpdateStart()
-    {
-
-    }
-
-    private void FixedUpdate()
-    {
-        FixedUpdateStart();
-
-        playerController.Move(moveDirection);
-
-
-        FixedUpdateEnd();
-    }
 
     private void LateUpdate()
     {

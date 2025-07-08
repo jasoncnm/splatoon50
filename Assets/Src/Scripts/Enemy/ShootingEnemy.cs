@@ -1,7 +1,7 @@
 using MoreMountains.Feedbacks;
 using UnityEngine;
 
-public class ShootingEnemy : Enemy
+public class ShootingEnemy : MonoBehaviour
 {
 
     [SerializeField, Range(0, 2)] float fireRate = 1f;
@@ -26,7 +26,8 @@ public class ShootingEnemy : Enemy
         {
             if (Time.time > nextShootTime)
             {
-                if (!GameManager.instance.player.GetComponent<PlayerController>()._Dashing)
+
+                // NOTE: tmp remove if (!GameManager.instance.player.GetComponent<PlayerController>()._Dashing)
                     ShootPlayer();
                 
                 nextShootTime = Time.time + fireRate;

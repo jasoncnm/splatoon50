@@ -1,19 +1,9 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour
 {
-    private void OnParticleCollision(GameObject other)
-    {
-        GameManager.instance.AddScore();
-        Destroy(gameObject);
-    }
+    protected float health, maxHealth, moveSpeed;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            GameManager.instance.OnPlayerHit();
-            Destroy(gameObject);
-        }
-    }
+    public abstract void TakeDamage(float damage);
+
 }

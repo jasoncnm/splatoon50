@@ -5,17 +5,28 @@ using UnityEngine.InputSystem.XR;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 15f, acceleration = 10f, fireRate = 0.3f;
+    public enum PlayerState
+    {
+        Normal, Rollling,
+    }
+
+    [SerializeField] float moveSpeed = 15f, acceleration = 10f;
 
     [SerializeField] Transform gunEndPointTr;
 
     [SerializeField] LayerMask splatterMask;
+
+    public PlayerState state { get; private set; }
     
     Rigidbody2D rb2D;
 
-    SpriteRenderer[] renderers;
-
     Vector2 contactNormal;
+
+    Vector2 rollDir;
+
+    Vector2 moveDir;
+
+    Vector2 lastMoveDir;
 
     Animator playerAnimator;
 
@@ -31,60 +42,129 @@ public class PlayerController : MonoBehaviour
 
     float turnSmoothTime = 0.01f;
     float nextShootTime = 0f;
+    float fireRate;
+    float rollSpeed;
 
-
-    public bool _Dashing { get; private set; } = false;
-
+    bool _Shooting = false;
 
     public Vector3 positionBeforeDash { get; private set; }
 
-    public void FixedUpdateEnd()
+
+    public void MoveSetup(Vector2 direction)
     {
-        contactNormal = Vector2.zero;
+        moveDir = direction;
+        if (direction.x != 0 || direction.y != 0)
+        {
+            lastMoveDir = moveDir;
+        }
+    }
+
+    public void OnShootStart()
+    {
+        _Shooting = true;
     }
 
 
+    public void OnShootEnd()
+    {
+        _Shooting = false;
+    }
+
+    public void DashSetup()
+    {
+        rollDir = lastMoveDir;
+        rollSpeed = 20f;
+        state = PlayerState.Rollling;
+
+        playerAnimator.SetTrigger("Dash");
+
+    }
+
     private void Start()
     {
+
+        state = PlayerState.Normal;
         playerAnimator = transform.Find("GFX").GetComponent<Animator>();
-        renderers = GetComponentsInChildren<SpriteRenderer>();
+
 
         positionBeforeDash = transform.position;
         aim = transform.Find("Aim");
         rb2D = transform.GetComponent<Rigidbody2D>();
+
+        fireRate = transform.Find("Aim").GetComponentInChildren<BulletSpawner>().FireRate();
     }
 
-    public void Move(Vector2 direction)
+    void FixedUpdateEnd()
+    {
+        contactNormal = Vector2.zero;
+    }
+
+    void FixedUpdate()
+    {
+        Move();
+
+        FixedUpdateEnd();
+    }
+
+    void Update()
     {
 
-        float dot = Vector2.Dot(direction, contactNormal);
-
-        Vector2 targetdir = direction;
-
-        if (direction.magnitude < 0.01f)
+        Debug.Log(state);
+        if (state == PlayerState.Rollling)
         {
-            playerAnimator.SetBool("Move", false);
-        }
-        else
-        {
-            playerAnimator.SetBool("Move", true);
+            OnDash();
         }
 
+        Rotate();
 
-        if (dot < 0)
+        if (_Shooting)
         {
-            targetdir -= dot * contactNormal;
+            OnShoot();
         }
+    }
 
-        targetdir = targetdir.normalized;
+    void Move()
+    {
+        switch (state)
+        {
+            case PlayerState.Normal:
+                {
 
-        Vector2 targetVelocity = targetdir * moveSpeed;
+                    float dot = Vector2.Dot(moveDir, contactNormal);
 
-        rb2D.linearVelocity = targetVelocity;
+                    Vector2 targetdir = moveDir;
+
+                    if (moveDir.magnitude < 0.01f)
+                    {
+                        playerAnimator.SetBool("Move", false);
+                    }
+                    else
+                    {
+                        playerAnimator.SetBool("Move", true);
+                    }
+
+
+                    if (dot < 0)
+                    {
+                        targetdir -= dot * contactNormal;
+                    }
+
+                    targetdir = targetdir.normalized;
+
+                    Vector2 targetVelocity = targetdir * moveSpeed;
+
+                    rb2D.linearVelocity = targetVelocity;
+                }
+                break;
+
+            case PlayerState.Rollling:
+                rb2D.linearVelocity = rollDir * rollSpeed;
+                break;
+        }
 
     }
 
-    public void Rotate()
+    void Rotate()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -112,10 +192,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnShoot()
+    void OnShoot()
     {
 
-        if (!_Dashing && Time.time > nextShootTime)
+        if (Time.time > nextShootTime)
         {
 
             Vector3 endPointPos = gunEndPointTr.position;
@@ -134,38 +214,19 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnDash()
+
+
+    void OnDash()
     {
-        RaycastHit2D hit2D = Physics2D.Raycast(transform.position, Vector2.up, .1f, splatterMask);
-        if (hit2D)
+        float rollSpeedDropMultiplier = 5f;
+        rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
+
+        float rollSpeedMinimum = 5f;
+
+
+        if (rollSpeed < rollSpeedMinimum)
         {
-            if (!_Dashing) positionBeforeDash = transform.position;
-            _Dashing = true;
-            Debug.Log("Can Dash");
-
-            foreach (SpriteRenderer renderer in renderers)
-            {
-                Color normal = renderer.color;
-                Color transparent = new Color(normal.r, normal.g, normal.b, 0.5f);
-                renderer.color = transparent;
-            }
-        }
-        else
-        {
-            OnExitDash();
-        }
-
-    }
-
-    public void OnExitDash()
-    {
-        _Dashing = false;
-
-        foreach (SpriteRenderer renderer in renderers)
-        {
-            Color normal = renderer.color;
-            Color opegue = new Color(normal.r, normal.g, normal.b, 1f);
-            renderer.color = opegue;
+            state = PlayerState.Normal;
         }
     }
 
@@ -177,8 +238,6 @@ public class PlayerController : MonoBehaviour
     void EvaluateCollision(Collision2D collision)
     {
         contactNormal = collision.contacts[0].normal;
-
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
