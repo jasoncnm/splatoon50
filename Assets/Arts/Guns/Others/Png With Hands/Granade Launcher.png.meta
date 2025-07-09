@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Granade Launcher_0: -7246353669087068332
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

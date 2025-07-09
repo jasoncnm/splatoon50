@@ -30,7 +30,7 @@ public class BulletSpawner : MonoBehaviour
 
         tr.GetComponent<Bullet>().Setup(dir, damage, pierce, fallOffDistance);
 
-        muzzleFlash.GetComponent<MuzzleFlash>().Setup();
+        if (muzzleFlash) muzzleFlash.GetComponent<MuzzleFlash>().Setup();
 
     }
 

@@ -118,7 +118,7 @@ Weapon Upgrade:
      - bigger bullets
 
 Drone:
- - default:
+ - default: attack enemies
  - bomb:
  - revive HP:
  - extra life:

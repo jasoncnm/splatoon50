@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dragunov_0: 2257014338749977130
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

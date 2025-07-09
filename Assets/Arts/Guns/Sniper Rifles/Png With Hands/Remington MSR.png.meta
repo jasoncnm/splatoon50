@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Remington MSR_0: 2883748522502591296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
