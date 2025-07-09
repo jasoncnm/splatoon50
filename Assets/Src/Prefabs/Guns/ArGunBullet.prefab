@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -338787313084847471}
   - component: {fileID: 6587639557743659366}
   m_Layer: 12
-  m_Name: DefaultGunBullet
+  m_Name: ArGunBullet
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

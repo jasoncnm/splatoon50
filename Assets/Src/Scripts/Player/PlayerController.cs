@@ -12,7 +12,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float moveSpeed = 15f, acceleration = 10f;
 
-    [SerializeField] Transform gunEndPointTr;
+    Transform gunEndPointTr;
+
+    PlayerGunController gunController;
 
     [SerializeField] LayerMask splatterMask;
 
@@ -44,6 +46,8 @@ public class PlayerController : MonoBehaviour
     float nextShootTime = 0f;
     float fireRate;
     float rollSpeed;
+    float triggerTimer = 0f;
+    float fireDelay;
 
     bool _Shooting = false;
 
@@ -61,6 +65,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnShootStart()
     {
+        triggerTimer = 0;
         _Shooting = true;
     }
 
@@ -72,12 +77,14 @@ public class PlayerController : MonoBehaviour
 
     public void DashSetup()
     {
-        rollDir = lastMoveDir;
-        rollSpeed = 20f;
-        state = PlayerState.Rollling;
+        if (state == PlayerState.Normal)
+        {
+            rollDir = lastMoveDir;
+            rollSpeed = 20f;
+            state = PlayerState.Rollling;
 
-        playerAnimator.SetTrigger("Dash");
-
+            playerAnimator.SetTrigger("Dash");
+        }
     }
 
     private void Start()
@@ -86,12 +93,21 @@ public class PlayerController : MonoBehaviour
         state = PlayerState.Normal;
         playerAnimator = transform.Find("GFX").GetComponent<Animator>();
 
-
         positionBeforeDash = transform.position;
         aim = transform.Find("Aim");
         rb2D = transform.GetComponent<Rigidbody2D>();
 
-        fireRate = transform.Find("Aim").GetComponentInChildren<BulletSpawner>().FireRate();
+        gunController = GetComponent<PlayerGunController>();
+        GunSetUp();
+
+    }
+
+    public void GunSetUp()
+    {
+        fireRate = gunController.gunProperties.fireRate;
+        fireDelay = gunController.gunProperties.fireDelay;
+
+        gunEndPointTr = gunController.gunTr.Find("GunEndPoint");
     }
 
     void FixedUpdateEnd()
@@ -109,7 +125,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        Debug.Log(state);
         if (state == PlayerState.Rollling)
         {
             OnDash();
@@ -177,25 +192,59 @@ public class PlayerController : MonoBehaviour
                         
         aim.eulerAngles = new Vector3(0, 0, angle);
 
+        SetSpriteFlip(aimDir, rollDir);
+    }
+
+    void SetSpriteFlip(Vector2 aimDir, Vector2 rollDir)
+    {
+
         SpriteRenderer playerSprite = transform.Find("GFX").GetComponent<SpriteRenderer>();
-        SpriteRenderer gunSprite = aim.GetChild(0).GetComponentInChildren<SpriteRenderer>();
+        SpriteRenderer gunSprite = gunController.gunTr.GetComponentInChildren<SpriteRenderer>();
+
+        switch (state)
+        {
+            case PlayerState.Normal:
+                {
+                    if (aimDir.x < 0)
+                    {
+                        playerSprite.flipX = true;
+                    }
+                    else
+                    {
+                        playerSprite.flipX = false;
+                    }
+                }
+                break;
+
+            case PlayerState.Rollling:
+                {
+                    if (rollDir.x < 0)
+                    {
+                        playerSprite.flipX = true;
+                    }
+                    else
+                    {
+                        playerSprite.flipX = false;
+                    }
+                }
+                break;
+        }
 
         if (aimDir.x < 0)
         {
             gunSprite.flipY = true;
-            playerSprite.flipX = true;
         }
         else
         {
             gunSprite.flipY = false;
-            playerSprite.flipX = false;
         }
     }
 
     void OnShoot()
     {
+        triggerTimer += Time.deltaTime;
 
-        if (Time.time > nextShootTime)
+        if (triggerTimer > fireDelay && Time.time > nextShootTime)
         {
 
             Vector3 endPointPos = gunEndPointTr.position;

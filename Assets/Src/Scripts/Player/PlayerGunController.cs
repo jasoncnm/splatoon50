@@ -8,11 +8,28 @@ public class PlayerGunController : MonoBehaviour
 
     MMF_Player playerShootFeedback;
 
-    BulletSpawner bulletSpawner;
+    public Transform gunTr { get; private set; }
+
+    public BulletSpawner bulletSpawner { get; private set; }
+    public GunProperties gunProperties { get; private set; }
     
-    private void Start()
+    
+
+    private void Awake()
     {
-        bulletSpawner = transform.Find("Aim").GetComponentInChildren<BulletSpawner>();
+        Transform aim = transform.Find("Aim");
+
+        for (int i = 0; i < aim.childCount; i++)
+        {
+           aim.GetChild(i).gameObject.SetActive(false);
+        }
+
+        gunTr = aim.Find("Gun_AR");
+
+        bulletSpawner = gunTr.GetComponent<BulletSpawner>();
+        gunProperties = gunTr.GetComponent<GunProperties>();
+
+        gunTr.gameObject.SetActive(true);
     }
 
 
@@ -35,4 +52,21 @@ public class PlayerGunController : MonoBehaviour
         bulletSpawner.SpawnBulllet(args.gunEndPointPos, args.shootDir);
 
     }
+
+    public void SetGun(string name)
+    {
+
+        gunTr.gameObject.SetActive(false);
+
+        gunTr = transform.Find("Aim").Find(name);
+
+        bulletSpawner = gunTr.GetComponent<BulletSpawner>();
+        gunProperties = gunTr.GetComponent<GunProperties>();
+
+        playerController.GunSetUp();
+
+        gunTr.gameObject.SetActive(true);
+
+    }
+
 }
