@@ -17,6 +17,7 @@ public class DroneController : MonoBehaviour
         spawner = GetComponentInChildren<BulletSpawner>();
         gunProperties = GetComponentInChildren<GunProperties>();
         fireRate = gunProperties.fireRate;
+        nextShootTime = Time.time + fireRate;
     }
 
 
@@ -24,7 +25,7 @@ public class DroneController : MonoBehaviour
     {
         if (GameManager.instance != null)
         {
-            Gizmos.DrawWireSphere(GameManager.instance.player.position, detectRange);
+            Gizmos.DrawWireSphere(transform.position, detectRange);
         }
     }
 
@@ -32,7 +33,7 @@ public class DroneController : MonoBehaviour
     {
         FollowPlayer();
 
-        Collider2D[] colliderArr = Physics2D.OverlapCircleAll(GameManager.instance.player.position, detectRange);
+        Collider2D[] colliderArr = Physics2D.OverlapCircleAll(transform.position, detectRange);
 
         Enemy target = null;
         float minDist = float.MaxValue;
@@ -40,7 +41,7 @@ public class DroneController : MonoBehaviour
         {
             if (collider.TryGetComponent<Enemy>(out Enemy enemy))
             {
-                float dist = Vector3.Distance(GameManager.instance.player.position, collider.transform.position);
+                float dist = Vector3.Distance(transform.position, collider.transform.position);
                 if (dist < minDist)
                 {
                     minDist = dist;

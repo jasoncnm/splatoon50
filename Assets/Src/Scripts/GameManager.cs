@@ -1,8 +1,6 @@
 using TMPro;
 using UnityEngine;
 using MoreMountains.Tools;
-using UnityEngine.UI;
-using Unity.VisualScripting;
 
 
 public class GameManager : MonoBehaviour
@@ -10,82 +8,58 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
-    [SerializeField] TextMeshProUGUI scoreText;
-
-    [SerializeField] GameObject pauseMenu;
-
-
-    public MMProgressBar healthBar;
-
-    public int gameScore = 0;
+    public static int gameScore = 0;
 
     public float playerHealth = 1f;
 
     public Transform player;
 
-    bool _GameIsPause = false;
-
     private void Awake()
     {
-        instance = this;
+        if (!instance) instance = this;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
-
-        pauseMenu.SetActive(false);
         gameScore = 0;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
 
-
     }
 
-    public void AddScore()
+    public static void AddScore(TextMeshProUGUI scoreText)
     {
         gameScore++;
         scoreText.text = gameScore.ToString();
     }
 
-    public void OnPlayerHit()
+    public void OnPlayerHit(Transform healthBar)
     {
         float amount = (playerHealth - 0.1f);
-        SetHealth(amount);
-    }
-
-
-    void SetHealth(float amount)
-    {
         playerHealth = amount;
         playerHealth = Mathf.Clamp(playerHealth, 0f, 1f);
-        GameManager.instance.healthBar.UpdateBar01(playerHealth);
+
+        if (healthBar.TryGetComponent<MMProgressBar>(out MMProgressBar bar))
+        {
+            bar.UpdateBar01(playerHealth);
+        }
     }
 
-
-    private void Update()
+    public static void Pause(GameObject pauseMenu)
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (!_GameIsPause)
-            {
-                _GameIsPause = true;
-                pauseMenu.SetActive(true);
+        pauseMenu.SetActive(true);
 
-                Time.timeScale = 0f;
-                Cursor.visible = true;
+        Time.timeScale = 0f;
+        Cursor.visible = true;
+    }
 
-            }
-            else
-            {
-                _GameIsPause = false;
-                pauseMenu.SetActive(false);
+    public static void UnPause(GameObject pauseMenu)
+    {
+        pauseMenu.SetActive(false);
 
-                Time.timeScale = 1f;
-                Cursor.visible = false;
-            }
-        }
+        Time.timeScale = 1f;
+        Cursor.visible = false;
     }
 
     public void SwitchWeapon(int index)

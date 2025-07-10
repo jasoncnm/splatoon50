@@ -279,11 +279,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnParticleCollision(GameObject other)
-    {
-        GameManager.instance.OnPlayerHit();
-    }
-
     void EvaluateCollision(Collision2D collision)
     {
         contactNormal = collision.contacts[0].normal;

@@ -1,14 +1,4 @@
 
-What is factor 50? 
- - A Sunscreen 
- - aka spf 50
- -  level of protection that a sunscreen offers against UVB rays.
-
-Concept for game
- - 2d Splatoon, sparing sunscreen all over 
- - It is like a 2d arena shooter. 
- - sunscreen can cover the arena. 
- - player can dash into the sunscreen they have spread
 
 Player Control
  - You control a sunscreen bottle in this top down game
