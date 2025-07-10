@@ -48,6 +48,7 @@ public class DroneController : MonoBehaviour
                     target = enemy;
                 }
             }
+
         }
 
         if (target)
@@ -85,6 +86,11 @@ public class DroneController : MonoBehaviour
             transform.position = newPos;
 
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.name);
     }
 
 }

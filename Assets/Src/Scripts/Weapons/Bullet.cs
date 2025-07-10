@@ -15,6 +15,7 @@ public class Bullet : MonoBehaviour
 
     float damage, fallOffDistance, pierce;
 
+
    public void Setup(Vector3 shootDir, float damage, float pierce, float fallOffDistance)
     {
         animator = GetComponent<Animator>();
@@ -58,7 +59,16 @@ public class Bullet : MonoBehaviour
                 animator.SetBool("Hit", true);
             }
         }
-        else
+        else if (Vector3.Distance(transform.position, orgPos) > transform.localScale.x)
+        {
+            moveSpeed = 0;
+            animator.SetBool("Hit", true);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (Vector3.Distance(transform.position, orgPos) > transform.localScale.x)
         {
             moveSpeed = 0;
             animator.SetBool("Hit", true);
