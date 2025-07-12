@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "654ed9de40df25ff",
+        "id": "ab9ca86cd34a0b5e",
         "type": "tabs",
         "children": [
           {
-            "id": "7797fae507c5d0cc",
+            "id": "67ef1bc26ab20e9e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "New tab"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3d07c58138bb7793",
@@ -169,8 +164,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7797fae507c5d0cc",
+  "active": "67ef1bc26ab20e9e",
   "lastOpenFiles": [
+    "README.md",
     "Library/ShaderCache.db-journal",
     "Temp/UnityTempFile-043d31963c99351489acca1fc74837e4",
     "Temp/UnityTempFile-9a6e90135e1d25244b6b2fb4ab9df1a4",
@@ -181,7 +177,6 @@
     "Temp/UnityTempFile-5f9de518409c6be4b81b9037c968d011",
     "Temp/ADB-Refresh46e58c52957eb8b4c96ae4863a5e166b",
     "Library/Search/propertyDatabase.db_1d13b32159ca4c38bdf46c55cda083a9_temp",
-    "Library/Search/propertyAliases.db_f7b8275f3c87475abd638d13d2b97288_temp",
     "Assets/Src/Prefabs/Bullets/Circle.png",
     "Temp/copyassets/Circle.png",
     "ScreenShots/ScreenShot3.png",

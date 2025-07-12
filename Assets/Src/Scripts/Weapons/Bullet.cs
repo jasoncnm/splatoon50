@@ -15,8 +15,10 @@ public class Bullet : MonoBehaviour
 
     float damage, fallOffDistance, pierce;
 
+    bool hit = false;
 
-   public void Setup(Vector3 shootDir, float damage, float pierce, float fallOffDistance)
+
+    public void Setup(Vector3 shootDir, float damage, float pierce, float fallOffDistance)
     {
         animator = GetComponent<Animator>();
         this.shootDir = shootDir.normalized;
@@ -24,11 +26,12 @@ public class Bullet : MonoBehaviour
         this.damage = damage;
         this.fallOffDistance = fallOffDistance;
         this.pierce = pierce;
+        hit = false;
     }
 
     private void Update()
     {
-        transform.position += shootDir * Time.deltaTime * moveSpeed;
+        GetComponent<Rigidbody2D>().linearVelocity = shootDir * moveSpeed;
     }
 
     
@@ -38,7 +41,7 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void EvaluateCollision(Collider2D collision)
     {
 
         if (collision.CompareTag("Enemies"))
@@ -59,20 +62,26 @@ public class Bullet : MonoBehaviour
                 animator.SetBool("Hit", true);
             }
         }
-        else if (Vector3.Distance(transform.position, orgPos) > transform.localScale.x)
+        else
         {
             moveSpeed = 0;
             animator.SetBool("Hit", true);
         }
+
+        hit = true;
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        EvaluateCollision(collision);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Vector3.Distance(transform.position, orgPos) > transform.localScale.x)
-        {
-            moveSpeed = 0;
-            animator.SetBool("Hit", true);
-        }
+        if (!hit) EvaluateCollision(collision);
+
+        moveSpeed = 0;
     }
 
 }

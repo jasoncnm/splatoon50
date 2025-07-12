@@ -189,8 +189,10 @@ public class PlayerController : MonoBehaviour
 
         float targetangle = Mathf.Atan2(aimDir.y, aimDir.x) * Mathf.Rad2Deg;
         float angle = Mathf.SmoothDampAngle(aim.eulerAngles.z, targetangle, ref turnVelo, turnSmoothTime);
-                        
-        aim.eulerAngles = new Vector3(0, 0, angle);
+        
+        
+
+        aim.eulerAngles = new Vector3(aim.eulerAngles.x, 0, angle);
 
         SetSpriteFlip(aimDir, rollDir);
     }
@@ -198,20 +200,28 @@ public class PlayerController : MonoBehaviour
     void SetSpriteFlip(Vector2 aimDir, Vector2 rollDir)
     {
 
-        SpriteRenderer playerSprite = transform.Find("GFX").GetComponent<SpriteRenderer>();
-        SpriteRenderer gunSprite = gunController.gunTr.GetComponentInChildren<SpriteRenderer>();
+        Transform playerGFX = transform.Find("GFX");
+        Transform gunGFX = gunController.gunTr.Find("GFX");
+
+        aimDir = aimDir.normalized;
+        rollDir = rollDir.normalized;
+
+
+        Vector3 playerAngles = playerGFX.localEulerAngles;
+        Vector3 gunAngles = gunGFX.localEulerAngles;
 
         switch (state)
         {
             case PlayerState.Normal:
                 {
                     if (aimDir.x < 0)
-                    {
-                        playerSprite.flipX = true;
+                    {  
+                        playerGFX.localRotation = Quaternion.Euler(playerAngles.x, 180f, playerAngles.z);
+
                     }
                     else
                     {
-                        playerSprite.flipX = false;
+                        playerGFX.localRotation = Quaternion.Euler(playerAngles.x, 0, playerAngles.z);
                     }
                 }
                 break;
@@ -220,11 +230,13 @@ public class PlayerController : MonoBehaviour
                 {
                     if (rollDir.x < 0)
                     {
-                        playerSprite.flipX = true;
+
+                        playerGFX.localRotation = Quaternion.Euler(playerAngles.x, 180f, playerAngles.z);
+  
                     }
                     else
                     {
-                        playerSprite.flipX = false;
+                        playerGFX.localRotation = Quaternion.Euler(playerAngles.x, 0, playerAngles.z);
                     }
                 }
                 break;
@@ -232,11 +244,12 @@ public class PlayerController : MonoBehaviour
 
         if (aimDir.x < 0)
         {
-            gunSprite.flipY = true;
+            gunGFX.localRotation = Quaternion.Euler(180f, 0, 0);
         }
         else
         {
-            gunSprite.flipY = false;
+
+            gunGFX.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
