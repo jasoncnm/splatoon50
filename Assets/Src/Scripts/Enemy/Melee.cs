@@ -32,6 +32,12 @@ public class Melee : Enemy
 
     }
 
+    public override void Move(Vector2 direction)
+    {
+        GetComponent<Rigidbody2D>().linearVelocity = (Vector3)direction.normalized * moveSpeed;
+
+    }
+
     public void StartDie()
     {
         GetComponent<Collider2D>().enabled = false;

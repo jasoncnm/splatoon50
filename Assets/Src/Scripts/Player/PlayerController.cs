@@ -1,5 +1,6 @@
 using MoreMountains.Tools;
 using System;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
 
@@ -181,7 +182,19 @@ public class PlayerController : MonoBehaviour
 
     void Rotate()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        Vector3 screenMousePos = Input.mousePosition;
+
+#if UNITY_EDITOR
+
+        screenMousePos.x = Mathf.Clamp(screenMousePos.x, 1, Handles.GetMainGameViewSize().x - 2);
+        screenMousePos.y = Mathf.Clamp(screenMousePos.y, 1, Handles.GetMainGameViewSize().y - 2);
+
+#endif
+
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(screenMousePos);
+
+
 
         Vector3 aimDir = (mousePos - aim.position).normalized;
 
