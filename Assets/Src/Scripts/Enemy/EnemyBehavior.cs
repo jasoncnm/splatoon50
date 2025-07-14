@@ -136,19 +136,19 @@ public class EnemyBehavior : MonoBehaviour
                 if (val > danger[i]) danger[i] = val;
 
             }
+        }
 
-            Vector2 directionToTarget = (data.currentTarget.position - transform.position);
-            for (int i = 0; i < interest.Length; i++)
+        Vector2 directionToTarget = (data.currentTarget.position - transform.position);
+        for (int i = 0; i < interest.Length; i++)
+        {
+            float result = Vector2.Dot(directionToTarget.normalized, Directions.eightDirections[i]);
+
+            if (result > 0)
             {
-                float result = Vector2.Dot(directionToTarget.normalized, Directions.eightDirections[i]);
-
-                if (result > 0)
+                float val = result;
+                if (val > interest[i])
                 {
-                    float val = result;
-                    if (val > interest[i])
-                    {
-                        interest[i] = val;
-                    }
+                    interest[i] = val;
                 }
             }
         }
