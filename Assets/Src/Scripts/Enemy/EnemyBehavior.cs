@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -56,6 +57,8 @@ public class EnemyBehavior : MonoBehaviour
     [SerializeField] float obstacleColliderThreshold = 0.6f;
 
     [SerializeField] float detectionDelay = 0.05f;
+
+    [SerializeField] float targetRechedThreshold = 0.5f;
 
     [SerializeField] LayerMask obstacleDectionMask;
 
@@ -136,6 +139,11 @@ public class EnemyBehavior : MonoBehaviour
                 if (val > danger[i]) danger[i] = val;
 
             }
+        }
+
+        if (Vector2.Distance(transform.position, data.target.position) < targetRechedThreshold)
+        {
+            return;
         }
 
         Vector2 directionToTarget = (data.currentTarget.position - transform.position);

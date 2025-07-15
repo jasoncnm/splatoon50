@@ -20,15 +20,24 @@ public class Bullet : MonoBehaviour
 
     public void Setup(Vector3 shootDir, float damage, float pierce, float fallOffDistance)
     {
+
         animator = GetComponent<Animator>();
         this.shootDir = shootDir.normalized;
         orgPos = transform.position;
         this.damage = damage;
         this.fallOffDistance = fallOffDistance;
         this.pierce = pierce;
-        hit = false;
-    }
 
+        hit = false;
+     
+        Collider2D projCollider = GetComponent<Collider2D>();
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, projCollider.bounds.extents.x, projCollider.includeLayers);
+        foreach (Collider2D collider in colliders)
+        {
+            EvaluateCollision(collider);
+        }
+
+    }
     private void Update()
     {
         GetComponent<Rigidbody2D>().linearVelocity = shootDir * moveSpeed;
@@ -81,7 +90,7 @@ public class Bullet : MonoBehaviour
     {
         if (!hit) EvaluateCollision(collision);
 
-        moveSpeed = 0;
+        // moveSpeed = 0;
     }
 
 }

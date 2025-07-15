@@ -41,6 +41,7 @@ public class Melee : Enemy
     public void StartDie()
     {
         GetComponent<Collider2D>().enabled = false;
+        moveSpeed = 0;
     }
 
     public void Die()
