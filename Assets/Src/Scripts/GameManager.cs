@@ -103,5 +103,19 @@ public class GameManager : MonoBehaviour
 
 
 
+    public void OnPlayerHit(float damageAmount)
+    {
+        float amount = (playerHealth - damageAmount);
+        SetHealth(amount);
+    }
+
+
+    void SetHealth(float amount)
+    {
+        playerHealth = amount;
+        playerHealth = Mathf.Clamp(playerHealth, 0f, 1f);
+        GameManager.instance.healthBar.UpdateBar01(playerHealth);
+    }
+
 }
 

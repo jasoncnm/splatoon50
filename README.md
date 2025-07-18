@@ -49,6 +49,11 @@ Free to play:
  - Ads:
    - 
 
+Enemy Stats:
+ - Hp
+ - Speed
+ - Damage
+
 Enemy Type:
  - White eye: normal / Red eye(Elite): + HP and damage
  - Melee: average
