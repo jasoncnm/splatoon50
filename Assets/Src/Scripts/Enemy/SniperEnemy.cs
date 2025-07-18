@@ -159,8 +159,7 @@ public class SniperEnemy : EnemyAbstract
 
     private void Shoot()
     {
-        // YOUR SHOOTING CODE GOES HERE
-        // Example: Instantiate projectile, apply damage, etc.
+        // WILL ADD SHOOTING CODE HERE
         Debug.Log("Sniper Fired!");
     }
 
