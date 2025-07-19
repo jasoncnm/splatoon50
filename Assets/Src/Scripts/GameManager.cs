@@ -33,17 +33,17 @@ public class GameManager : MonoBehaviour
         gameScore++;
         scoreText.text = gameScore.ToString();
     }
-
-    public void OnPlayerHit(Transform healthBar)
+  
+    public void OnPlayerHit(float damageAmount)
     {
-        float amount = (playerHealth - 0.1f);
+        float amount = (playerHealth - damageAmount);
         playerHealth = amount;
         playerHealth = Mathf.Clamp(playerHealth, 0f, 1f);
 
-        if (healthBar.TryGetComponent<MMProgressBar>(out MMProgressBar bar))
-        {
-            bar.UpdateBar01(playerHealth);
-        }
+        //if (healthBar.TryGetComponent<MMProgressBar>(out MMProgressBar bar))
+        //{
+        //    bar.UpdateBar01(playerHealth);
+        //}
     }
 
     public static void Pause(GameObject pauseMenu)
@@ -103,19 +103,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    public void OnPlayerHit(float damageAmount)
-    {
-        float amount = (playerHealth - damageAmount);
-        SetHealth(amount);
-    }
 
-
-    void SetHealth(float amount)
-    {
-        playerHealth = amount;
-        playerHealth = Mathf.Clamp(playerHealth, 0f, 1f);
-        GameManager.instance.healthBar.UpdateBar01(playerHealth);
-    }
 
 }
 

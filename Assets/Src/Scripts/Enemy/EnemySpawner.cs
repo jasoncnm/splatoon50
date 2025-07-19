@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
+#if false
     [Header("Enemy Settings")]
     public GameObject enemyPrefab;
     public float spawnInterval = 5f;
@@ -136,4 +137,5 @@ public class EnemySpawner : MonoBehaviour
             }
         }
     }
+#endif
 }
