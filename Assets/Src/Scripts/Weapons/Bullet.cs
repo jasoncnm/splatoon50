@@ -15,10 +15,12 @@ public class Bullet : MonoBehaviour
 
     float damage, fallOffDistance, pierce;
 
+    ElementalDamage elementalDamage;
+
     bool hit = false;
 
 
-    public void Setup(Vector3 shootDir, float damage, float pierce, float fallOffDistance)
+    public void Setup(Vector3 shootDir, float damage, float pierce, float fallOffDistance, ElementalDamage elemental)
     {
 
         animator = GetComponent<Animator>();
@@ -27,6 +29,7 @@ public class Bullet : MonoBehaviour
         this.damage = damage;
         this.fallOffDistance = fallOffDistance;
         this.pierce = pierce;
+        this.elementalDamage = elemental;
 
         hit = false;
      
@@ -61,7 +64,7 @@ public class Bullet : MonoBehaviour
 
             if (dist > fallOffDistance) damage *= 0.5f;
             else if (dist > fallOffDistance * 2) damage *= 0.25f;
-            collision.GetComponent<Enemy>().TakeDamage(damage);
+            collision.GetComponent<Enemy>().TakeDamage(damage, elementalDamage);
 
             if (pierce < 0)
             {
@@ -70,6 +73,7 @@ public class Bullet : MonoBehaviour
                 moveSpeed = 0;
                 animator.SetBool("Hit", true);
             }
+
         }
         else
         {

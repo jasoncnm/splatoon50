@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: C96
     originalName: 
-    pivot: {x: 0.5, y: -0.44444445}
+    pivot: {x: 0.5, y: -0.36363637}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,7 +133,7 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 18
-      height: 9
+      height: 11
     spriteID: 7da6f9ddd7aace5489e7221d152ab66c
     spriteBone: []
     spriteOutline: []
@@ -159,7 +159,7 @@ ScriptedImporter:
         x: 0
         y: 4
         width: 18
-        height: 9
+        height: 11
       spriteId: 7da6f9ddd7aace5489e7221d152ab66c
     linkedCells: []
     parentIndex: -1

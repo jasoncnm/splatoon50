@@ -11,7 +11,6 @@ public class InputReader : ScriptableObject
     [SerializeField] public InputActionAsset asset;
 
     public event UnityAction<Vector2> moveEvent;
-    public event UnityAction<Vector2> aimEvent;
 
     public event UnityAction shootEvent;
     public event UnityAction shootCancelledEvent;
@@ -26,7 +25,6 @@ public class InputReader : ScriptableObject
     public event UnityAction dashCancelledEvent;
 
     InputAction shootAction;
-    InputAction aimAction;
     InputAction moveAction;
     InputAction pauseAction;
     InputAction unPauseAction;
@@ -35,12 +33,11 @@ public class InputReader : ScriptableObject
     
     private void OnEnable()
     {
-        aimAction = asset.FindAction("Aim", true);
         moveAction = asset.FindAction("Move", true);
         pauseAction = asset.FindAction("Pause", true);
         unPauseAction = asset.FindAction("UnPause", true);
         interactAction = asset.FindAction("Interact", true);
-        shootAction = asset.FindAction("Shoot", true);
+        shootAction = asset.FindAction("Attack", true);
         dashAction = asset.FindAction("Dash", true);
 
         dashAction.started += OnDash;
@@ -50,10 +47,6 @@ public class InputReader : ScriptableObject
         shootAction.started += OnShoot;
         shootAction.performed += OnShoot;
         shootAction.canceled += OnShoot;
-
-        aimAction.started += Onaim;
-        aimAction.performed += Onaim;
-        aimAction.canceled += Onaim;
 
         moveAction.started   += OnMove;
         moveAction.performed += OnMove;
@@ -73,7 +66,6 @@ public class InputReader : ScriptableObject
 
         dashAction.Enable();
         shootAction.Enable();
-        aimAction.Enable();
         moveAction.Enable();
         pauseAction.Enable();
         unPauseAction.Enable();
@@ -82,10 +74,6 @@ public class InputReader : ScriptableObject
 
     private void OnDisable()
     {
-        aimAction.started -= Onaim;
-        aimAction.performed -= Onaim;
-        aimAction.canceled -= Onaim;
-
         dashAction.started -= OnDash;
         dashAction.performed -= OnDash;
         dashAction.canceled -= OnDash;
@@ -110,9 +98,9 @@ public class InputReader : ScriptableObject
         shootAction.performed -= OnShoot;
         shootAction.canceled -= OnShoot;
 
+
         dashAction.Disable();
         shootAction.Disable();
-        aimAction.Disable();
         moveAction.Disable();
         pauseAction.Disable();
         unPauseAction.Disable();
@@ -167,10 +155,6 @@ public class InputReader : ScriptableObject
 
     }
 
-    void Onaim(InputAction.CallbackContext  context)
-    {
-        aimEvent?.Invoke(context.ReadValue<Vector2>());
-    }
 
     void OnInteract(InputAction.CallbackContext context)
     {

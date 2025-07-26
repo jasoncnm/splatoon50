@@ -8,7 +8,7 @@ public class PlayerGunController : MonoBehaviour
 
     MMF_Player playerShootFeedback;
 
-    public Transform gunTr { get; private set; }
+    public Transform gunTr;
 
     public BulletSpawner bulletSpawner { get; private set; }
     public GunProperties gunProperties { get; private set; }
@@ -24,7 +24,6 @@ public class PlayerGunController : MonoBehaviour
            aim.GetChild(i).gameObject.SetActive(false);
         }
 
-        gunTr = aim.Find("Gun_AR");
 
         bulletSpawner = gunTr.GetComponent<BulletSpawner>();
         gunProperties = gunTr.GetComponent<GunProperties>();

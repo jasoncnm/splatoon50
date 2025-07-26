@@ -11,15 +11,10 @@ public class PlayerController : MonoBehaviour
         Normal, Rollling,
     }
 
-    [SerializeField] float moveSpeed = 15f, acceleration = 10f;
-
     Transform gunEndPointTr;
 
     PlayerGunController gunController;
 
-    [SerializeField] LayerMask splatterMask;
-
-    public PlayerState state { get; private set; }
     
     Rigidbody2D rb2D;
 
@@ -33,7 +28,23 @@ public class PlayerController : MonoBehaviour
 
     Animator playerAnimator;
 
+    float turnSmoothTime = 0.01f;
+    float nextShootTime = 0f;
+    float fireRate;
+    float rollSpeed;
+    float triggerTimer = 0f;
+    float fireDelay;
+    float dashDelay = 1f;
+    float nextDashTime = 0f;
+
+    [SerializeField] float moveSpeed = 15f, acceleration = 10f;
+
+    [SerializeField] Transform interactIcon;
+
+    public PlayerState state { get; private set; }
     public Transform aim { get; private set; }
+
+    public Vector3 positionBeforeDash { get; private set; }
 
     public event EventHandler<OnShootEventArgs> shoot;
     public class OnShootEventArgs : EventArgs
@@ -42,17 +53,8 @@ public class PlayerController : MonoBehaviour
         public Vector3 shootPos;
         public Vector3 shootDir;
     }
-
-    float turnSmoothTime = 0.01f;
-    float nextShootTime = 0f;
-    float fireRate;
-    float rollSpeed;
-    float triggerTimer = 0f;
-    float fireDelay;
-
     bool _Shooting = false;
 
-    public Vector3 positionBeforeDash { get; private set; }
 
 
     public void MoveSetup(Vector2 direction)
@@ -78,18 +80,23 @@ public class PlayerController : MonoBehaviour
 
     public void DashSetup()
     {
-        if (state == PlayerState.Normal)
+
+        if (state == PlayerState.Normal && Time.time > nextDashTime)
         {
             rollDir = lastMoveDir;
             rollSpeed = 20f;
             state = PlayerState.Rollling;
 
             playerAnimator.SetTrigger("Dash");
+
+            nextDashTime = Time.time + dashDelay;
         }
     }
 
     private void Start()
     {
+
+        interactIcon.gameObject.SetActive(false);
 
         state = PlayerState.Normal;
         playerAnimator = transform.Find("GFX").GetComponent<Animator>();
@@ -118,6 +125,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (GameManager.gameIsPause) return;
+
         Move();
 
         FixedUpdateEnd();
@@ -125,6 +134,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.gameIsPause) return;
+
 
         if (state == PlayerState.Rollling)
         {
@@ -137,6 +148,51 @@ public class PlayerController : MonoBehaviour
         {
             OnShoot();
         }
+
+        InteractDetect();
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (Application.isPlaying)
+        {
+            Gizmos.DrawWireSphere(transform.position, 2.0f);
+        }
+    }
+
+    void InteractDetect()
+    {
+        float detectRange = 2.0f;
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, detectRange);
+
+        Interactable item = null;
+
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.TryGetComponent<Interactable>(out Interactable outItem))
+            {
+                if (item == null || 
+                   (Vector3.Distance(transform.position, outItem.transform.position) < Vector3.Distance(transform.position, item.transform.position)))
+                {
+                    item = outItem;
+                }
+            }
+        }
+
+        if (item != null)
+        {
+            item.ReadyToInteract(interactIcon);
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                item.Interact();
+            }
+        }
+        else
+        {
+            interactIcon.gameObject.SetActive(false);
+        }
     }
 
     void Move()
@@ -145,7 +201,6 @@ public class PlayerController : MonoBehaviour
         {
             case PlayerState.Normal:
                 {
-
                     float dot = Vector2.Dot(moveDir, contactNormal);
 
                     Vector2 targetdir = moveDir;
@@ -185,16 +240,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 screenMousePos = Input.mousePosition;
 
-#if UNITY_EDITOR
-
-        screenMousePos.x = Mathf.Clamp(screenMousePos.x, 1, Handles.GetMainGameViewSize().x - 2);
-        screenMousePos.y = Mathf.Clamp(screenMousePos.y, 1, Handles.GetMainGameViewSize().y - 2);
-
-#endif
-
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(screenMousePos);
-
-
 
         Vector3 aimDir = (mousePos - aim.position).normalized;
 
@@ -203,8 +249,6 @@ public class PlayerController : MonoBehaviour
         float targetangle = Mathf.Atan2(aimDir.y, aimDir.x) * Mathf.Rad2Deg;
         float angle = Mathf.SmoothDampAngle(aim.eulerAngles.z, targetangle, ref turnVelo, turnSmoothTime);
         
-        
-
         aim.eulerAngles = new Vector3(aim.eulerAngles.x, 0, angle);
 
         SetSpriteFlip(aimDir, rollDir);
@@ -298,7 +342,6 @@ public class PlayerController : MonoBehaviour
 
         float rollSpeedMinimum = 5f;
 
-
         if (rollSpeed < rollSpeedMinimum)
         {
             state = PlayerState.Normal;
@@ -323,6 +366,21 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionExit(Collision collision)
     {
         contactNormal = Vector2.zero;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PistolUpgrade"))
+        {
+            // Do something with game object
+            // Destroy(collision.gameObject);
+        }
+
+        if (collision.CompareTag("Coin"))
+        {
+            collision.GetComponent<Animator>().SetTrigger("PickUp");
+        }
+
     }
 
 }

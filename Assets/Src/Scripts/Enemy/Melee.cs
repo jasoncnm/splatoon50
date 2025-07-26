@@ -1,52 +1,134 @@
+using System;
+using System.Collections;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Melee : Enemy
 {
-    [SerializeField] Slider healthBar;
+    GameManager gm;
 
-    [SerializeField] float initHealth, speed;
+    bool fire = false;
+    bool ice = false;
 
-    Animator animator;
+    //private void Start()
+    //{
+    //    animator = GetComponent<Animator>();
+    //    spriteRenderer = GetComponent<SpriteRenderer>();
+    //    gm = GameManager.instance;
 
-    private void Awake()
+    //    maxHealth = initHealth;
+    //    moveSpeed = speed;
+    //    health = initHealth;
+    //    material = spriteRenderer.material;
+    //    healthBar = meleeHealthBar;
+
+    //    base.flashColor = flashColor;
+    //    base.flashTime = flashTime;
+    //    base.flashCurve = flashCurve;
+
+    //}
+
+    public override void Start()
     {
-        maxHealth = initHealth;
-        moveSpeed = speed;
-        health = initHealth;
+
+        base.Start();
+
+        gm = GameManager.instance;
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        material = spriteRenderer.material;
     }
 
-    public override void TakeDamage(float damage)
+
+
+    public override void TakeDamage(float damage, ElementalDamage elementalDamage)
     {
-        health -= damage;
-        health = Mathf.Clamp(health, 0, maxHealth);
+        Damage(damage);
 
-        if (health == 0)
+        switch(elementalDamage)
         {
-            animator.SetBool("Die", true);
-            healthBar.gameObject.SetActive(false);
-        }
+            case ElementalDamage.FIRE:
+                {
+                    float fireDuration = 5f;
+                    float fireDamage = 10f;
+                    if (!fire) StartCoroutine(TakeFireDamage(elementalDamage, fireDuration, fireDamage));
+                    break;
+                }
+            case ElementalDamage.LIGHTING:
+                {
 
-        healthBar.value = health / maxHealth;
+                    if (!transform.GetComponentInChildren<LightingStruck>()) // && !transform.GetComponentInChildren<ChainLighting>())
+                    {
+                        Instantiate(gm.beenStruck, transform);
+                        GameObject obj = Instantiate(gm.chainLightingEffect, transform.position, Quaternion.identity);
+                        obj.transform.parent = transform;
+
+                        ChainLighting.damage = 10;
+                        ChainLighting.amountToChain = 5;
+
+                    }
+
+                    break;
+                }
+
+            case ElementalDamage.ICE:
+                {
+                    if (!ice) StartCoroutine(IceSlowDown(5f));
+                    break;
+                }
+        }
 
     }
 
     public override void Move(Vector2 direction)
     {
-        GetComponent<Rigidbody2D>().linearVelocity = (Vector3)direction.normalized * moveSpeed;
-
+        base.Move(direction);
+        // GetComponent<Rigidbody2D>().linearVelocity = (Vector3)direction.normalized * moveSpeed;
     }
 
-    public void StartDie()
+
+    public override void Die()
     {
-        GetComponent<Collider2D>().enabled = false;
-        moveSpeed = 0;
+        base.Die();
     }
 
-    public void Die()
+    IEnumerator IceSlowDown(float duration)
     {
-        Destroy(gameObject);
+        ice = true;
+        material.SetColor("_BlendColor", Color.blue);
+        material.SetFloat("_BlendAmount", 0.5f);
+        currentSpeed *= 0.5f;
+
+        yield return new WaitForSeconds(duration);
+
+        material.SetFloat("_BlendAmount", 0f);
+        currentSpeed = moveSpeed;
+
+        ice = false;
+    }
+
+    IEnumerator TakeFireDamage(ElementalDamage elementalDamage, float duration, float damage)
+    {
+        material.SetColor("_BlendColor", Color.red);
+        material.SetFloat("_BlendAmount", 0.5f);
+        fire = true;
+        float timer = 0;
+        for (;;)
+        {
+            Debug.Log("Timer: " + timer);
+            yield return new WaitForSeconds(1f);
+
+            Damage(damage);
+            timer++;       
+            
+            if (timer > duration)
+            {
+                fire = false;
+                break;
+            }
+        }
+        material.SetFloat("_BlendAmount", 0f);
     }
 
 }

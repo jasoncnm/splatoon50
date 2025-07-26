@@ -10,9 +10,38 @@ public class GameManager : MonoBehaviour
 
     public static int gameScore = 0;
 
+    public static bool gameIsPause { get; private set; } = false;
+
+    [Header("Player Stats")]
+
     public float playerHealth = 1f;
 
     public Transform player;
+
+    [Header("DropItems")]
+
+    public Transform coin;
+
+    public Transform[] pistolUpgrades;
+
+    public Transform[] guns;
+
+
+    [Header("Bullets")]
+
+    public Transform normalBullet;
+
+    public Transform fireBullet;
+
+    public Transform lightingBullet;
+
+    public Transform iceBullet;
+
+    [Header("Effects")]
+
+    public GameObject chainLightingEffect;
+
+    public GameObject beenStruck;
 
     private void Awake()
     {
@@ -52,6 +81,8 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 0f;
         Cursor.visible = true;
+
+        gameIsPause = true;
     }
 
     public static void UnPause(GameObject pauseMenu)
@@ -60,6 +91,8 @@ public class GameManager : MonoBehaviour
 
         Time.timeScale = 1f;
         Cursor.visible = false;
+
+        gameIsPause = false;
     }
 
     public void SwitchWeapon(int index)

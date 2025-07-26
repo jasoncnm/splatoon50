@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: DesertEagle
     originalName: 
-    pivot: {x: 0.5, y: -0.5}
+    pivot: {x: 39.23077, y: -91.72727}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,8 +132,8 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 12
-      height: 8
+      width: 13
+      height: 11
     spriteID: cce52b9fed2314c429612ae951c12d9a
     spriteBone: []
     spriteOutline: []
@@ -143,6 +143,48 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Frame_1
+    originalName: 
+    pivot: {x: 39.23077, y: -91.72727}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 23
+      width: 13
+      height: 11
+    spriteID: 6a9701b8cf32c5a4ebe177a6c91d08da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 23}
+  - name: Frame_2
+    originalName: 
+    pivot: {x: 39.23077, y: -91.72727}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 42
+      width: 13
+      height: 11
+    spriteID: 7ce938115ef9a474fa608cf734b386d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 42}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -152,15 +194,33 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: DesertEagle
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 4
-        width: 12
-        height: 8
+        y: 1009
+        width: 13
+        height: 11
       spriteId: cce52b9fed2314c429612ae951c12d9a
+    - name: Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 1009
+        width: 13
+        height: 11
+      spriteId: 6a9701b8cf32c5a4ebe177a6c91d08da
+    - name: Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 1009
+        width: 13
+        height: 11
+      spriteId: 7ce938115ef9a474fa608cf734b386d9
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -179,4 +239,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 16}
+  canvasSize: {x: 1024, y: 1024}

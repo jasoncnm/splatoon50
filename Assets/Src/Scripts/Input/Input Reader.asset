@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efa1b02e9f1a11a44a9ad32f943bf0af, type: 3}
   m_Name: Input Reader
   m_EditorClassIdentifier: 
-  asset: {fileID: -944628639613478452, guid: e1114a40c8df40b4fbd2864456b0f50d, type: 3}
+  asset: {fileID: -944628639613478452, guid: aba53d708f44dc848ae09d07494fc2ef, type: 3}

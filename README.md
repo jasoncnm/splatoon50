@@ -132,16 +132,16 @@ User Interface
  - Game will end when player has no health left
 
 Project timeline
-1. Weapons (non-upgraded) |Jason           100%
-2. Enemy | Chris                            70%
-3. Enemy | Chris                             0%
-3. Drone |Jason                             90%
-4. Spawn algorithm |Chris                    0%
-6. Player level up systems | Jason           0%
-7. Chest | Jason                             0%
-8. healthPack | Jason                        0%
-6. Upgrade weapons |Jason                    0%
-7. Shop (coin system) |Chris                 0%
-8. Menu |Jason                               0%
-5. Level system (UI included) |Chris         0%
-9. Ads |Chris                                0%
+1.   Weapons (non-upgraded) | Jason           100%
+2.   Enemy | Chris                                             70%
+3.   Enemy | Chris                                               0%
+4.   Drone  | Jason                                              90%
+5.   Spawn algorithm | Chris                                0%
+6.   Player level up systems | Jason                    0%
+7.   Chest | Jason                                                100%
+8.   health Pack | Jason                                       0%
+9.   Upgrade weapons |Jason                             30%
+10. Shop (coin system) | Chris                             0%
+11. Menu  |Jason                                                 0%
+12. Level system (UI included) |Chris                 0%
+13. Ads | Chris                                                     0%

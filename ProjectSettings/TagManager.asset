@@ -9,6 +9,9 @@ TagManager:
   - Splatter
   - bullet
   - Enemies
+  - Chest
+  - PistolUpgrade
+  - Coin
   layers:
   - Default
   - TransparentFX
