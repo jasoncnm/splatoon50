@@ -1,181 +1,110 @@
-using MoreMountains.Feedbacks;
 using UnityEngine;
-using System.Collections;
 
 public class SniperEnemy : EnemyAbstract
 {
-    [Header("Player Detection")]
-    [SerializeField] private float detectionRange = 30f;
-    [SerializeField] private LayerMask obstacleLayers;
-    [SerializeField] private LayerMask playerLayer;
-    
-    [Header("Aiming Settings")]
-    [SerializeField] private LineRenderer laserLine;
-    [SerializeField] private Color aimingColor = Color.red;
-    [SerializeField] private float laserWidth = 0.05f;
-    
-    [Header("Attack Settings")]
-    [SerializeField] private float shootDelay = 3f;
-    [SerializeField] private GameObject warningPrefab;
-    [SerializeField] private AudioClip warningSound;
-    
-    [Header("References")]
-    [SerializeField] private Transform firePoint;
-    [SerializeField] private AudioSource audioSource;
+    public Transform firePoint;  // The position where the laser starts
+    public LineRenderer laserLine;
+    public LayerMask visionMask; // Make sure this includes "Player" but excludes "Walls"
+    public float timeBeforeShot = 3f; // Total aiming time before shooting
+    public GameObject chargeEffectPrefab; // Shown 1 second before shot
+    public AudioClip chargeSound;
+    public AudioSource audioSource;
 
     private Transform player;
-    private GameObject currentWarning;
-    private bool isAiming;
-    private bool isInWarningPhase;
     private float aimTimer;
+    private bool isAiming;
+    private bool isCharging;
+    private GameObject chargeEffectInstance;
 
     void Start()
     {
-        // Initialize laser
-        laserLine.startWidth = laserWidth;
-        laserLine.endWidth = laserWidth;
-        laserLine.enabled = false;
-        
-        // Find player
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        
-        if (audioSource == null)
-            audioSource = GetComponent<AudioSource>();
+        laserLine.enabled = false;
     }
 
+    // Update timng
     void Update()
     {
         if (CanSeePlayer())
         {
             if (!isAiming)
             {
-                // Start aiming sequence
                 StartAiming();
             }
-            
-            // Always update laser position while aiming
-            UpdateLaserPosition();
-            
-            // Handle aiming sequence
-            HandleAimingSequence();
+
+            AimLaser();
+            aimTimer += Time.deltaTime;
+
+            if (!isCharging && aimTimer >= timeBeforeShot - 1f)
+            {
+                TriggerChargeEffect();
+            }
+
+            if (aimTimer >= timeBeforeShot)
+            {
+                Shoot();
+                ResetAiming();
+            }
         }
         else if (isAiming)
         {
-            // Player lost, reset
             ResetAiming();
         }
     }
 
-    private bool CanSeePlayer()
+    bool CanSeePlayer()
     {
-        if (player == null) return false;
-        
-        Vector3 directionToPlayer = player.position - transform.position;
-        float distanceToPlayer = directionToPlayer.magnitude;
-        
-        if (distanceToPlayer > detectionRange) return false;
-        
-        // Check for obstacles
-        if (Physics.Raycast(transform.position, directionToPlayer, distanceToPlayer, obstacleLayers))
-        {
-            return false;
-        }
-        
-        // Final check for player
-        return Physics.Raycast(transform.position, directionToPlayer, out RaycastHit hit, 
-                              detectionRange, playerLayer);
+        Vector2 direction = (player.position - firePoint.position).normalized;
+        float distance = Vector2.Distance(firePoint.position, player.position);
+
+        RaycastHit2D hit = Physics2D.Raycast(firePoint.position, direction, distance, visionMask);
+        return hit.collider != null && hit.collider.CompareTag("Player");
     }
 
-    private void StartAiming()
+    void StartAiming()
     {
         isAiming = true;
         aimTimer = 0f;
+        isCharging = false;
         laserLine.enabled = true;
-        laserLine.startColor = aimingColor;
-        laserLine.endColor = aimingColor;
     }
 
-    private void UpdateLaserPosition()
+    void AimLaser()
     {
-        if (laserLine == null || player == null) return;
-        
+        if (!laserLine.enabled) return;
+
         laserLine.SetPosition(0, firePoint.position);
         laserLine.SetPosition(1, player.position);
     }
 
-    private void HandleAimingSequence()
+    void TriggerChargeEffect()
     {
-        aimTimer += Time.deltaTime;
-        
-        // 1 second before shooting: show warning
-        if (aimTimer >= shootDelay - 1f && !isInWarningPhase)
+        isCharging = true;
+        if (chargeEffectPrefab != null)
         {
-            StartWarningPhase();
+            chargeEffectInstance = Instantiate(chargeEffectPrefab, firePoint.position, Quaternion.identity);
         }
-        
-        // Time to shoot
-        if (aimTimer >= shootDelay)
+        if (chargeSound != null && audioSource != null)
         {
-            Shoot();
-            ResetAiming();
+            audioSource.PlayOneShot(chargeSound);
         }
     }
 
-    private void StartWarningPhase()
+    void Shoot()
     {
-        isInWarningPhase = true;
-        
-        // Create warning indicator
-        if (warningPrefab != null)
-        {
-            // Position at player's location
-            currentWarning = Instantiate(warningPrefab, player.position + Vector3.up * 2f, 
-                                       Quaternion.identity);
-        }
-        
-        // Play warning sound
-        if (audioSource != null && warningSound != null)
-        {
-            audioSource.PlayOneShot(warningSound);
-        }
-        
-        // Visual feedback: change laser to blinking
-        StartCoroutine(BlinkLaser());
+        // TODO: Implement shooting logic
     }
 
-    private IEnumerator BlinkLaser()
-    {
-        while (isInWarningPhase)
-        {
-            laserLine.startColor = Color.yellow;
-            laserLine.endColor = Color.yellow;
-            yield return new WaitForSeconds(0.1f);
-            
-            laserLine.startColor = Color.red;
-            laserLine.endColor = Color.red;
-            yield return new WaitForSeconds(0.1f);
-        }
-    }
-
-    private void Shoot()
-    {
-        // WILL ADD SHOOTING CODE HERE
-        Debug.Log("Sniper Fired!");
-    }
-
-    private void ResetAiming()
+    void ResetAiming()
     {
         isAiming = false;
-        isInWarningPhase = false;
+        isCharging = false;
         aimTimer = 0f;
         laserLine.enabled = false;
-        
-        // Clean up warning
-        if (currentWarning != null)
+
+        if (chargeEffectInstance != null)
         {
-            Destroy(currentWarning);
+            Destroy(chargeEffectInstance);
         }
-        
-        StopAllCoroutines();
     }
 }
