@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Enemies")]
 
-    public Transform[] enemyies;
+    public Transform[] enemies;
 
     [Header("DropItems")]
 

@@ -12559,11 +12559,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.1721935, y: 1.7593734}
   m_EdgeRadius: 0
---- !u!1 &979841296 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7016561610914137116, guid: ffdd8d6381287694a8a0dd70c8af6fee, type: 3}
-  m_PrefabInstance: {fileID: 6887384760010371457}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1019239312
 GameObject:
   m_ObjectHideFlags: 0
@@ -12842,7 +12837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 1
   player: {fileID: 3654471322123419317}
-  enemyies:
+  enemies:
   - {fileID: 7205156856316230011, guid: ffdd8d6381287694a8a0dd70c8af6fee, type: 3}
   coin: {fileID: 5308073703943503837, guid: 0ac25f6b544a63b4ab358d629968ca63, type: 3}
   pistolUpgrades:
@@ -12876,11 +12871,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   groundTilemap: {fileID: 246305225}
-  enemyPrefabs:
-  - {fileID: 979841296}
-  batchSize: 5
+  targetCamera: {fileID: 0}
+  batchSize: 2
   spawnInterval: 3
   startOnAwake: 1
+  spawnRadius: 2
 --- !u!1 &1118740592
 GameObject:
   m_ObjectHideFlags: 0
