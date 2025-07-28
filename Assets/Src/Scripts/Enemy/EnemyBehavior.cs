@@ -120,32 +120,39 @@ public class EnemyBehavior : MonoBehaviour
     {
         ResetData();
 
-        foreach (Collider2D collider in data.obstacles)
+
+        if (data.obstacles != null)
         {
-            if (collider.transform.name == transform.name) continue;
-
-
-            Vector2 directionToObstacle = collider.ClosestPoint(transform.position) - (Vector2)(transform.position);
-            float distanceToObstale = directionToObstacle.magnitude;
-
-            float weight = (distanceToObstale <= obstacleColliderThreshold) ? 1 :  (obstacleDectionRadius - distanceToObstale) / obstacleDectionRadius;
-
-            for (int i = 0; i < Directions.eightDirections.Length; i++)
+            // Update Danger Map
+            foreach (Collider2D collider in data.obstacles)
             {
-                float result = Vector2.Dot(directionToObstacle.normalized, Directions.eightDirections[i]);
+                if (collider.transform.name == transform.name) continue;
 
-                float val = weight * result;
 
-                if (val > danger[i]) danger[i] = val;
+                Vector2 directionToObstacle = collider.ClosestPoint(transform.position) - (Vector2)(transform.position);
+                float distanceToObstale = directionToObstacle.magnitude;
 
+                float weight = (distanceToObstale <= obstacleColliderThreshold) ? 1 : (obstacleDectionRadius - distanceToObstale) / obstacleDectionRadius;
+
+                for (int i = 0; i < Directions.eightDirections.Length; i++)
+                {
+                    float result = Vector2.Dot(directionToObstacle.normalized, Directions.eightDirections[i]);
+
+                    float val = weight * result;
+
+                    if (val > danger[i]) danger[i] = val;
+
+                }
             }
         }
+
 
         if (Vector2.Distance(transform.position, data.target.position) < targetRechedThreshold)
         {
             return;
         }
 
+        // Update Interest map
         Vector2 directionToTarget = (data.currentTarget.position - transform.position);
         for (int i = 0; i < interest.Length; i++)
         {

@@ -2,30 +2,39 @@ using UnityEngine;
 
 public abstract class EnemyAbstract : MonoBehaviour
 {
-    [Header("Enemy Configuration")]
-    [SerializeField] protected EnemyStatsData stats;
-    
-    private int currentHealth;
-    
+    [System.Serializable]
+    public class EnemyStats
+    {
+        public int MaxHealth;
+        public float Speed;
+        public int Damage;
+    }
+
+    [SerializeField]
+    protected EnemyStats stats;
+
+    protected int currentHealth;
+
     protected virtual void Awake()
     {
         currentHealth = stats.MaxHealth;
     }
-    
+
     public virtual void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        if(currentHealth <= 0) Die();
+        if (currentHealth <= 0) Die();
     }
-    
+
     protected virtual void Die()
     {
         // Common death logic
         Destroy(gameObject);
     }
-    
-    // Public properties for other scripts to access
-    public float MoveSpeed => stats.MoveSpeed;
-    public int Damage => stats.AttackDamage;
-    public int CurrentHealth => currentHealth;
+
+    // Optional: Public getter for stats if needed by child classes
+    public EnemyStats GetStats()
+    {
+        return stats;
+    }
 }

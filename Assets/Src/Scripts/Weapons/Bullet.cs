@@ -87,7 +87,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EvaluateCollision(collision);
+        if (!hit) EvaluateCollision(collision);
     }
 
     private void OnTriggerStay2D(Collider2D collision)

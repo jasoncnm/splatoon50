@@ -119,7 +119,6 @@ public abstract class Enemy : MonoBehaviour
 
     void DropCoins(int count)
     {
-        
         for (int i = 0; i < count; i++)
         {
             Vector3 offset = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0) * 0.5f;

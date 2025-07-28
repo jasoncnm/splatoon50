@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
 
     public Transform player;
 
+    [Header("Enemies")]
+
+    public Transform[] enemyies;
+
     [Header("DropItems")]
 
     public Transform coin;
