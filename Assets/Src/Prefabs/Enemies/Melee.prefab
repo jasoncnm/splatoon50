@@ -495,7 +495,7 @@ MonoBehaviour:
   obstacleDectionRadius: 4
   obstacleColliderThreshold: 2
   detectionDelay: 0.05
-  targetRechedThreshold: 0.5
+  targetRechedThreshold: 1
   obstacleDectionMask:
     serializedVersion: 2
     m_Bits: 768

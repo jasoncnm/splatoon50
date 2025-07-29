@@ -376,11 +376,6 @@ public class PlayerController : MonoBehaviour
             // Destroy(collision.gameObject);
         }
 
-        if (collision.CompareTag("Coin"))
-        {
-            collision.GetComponent<Animator>().SetTrigger("PickUp");
-        }
-
     }
 
 }

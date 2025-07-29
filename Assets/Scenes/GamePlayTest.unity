@@ -12856,6 +12856,7 @@ MonoBehaviour:
   fireBullet: {fileID: 1101569938003979892, guid: 6b1080554c6e4dd43800fe3af8e58314, type: 3}
   lightingBullet: {fileID: 1101569938003979892, guid: ecf9ca9954ebc704bbf9120191ef7070, type: 3}
   iceBullet: {fileID: 1101569938003979892, guid: 7e7b61fe6cfad5e4fb0a0c7eb17fcc0b, type: 3}
+  poisonBullet: {fileID: 1101569938003979892, guid: 76032db0aca3017498e73f9371068164, type: 3}
   chainLightingEffect: {fileID: 5711753336704833679, guid: 840d3d6b43615b446b63bc654b7cbeca, type: 3}
   beenStruck: {fileID: 1459312979380544662, guid: 946e8e14908c6414cac8e9bcc6e24107, type: 3}
 --- !u!114 &1116977447
@@ -20144,10 +20145,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1667064230604658452, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
-      propertyPath: crits
-      value: 0.2
-      objectReference: {fileID: 0}
     - target: {fileID: 3654471321893638447, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -24,6 +24,11 @@ public abstract class Enemy : MonoBehaviour
 
     float health, maxHealth;
 
+    bool effectStart = false;
+    bool effectEnd = false;
+
+    protected GameManager gm;
+
     protected float currentSpeed;
 
     protected SpriteRenderer spriteRenderer;
@@ -31,12 +36,6 @@ public abstract class Enemy : MonoBehaviour
     protected Material material;
 
     protected Animator animator;
-
-
-    //protected Color flashColor = Color.white;
-    //protected float flashTime = 0.25f;
-    //protected AnimationCurve flashCurve;
-
 
 
     public void Stun()
@@ -51,11 +50,89 @@ public abstract class Enemy : MonoBehaviour
         currentSpeed = moveSpeed;
     }
 
-    public abstract void TakeDamage(float damage, ElementalDamage elementalDamage);
+    public virtual void TakeDamage(float damage, ElementalDamage elementalDamage)
+    {
+        Damage(damage);
+
+        switch (elementalDamage)
+        {
+            case ElementalDamage.FIRE:
+                {
+                    float fireDuration = 5f;
+                    float fireDamage = 10f;
+                    if (!effectStart)
+                    {
+                        material.SetColor("_BlendColor", Color.red);
+                        StartCoroutine(LastingDamage(fireDuration, fireDamage));
+
+                        if (effectEnd)
+                        {
+
+                            material.SetFloat("_BlendAmount", 0f);
+                        }    
+                    }
+                    break;
+                }
+            case ElementalDamage.LIGHTING:
+                {
+
+                    if (!transform.GetComponentInChildren<LightingStruck>()) // && !transform.GetComponentInChildren<ChainLighting>())
+                    {
+                        Instantiate(gm.beenStruck, transform);
+                        GameObject obj = Instantiate(gm.chainLightingEffect, transform.position, Quaternion.identity);
+                        obj.transform.parent = transform;
+
+                        ChainLighting.damage = 10;
+                        ChainLighting.amountToChain = 5;
+
+                    }
+
+                    break;
+                }
+
+            case ElementalDamage.ICE:
+                {
+                    if (!effectStart)
+                    {
+                        material.SetColor("_BlendColor", Color.blue);
+                        StartCoroutine(SlowDown(5f, 0.5f));
+
+
+                        if (effectEnd) material.SetFloat("_BlendAmount", 0f);
+
+                    }
+                    break;
+                }
+
+            case ElementalDamage.POSION:
+                {
+                    if (!effectStart)
+                    {
+                        material.SetColor("_BlendColor", new Color(0.7f, 0.1f, 0.1f));
+                       float duration = 5f;
+                        float _damage = 5f;
+                        float speedRate = 0.7f;
+
+                        StartCoroutine(SlowDown(duration, speedRate));
+                        StartCoroutine(LastingDamage(duration, _damage));
+
+
+                    }
+
+                    break;
+                }
+        }
+    }
 
 
     public virtual void Start()
     {
+
+        gm = GameManager.instance;
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        material = spriteRenderer.material;
+
         currentSpeed = moveSpeed;
         maxHealth = initHealth;
         health = initHealth;
@@ -115,6 +192,44 @@ public abstract class Enemy : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    IEnumerator SlowDown(float duration, float slowRate)
+    {
+        material.SetFloat("_BlendAmount", 0.5f);
+
+        effectStart = true;
+
+        currentSpeed *= slowRate;
+
+        yield return new WaitForSeconds(duration);
+
+        currentSpeed = moveSpeed;
+
+        effectStart = false;
+
+        material.SetFloat("_BlendAmount", 0f);
+    }
+
+    IEnumerator LastingDamage(float duration, float damage)
+    {
+        material.SetFloat("_BlendAmount", 0.5f);
+
+        effectStart = true;
+
+        float timer = 0;
+
+        for (;timer < duration;)
+        {
+            Debug.Log("Timer: " + timer);
+            yield return new WaitForSeconds(1f);
+
+            Damage(damage);
+            timer++;
+        }
+
+        effectStart = false;
+        material.SetFloat("_BlendAmount", 0f);
     }
 
     void DropCoins(int count)

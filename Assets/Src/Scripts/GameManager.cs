@@ -41,6 +41,8 @@ public class GameManager : MonoBehaviour
 
     public Transform iceBullet;
 
+    public Transform poisonBullet;
+
     [Header("Effects")]
 
     public GameObject chainLightingEffect;
