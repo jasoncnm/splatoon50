@@ -221,7 +221,6 @@ public abstract class Enemy : MonoBehaviour
 
         for (;timer < duration;)
         {
-            Debug.Log("Timer: " + timer);
             yield return new WaitForSeconds(1f);
 
             Damage(damage);

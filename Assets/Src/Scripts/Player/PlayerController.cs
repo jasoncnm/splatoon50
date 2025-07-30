@@ -3,6 +3,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -37,9 +38,6 @@ public class PlayerController : MonoBehaviour
     float dashDelay = 1f;
     float nextDashTime = 0f;
 
-    [SerializeField] float moveSpeed = 15f, acceleration = 10f;
-
-    [SerializeField] Transform interactIcon;
 
     public PlayerState state { get; private set; }
     public Transform aim { get; private set; }
@@ -56,6 +54,20 @@ public class PlayerController : MonoBehaviour
     bool _Shooting = false;
 
 
+    [Header("Player Movement")]
+    [SerializeField] float moveSpeed = 15f;
+    [SerializeField] float acceleration = 10f;
+
+
+    [Header("Player Health")]
+    [SerializeField, Range(0, 10)] int health = 4;
+    [SerializeField, Range(0, 10)] int numOfHearts = 4;
+    [SerializeField] Image[] hearts;
+
+    [Header("Player Assets")]
+    [SerializeField] Transform interactIcon;
+    [SerializeField] Sprite fullHeart;
+    [SerializeField] Sprite emptyHeart;
 
     public void MoveSetup(Vector2 direction)
     {
@@ -80,7 +92,6 @@ public class PlayerController : MonoBehaviour
 
     public void DashSetup()
     {
-
         if (state == PlayerState.Normal && Time.time > nextDashTime)
         {
             rollDir = lastMoveDir;
@@ -91,6 +102,11 @@ public class PlayerController : MonoBehaviour
 
             nextDashTime = Time.time + dashDelay;
         }
+    }
+
+    public void TakeDamage()
+    {
+        health--;
     }
 
     private void Start()
@@ -151,6 +167,8 @@ public class PlayerController : MonoBehaviour
 
         InteractDetect();
 
+        CheckHealth();
+
     }
 
     private void OnDrawGizmos()
@@ -158,6 +176,43 @@ public class PlayerController : MonoBehaviour
         if (Application.isPlaying)
         {
             Gizmos.DrawWireSphere(transform.position, 2.0f);
+        }
+    }
+
+
+    void CheckHealth()
+    {
+
+        if (health <= 0)
+        {
+            // TODO: Player Dead
+
+            health = 0;
+        }
+
+
+        if (health > numOfHearts) health = numOfHearts;
+
+        for (int i = 0; i < hearts.Length; i++)
+        {
+
+            if (i < health)
+            {
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+
+            if (i < numOfHearts)
+            {
+                hearts[i].enabled = true;
+            }
+            else
+            {
+                hearts[i].enabled = false;
+            }
         }
     }
 
@@ -368,8 +423,30 @@ public class PlayerController : MonoBehaviour
         contactNormal = Vector2.zero;
     }
 
+    float nextDamageTime = 0;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.name);
+
+        float damageRate = 1f;
+
+
+        if (collision.CompareTag("Enemies") && Time.time > nextDamageTime)
+        {
+            TakeDamage();
+
+            Vector3 dir = (collision.transform.position - transform.position).normalized;
+   
+            rollDir = -dir;
+            rollSpeed = 20f;
+            state = PlayerState.Rollling;
+
+            nextDamageTime = Time.time + damageRate;
+
+            // playerAnimator.SetTrigger("Dash");
+
+        }
+
         if (collision.CompareTag("PistolUpgrade"))
         {
             // Do something with game object

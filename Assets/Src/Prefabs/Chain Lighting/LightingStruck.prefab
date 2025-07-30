@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab5a9fd435a9bb4a94c6415b81d6af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextStruckTime: 1.5
+  nextStruckTime: 0.54

@@ -2,6 +2,9 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.PackageManager;
+using UnityEngine.Assertions;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -19,6 +22,8 @@ public class EnemySpawner : MonoBehaviour
     [Tooltip("Radius (world units) around the picked centre in which to scatter this batch.")]
     [SerializeField, Min(0f)] private float spawnRadius = 2f;
 
+    [Header("Indicator")]
+    [SerializeField] Transform indicator;
 
     private Transform[] enemyPrefabs;
     private readonly List<Vector3> _validPositions = new();
@@ -45,14 +50,19 @@ public class EnemySpawner : MonoBehaviour
         if (_loop != null) StopCoroutine(_loop);
     }
 
-    public void SpawnBatch()
+    public Vector3[] GetSpawnBatchLocations(Transform[] enemies)
     {
         UpdateVisiblePositions();
+
         if (_visiblePositions.Count == 0)
         {
             Debug.Log("Spawner: no walkable tiles inside the camera right now.");
-            return;
+            return null;
         }
+
+
+        Vector3[] result = new Vector3[batchSize];
+
 
         Vector3 centre = _visiblePositions[Random.Range(0, _visiblePositions.Count)];
 
@@ -63,20 +73,56 @@ public class EnemySpawner : MonoBehaviour
             Vector2 offset = Random.insideUnitCircle * spawnRadius;
             Vector3 tryPos = centre + (Vector3)offset;
 
-            if (!IsSpawnable(tryPos)) continue; // reject if off-screen or not on ground
+            if (!IsSpawnable(tryPos, result, enemies, spawned)) continue; // reject if off-screen or not on ground
 
-            Transform pf = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
-            Instantiate(pf, tryPos, Quaternion.identity);
+            result[spawned] = tryPos;
+
             spawned++;
         }
+        return result;
+    }
+
+    public Transform[] GetEnemiesKind(int count)
+    {
+        Transform[] result = new Transform[batchSize];
+
+        for (int i = 0; i < count; i++)
+        {
+            result[i] = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
+        }
+        return result;
     }
 
     private IEnumerator SpawnLoop()
     {
         while (true)
         {
-            SpawnBatch();
+
+            Transform[] indicators = new Transform[batchSize];
+            Transform[] enemies = GetEnemiesKind(batchSize);
+            Vector3[] enemiesPos = GetSpawnBatchLocations(enemies);
+
+            for (int i = 0; i < batchSize; i++)
+            {
+                indicators[i] = Instantiate(indicator, enemiesPos[i], Quaternion.identity);
+            }
+
             yield return new WaitForSeconds(spawnInterval);
+
+            for (int i = 0; i < batchSize; i++)
+            {
+                if (indicators == null || enemiesPos == null)
+                {
+                    Assert.IsTrue(false, "indicators or enimesPos are not initialized");
+                    break;
+                }
+
+                Destroy(indicators[i].gameObject);
+
+                Transform pf = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
+                Instantiate(pf, enemiesPos[i], Quaternion.identity);
+            }
+
         }
     }
 
@@ -102,11 +148,36 @@ public class EnemySpawner : MonoBehaviour
         return vp.z > 0f && vp.x > 0f && vp.x < 1f && vp.y > 0f && vp.y < 1f;
     }
 
-    private bool IsSpawnable(Vector3 worldPos)
+    private bool IsSpawnable(Vector3 worldPos, Vector3[] enemyPos, Transform[] enemies, int length)
     {
         // 1. must still be inside the camera
         if (!IsOnScreen(worldPos)) return false;
+        
         // 2. must fall on a tile that exists in the ground tilemap
-        return groundTilemap.HasTile(groundTilemap.WorldToCell(worldPos));
+        if (!groundTilemap.HasTile(groundTilemap.WorldToCell(worldPos))) return false;
+        
+        // 3. must not spawn on top of perivous spawned enemies
+        for (int i = 0; i < length; i++)
+        {
+            Vector3 pos = enemyPos[i];
+            float enemyR = enemies[i].localScale.x * 0.5f;
+            float currentR = enemies[length].localScale.x * 0.5f;
+
+            float dist = Vector3.Distance(pos, worldPos);
+
+            if (dist < (currentR + enemyR)) return false;
+
+        }
+
+        return true;
+
     }
+
+    private void OnDrawGizmos()
+    {
+        //if (!Application.isPlaying) return;
+        //Gizmos.color = Color.green;
+        //Gizmos.DrawSphere(Vector3.zero, enemyPrefabs[0].localScale.x * 0.5f);
+    }
+
 }
