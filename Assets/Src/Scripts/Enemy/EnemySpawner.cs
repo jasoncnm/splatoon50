@@ -30,24 +30,92 @@ public class EnemySpawner : MonoBehaviour
     private readonly List<Vector3> _visiblePositions = new(); // walkable + on-screen
     private Coroutine _loop;
 
+
+    Vector3[] enemiesPos;
+    Transform[] indicators;
+    List<GameObject> enemies;
+
+
     private void Awake()
     {
         if (targetCamera == null) targetCamera = Camera.main;
         CacheTileCenters();
+        enemies = new List<GameObject>();
+        indicators = new Transform[batchSize];
     }
 
     private void Start()
     {
         enemyPrefabs = GameManager.instance.enemies;
-        if (startOnAwake && spawnInterval > 0f)
-            _loop = StartCoroutine(SpawnLoop());
+        if (startOnAwake)
+        {
+            SetUp();
+        }
+
+        //    _loop = StartCoroutine(SpawnLoop());
         // else if (startOnAwake)
         //     SpawnBatch();
+    }
+
+    private IEnumerator SpawnLoop()
+    {
+        while (true)
+        {
+
+            Transform[] enemyBuffer = GetEnemiesKind(batchSize);
+            enemiesPos = GetSpawnBatchLocations(enemyBuffer);
+
+            for (int i = 0; i < batchSize; i++)
+            {
+                indicators[i] = Instantiate(indicator, enemiesPos[i], Quaternion.identity);
+            }
+
+            yield return new WaitForSeconds(spawnInterval);
+
+            for (int i = 0; i < batchSize; i++)
+            {
+                if (indicators == null || enemiesPos == null)
+                {
+                    Assert.IsTrue(false, "indicators or enimesPos are not initialized");
+                    break;
+                }
+
+                Destroy(indicators[i].gameObject);
+
+                Transform pf = enemyBuffer[i];
+                Transform tr = Instantiate(pf, enemiesPos[i], Quaternion.identity);
+                enemies.Add(tr.gameObject);
+            }
+
+        }
     }
 
     private void OnDisable()
     {
         if (_loop != null) StopCoroutine(_loop);
+
+        if (enemies != null)
+        {
+            foreach ( GameObject e in enemies )
+            {
+                if (e) e.GetComponent<Enemy>().StartDie();
+            }
+        }
+
+        if (indicators != null)
+        {
+            foreach ( Transform i in indicators)
+            {
+                if (i) Destroy(i.gameObject);
+            }
+        }
+
+    }
+
+    public void SetUp()
+    {
+        if (spawnInterval > 0f)
+            _loop = StartCoroutine(SpawnLoop());
     }
 
     public Vector3[] GetSpawnBatchLocations(Transform[] enemies)
@@ -93,38 +161,6 @@ public class EnemySpawner : MonoBehaviour
         return result;
     }
 
-    private IEnumerator SpawnLoop()
-    {
-        while (true)
-        {
-
-            Transform[] indicators = new Transform[batchSize];
-            Transform[] enemies = GetEnemiesKind(batchSize);
-            Vector3[] enemiesPos = GetSpawnBatchLocations(enemies);
-
-            for (int i = 0; i < batchSize; i++)
-            {
-                indicators[i] = Instantiate(indicator, enemiesPos[i], Quaternion.identity);
-            }
-
-            yield return new WaitForSeconds(spawnInterval);
-
-            for (int i = 0; i < batchSize; i++)
-            {
-                if (indicators == null || enemiesPos == null)
-                {
-                    Assert.IsTrue(false, "indicators or enimesPos are not initialized");
-                    break;
-                }
-
-                Destroy(indicators[i].gameObject);
-
-                Transform pf = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
-                Instantiate(pf, enemiesPos[i], Quaternion.identity);
-            }
-
-        }
-    }
 
     private void CacheTileCenters()
     {

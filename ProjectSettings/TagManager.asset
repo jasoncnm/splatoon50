@@ -12,6 +12,7 @@ TagManager:
   - Chest
   - PistolUpgrade
   - Coin
+  - CoinCollector
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: 73cb76c86c371d04e9eed30b00f9bba3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8725370030690304434
+    second: badland_quest_6_12_0
+  - first:
+      213: 3584099516847729875
+    second: badland_quest_6_12_1
+  - first:
+      213: -6421022780605595417
+    second: badland_quest_6_12_2
+  - first:
+      213: -6907688500836028918
+    second: badland_quest_6_12_3
+  - first:
+      213: -8652559394485069947
+    second: badland_quest_6_12_4
+  - first:
+      213: 4146605241489525556
+    second: badland_quest_6_12_5
+  - first:
+      213: -7392709525824874913
+    second: badland_quest_6_12_6
+  - first:
+      213: 2920441807150572932
+    second: badland_quest_6_12_7
+  - first:
+      213: -2790547552231875268
+    second: badland_quest_6_12_8
+  - first:
+      213: -6456229632062477551
+    second: badland_quest_6_12_9
+  - first:
+      213: -3889237046654494515
+    second: badland_quest_6_12_10
+  - first:
+      213: 1197579804323879531
+    second: badland_quest_6_12_11
+  - first:
+      213: 2190675343350809398
+    second: badland_quest_6_12_12
+  - first:
+      213: 6530021344755014608
+    second: badland_quest_6_12_13
+  - first:
+      213: -1611029483468281930
+    second: badland_quest_6_12_14
+  - first:
+      213: -3864663899953595413
+    second: badland_quest_6_12_15
+  - first:
+      213: -6325294736509039257
+    second: badland_quest_6_12_16
+  - first:
+      213: -6059591545992555135
+    second: badland_quest_6_12_17
+  - first:
+      213: 5594147528725634761
+    second: badland_quest_6_12_18
+  - first:
+      213: 521934476306690651
+    second: badland_quest_6_12_19
+  - first:
+      213: 3311813830518240992
+    second: badland_quest_6_12_20
+  - first:
+      213: 750751237742563881
+    second: badland_quest_6_12_21
+  - first:
+      213: 5280446657249298345
+    second: badland_quest_6_12_22
+  - first:
+      213: 1571869558340485397
+    second: badland_quest_6_12_23
+  - first:
+      213: -4610059035920384852
+    second: badland_quest_6_12_24
+  - first:
+      213: 3176426323554633674
+    second: badland_quest_6_12_25
+  - first:
+      213: -2117877770257723802
+    second: badland_quest_6_12_26
+  - first:
+      213: -3151166603884954063
+    second: badland_quest_6_12_27
+  - first:
+      213: 7549364060164866404
+    second: badland_quest_6_12_28
+  - first:
+      213: 3107984600199696172
+    second: badland_quest_6_12_29
+  - first:
+      213: -5827248342818575644
+    second: badland_quest_6_12_30
+  - first:
+      213: 5539318032406849603
+    second: badland_quest_6_12_31
+  - first:
+      213: -6995960635783411593
+    second: badland_quest_6_12_32
+  - first:
+      213: 3045695760324394282
+    second: badland_quest_6_12_33
+  - first:
+      213: 8284667811007731416
+    second: badland_quest_6_12_34
+  - first:
+      213: 5890102466827143386
+    second: badland_quest_6_12_35
+  - first:
+      213: -2839720608969988447
+    second: badland_quest_6_12_36
+  - first:
+      213: 8458424306765694395
+    second: badland_quest_6_12_37
+  - first:
+      213: -5321429007734059710
+    second: badland_quest_6_12_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: badland_quest_6_12_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e7dd2af2249e680800000000000000
+      internalID: -8725370030690304434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcab5d65874db130800000000000000
+      internalID: 3584099516847729875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e000531dc1f3e6a0800000000000000
+      internalID: -6421022780605595417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 24
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e2e9038e5f220a0800000000000000
+      internalID: -6907688500836028918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5879fbde21febe780800000000000000
+      internalID: -8652559394485069947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 24
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b81ca5f73bb8930800000000000000
+      internalID: 4146605241489525556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56df81cad1d76990800000000000000
+      internalID: -7392709525824874913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 24
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485e866b95e778820800000000000000
+      internalID: 2920441807150572932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3d126449cbf549d0800000000000000
+      internalID: -2790547552231875268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_9
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 24
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ba0903b5dd666a0800000000000000
+      internalID: -6456229632062477551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_10
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc89eda1387a60ac0800000000000000
+      internalID: -3889237046654494515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_11
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 24
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a18eaac78ae9010800000000000000
+      internalID: 1197579804323879531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 12
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633c1aa3e97d66e10800000000000000
+      internalID: 2190675343350809398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db57d5c0db4f9a50800000000000000
+      internalID: 6530021344755014608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7213b683974a9e0800000000000000
+      internalID: -1611029483468281930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_15
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 24
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb7dfaa8a4fd5ac0800000000000000
+      internalID: -3864663899953595413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_16
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 22
+        width: 7
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d0bb233f90838a0800000000000000
+      internalID: -6325294736509039257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1855721189108eba0800000000000000
+      internalID: -6059591545992555135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 22
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ce12dec98762ad40800000000000000
+      internalID: 5594147528725634761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_19
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 12
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b523a4014a84e3700800000000000000
+      internalID: 521934476306690651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e6f342d12de5fd20800000000000000
+      internalID: 3311813830518240992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 12
+        width: 7
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9229458e5443b6a00800000000000000
+      internalID: 750751237742563881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a74ebcf14ae74940800000000000000
+      internalID: 5280446657249298345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_23
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 24
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5118222090760d510800000000000000
+      internalID: 1571869558340485397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cacb2626bb7c500c0800000000000000
+      internalID: -4610059035920384852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 24
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac78cae69eee41c20800000000000000
+      internalID: 3176426323554633674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_26
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e87129369cb92e0800000000000000
+      internalID: -2117877770257723802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_27
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 21
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13efc5b5baec444d0800000000000000
+      internalID: -3151166603884954063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_28
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 36
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4614a3e4d9ab4c860800000000000000
+      internalID: 7549364060164866404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_29
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 21
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f894ee687c12b20800000000000000
+      internalID: 3107984600199696172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eaa05c9184712fa0800000000000000
+      internalID: -5827248342818575644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_31
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 12
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348a683e66c9fdc40800000000000000
+      internalID: 5539318032406849603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_32
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77883813eda59ee90800000000000000
+      internalID: -6995960635783411593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_33
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d7c00482c744a20800000000000000
+      internalID: 3045695760324394282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_34
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 12
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d69a35ea7d09f270800000000000000
+      internalID: 8284667811007731416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_35
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad842e98cf8ddb150800000000000000
+      internalID: 5890102466827143386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_36
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 12
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6ecf0d6294798d0800000000000000
+      internalID: -2839720608969988447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_37
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 12
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb58c44a71c526570800000000000000
+      internalID: 8458424306765694395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badland_quest_6_12_38
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 12
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d4d88f28c7626b0800000000000000
+      internalID: -5321429007734059710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2280 @@
+fileFormatVersion: 2
+guid: cfd49c779b4d79f4d9932290a0514a55
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8136723383329218825
+    second: stumblehill_32_48_0
+  - first:
+      213: 6734438317990269707
+    second: stumblehill_32_48_1
+  - first:
+      213: -8913929363291252264
+    second: stumblehill_32_48_2
+  - first:
+      213: 4635194812607324787
+    second: stumblehill_32_48_3
+  - first:
+      213: 8771088700823357257
+    second: stumblehill_32_48_4
+  - first:
+      213: 2461131666976775551
+    second: stumblehill_32_48_5
+  - first:
+      213: 1832860962249224583
+    second: stumblehill_32_48_6
+  - first:
+      213: 3978210366615675819
+    second: stumblehill_32_48_7
+  - first:
+      213: -679019354215014563
+    second: stumblehill_32_48_8
+  - first:
+      213: -6207902769983233811
+    second: stumblehill_32_48_9
+  - first:
+      213: -1171201481126877147
+    second: stumblehill_32_48_10
+  - first:
+      213: -4601055897399853550
+    second: stumblehill_32_48_11
+  - first:
+      213: -4293657974470162151
+    second: stumblehill_32_48_12
+  - first:
+      213: 2760978004190603354
+    second: stumblehill_32_48_13
+  - first:
+      213: -7808172616594268627
+    second: stumblehill_32_48_14
+  - first:
+      213: -4412528732287637152
+    second: stumblehill_32_48_15
+  - first:
+      213: 9016334750757460859
+    second: stumblehill_32_48_16
+  - first:
+      213: 1326870272859576161
+    second: stumblehill_32_48_17
+  - first:
+      213: 2681563518939224691
+    second: stumblehill_32_48_18
+  - first:
+      213: 2792246701296806783
+    second: stumblehill_32_48_19
+  - first:
+      213: 2457855826414030848
+    second: stumblehill_32_48_20
+  - first:
+      213: 5910842525087993119
+    second: stumblehill_32_48_21
+  - first:
+      213: -7187196200932159342
+    second: stumblehill_32_48_22
+  - first:
+      213: 3017138255240701316
+    second: stumblehill_32_48_23
+  - first:
+      213: -7294294190507784226
+    second: stumblehill_32_48_24
+  - first:
+      213: 1858437606724376932
+    second: stumblehill_32_48_25
+  - first:
+      213: -1594015678327724533
+    second: stumblehill_32_48_26
+  - first:
+      213: 2226656353270592182
+    second: stumblehill_32_48_27
+  - first:
+      213: 7457664784209627836
+    second: stumblehill_32_48_28
+  - first:
+      213: -5549426412773178497
+    second: stumblehill_32_48_29
+  - first:
+      213: -5946470034662989285
+    second: stumblehill_32_48_30
+  - first:
+      213: -8661058946290127776
+    second: stumblehill_32_48_31
+  - first:
+      213: 1432443754618465089
+    second: stumblehill_32_48_32
+  - first:
+      213: -1883393628850216199
+    second: stumblehill_32_48_33
+  - first:
+      213: 2098341112924573334
+    second: stumblehill_32_48_34
+  - first:
+      213: -8311131029448607070
+    second: stumblehill_32_48_35
+  - first:
+      213: 8121380172606208514
+    second: stumblehill_32_48_36
+  - first:
+      213: 2320717281083198354
+    second: stumblehill_32_48_37
+  - first:
+      213: -6421657293328131579
+    second: stumblehill_32_48_38
+  - first:
+      213: -48230503529606263
+    second: stumblehill_32_48_39
+  - first:
+      213: 5516977909013343435
+    second: stumblehill_32_48_40
+  - first:
+      213: 8556126399010253871
+    second: stumblehill_32_48_41
+  - first:
+      213: 3432174930293983677
+    second: stumblehill_32_48_42
+  - first:
+      213: 1042294538805688899
+    second: stumblehill_32_48_43
+  - first:
+      213: 1521366739548803634
+    second: stumblehill_32_48_44
+  - first:
+      213: -4542238175664677239
+    second: stumblehill_32_48_45
+  - first:
+      213: 257501231538486309
+    second: stumblehill_32_48_46
+  - first:
+      213: -2202180571270610823
+    second: stumblehill_32_48_47
+  - first:
+      213: 2576356956963036108
+    second: stumblehill_32_48_48
+  - first:
+      213: 8115670972640131082
+    second: stumblehill_32_48_49
+  - first:
+      213: -5146949828335387442
+    second: stumblehill_32_48_50
+  - first:
+      213: 1301483280922685363
+    second: stumblehill_32_48_51
+  - first:
+      213: -3375494469627542711
+    second: stumblehill_32_48_52
+  - first:
+      213: -5794862708825060589
+    second: stumblehill_32_48_53
+  - first:
+      213: 3010777679797331001
+    second: stumblehill_32_48_54
+  - first:
+      213: 2654417462377709741
+    second: stumblehill_32_48_55
+  - first:
+      213: 8024537790846299920
+    second: stumblehill_32_48_56
+  - first:
+      213: 7614513837974600935
+    second: stumblehill_32_48_57
+  - first:
+      213: 499409227934546770
+    second: stumblehill_32_48_58
+  - first:
+      213: 7414118964679237532
+    second: stumblehill_32_48_59
+  - first:
+      213: -8810515510327768076
+    second: stumblehill_32_48_60
+  - first:
+      213: -722075520258751719
+    second: stumblehill_32_48_61
+  - first:
+      213: -6992725181811243818
+    second: stumblehill_32_48_62
+  - first:
+      213: 706904583776657608
+    second: stumblehill_32_48_63
+  - first:
+      213: 5282225408060961136
+    second: stumblehill_32_48_64
+  - first:
+      213: -8758048702152051690
+    second: stumblehill_32_48_65
+  - first:
+      213: 7078656034346279615
+    second: stumblehill_32_48_66
+  - first:
+      213: 5469454511416978079
+    second: stumblehill_32_48_67
+  - first:
+      213: -4946620395640443662
+    second: stumblehill_32_48_68
+  - first:
+      213: 4503574771200855267
+    second: stumblehill_32_48_69
+  - first:
+      213: 707327732459200154
+    second: stumblehill_32_48_70
+  - first:
+      213: 6411151427384041608
+    second: stumblehill_32_48_71
+  - first:
+      213: 8357740539246530313
+    second: stumblehill_32_48_72
+  - first:
+      213: -9148595451151036051
+    second: stumblehill_32_48_73
+  - first:
+      213: -7560110712478731617
+    second: stumblehill_32_48_74
+  - first:
+      213: 8851023699778330144
+    second: stumblehill_32_48_75
+  - first:
+      213: 1224098300301575483
+    second: stumblehill_32_48_76
+  - first:
+      213: -3834854730165400855
+    second: stumblehill_32_48_77
+  - first:
+      213: 7588892866077556256
+    second: stumblehill_32_48_78
+  - first:
+      213: -6864754431273625064
+    second: stumblehill_32_48_79
+  - first:
+      213: 8629111610864205933
+    second: stumblehill_32_48_80
+  - first:
+      213: 8040997111256703540
+    second: stumblehill_32_48_81
+  - first:
+      213: 4936707887226397804
+    second: stumblehill_32_48_82
+  - first:
+      213: 3756526285347597199
+    second: stumblehill_32_48_83
+  - first:
+      213: 261703556903328508
+    second: stumblehill_32_48_84
+  - first:
+      213: -4925161814523493731
+    second: stumblehill_32_48_85
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stumblehill_32_48_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 217
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901e3f29ec27be070800000000000000
+      internalID: 8136723383329218825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 217
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03d69938f7857d50800000000000000
+      internalID: 6734438317990269707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 217
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d9d91cd87c5b4480800000000000000
+      internalID: -8913929363291252264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 217
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372613eaf15835040800000000000000
+      internalID: 4635194812607324787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_4
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 217
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947c402c3ba29b970800000000000000
+      internalID: 8771088700823357257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 217
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d9d932632b72220800000000000000
+      internalID: 2461131666976775551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 216
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781bb819551af6910800000000000000
+      internalID: 1832860962249224583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 216
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba367ef3041753730800000000000000
+      internalID: 3978210366615675819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_8
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 216
+        width: 12
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5f1664be73a396f0800000000000000
+      internalID: -679019354215014563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_9
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 217
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de06cf2525919d9a0800000000000000
+      internalID: -6207902769983233811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 216
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528650d457e0fbfe0800000000000000
+      internalID: -1171201481126877147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 215
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ef3cbe904c520c0800000000000000
+      internalID: -4601055897399853550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 215
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919ceac22dcd964c0800000000000000
+      internalID: -4293657974470162151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 215
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58a274ddd6f05620800000000000000
+      internalID: 2760978004190603354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_14
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 216
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e57faef5cc3a390800000000000000
+      internalID: -7808172616594268627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_15
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 216
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0696ace1f7c83c2c0800000000000000
+      internalID: -4412528732287637152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 163
+        width: 30
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b98ea6fa4702d70800000000000000
+      internalID: 9016334750757460859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 164
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16712dcab7df96210800000000000000
+      internalID: 1326870272859576161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_18
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 164
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ad40d10d3d63520800000000000000
+      internalID: 2681563518939224691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 164
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b6d04b49d00c620800000000000000
+      internalID: 2792246701296806783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 164
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00058821ade0c1220800000000000000
+      internalID: 2457855826414030848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 163
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d8427a5f7870250800000000000000
+      internalID: 5910842525087993119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_22
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 164
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290d6687223f14c90800000000000000
+      internalID: -7187196200932159342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_23
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 165
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4852dd5f1470fd920800000000000000
+      internalID: 3017138255240701316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 165
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7869f941675ca90800000000000000
+      internalID: -7294294190507784226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_25
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 165
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469980a282f7ac910800000000000000
+      internalID: 1858437606724376932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_26
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 164
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b066fde9f2be0e9e0800000000000000
+      internalID: -1594015678327724533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_27
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 160
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b27f8de72ca6ee10800000000000000
+      internalID: 2226656353270592182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 168
+        width: 6
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cba41ccdb92fe7760800000000000000
+      internalID: 7457664784209627836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_29
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 170
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f730c77641a7cf2b0800000000000000
+      internalID: -5549426412773178497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_30
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 164
+        width: 13
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12686c5205e97da0800000000000000
+      internalID: -5946470034662989285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_31
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 164
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c68afc6ccbdc780800000000000000
+      internalID: -8661058946290127776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_32
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ba2c2610011e310800000000000000
+      internalID: 1432443754618465089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_33
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 160
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f226242977dcd5e0800000000000000
+      internalID: -1883393628850216199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_34
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 111
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e877def1ece1d10800000000000000
+      internalID: 2098341112924573334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_35
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 113
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa3dfbec5ee8ac80800000000000000
+      internalID: -8311131029448607070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_36
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 112
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20af712fc30f4b070800000000000000
+      internalID: 8121380172606208514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_37
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 113
+        width: 23
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b031b4218d43020800000000000000
+      internalID: 2320717281083198354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_38
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 112
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a51e117b0b1e6a0800000000000000
+      internalID: -6421657293328131579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_39
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 112
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98397c1dc96a45ff0800000000000000
+      internalID: -48230503529606263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_40
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 112
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bccea649d2e309c40800000000000000
+      internalID: 5516977909013343435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_41
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 131
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c295aa0a77db670800000000000000
+      internalID: 8556126399010253871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_42
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 131
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db98c272ae881af20800000000000000
+      internalID: 3432174930293983677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_43
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 132
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ab7d85c59f67e00800000000000000
+      internalID: 1042294538805688899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_44
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 128
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23296e33dfafc1510800000000000000
+      internalID: 1521366739548803634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_45
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 110
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ed94ee17ab6f0c0800000000000000
+      internalID: -4542238175664677239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_46
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 110
+        width: 20
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cb31b7104d29300800000000000000
+      internalID: 257501231538486309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_47
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 110
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970062620784071e0800000000000000
+      internalID: -2202180571270610823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_48
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 110
+        width: 21
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb5362900f01c320800000000000000
+      internalID: 2576356956963036108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_49
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 111
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08f92e30c7a0a070800000000000000
+      internalID: 8115670972640131082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_50
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 120
+        width: 13
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccbf4d966c5298b0800000000000000
+      internalID: -5146949828335387442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_51
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 108
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bfa180062ccf0210800000000000000
+      internalID: 1301483280922685363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_52
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 59
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9430e8cf9a5d721d0800000000000000
+      internalID: -3375494469627542711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_53
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 56
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b035e9113849fa0800000000000000
+      internalID: -5794862708825060589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_54
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 59
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934aef5195e68c920800000000000000
+      internalID: 3010777679797331001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_55
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 81
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da00e9a4e9266d420800000000000000
+      internalID: 2654417462377709741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_56
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 81
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f671eda92ec5f60800000000000000
+      internalID: 8024537790846299920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_57
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 58
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecb5c10eff2ca960800000000000000
+      internalID: 7614513837974600935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_58
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 58
+        width: 7
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b379cfb024ee600800000000000000
+      internalID: 499409227934546770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_59
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 58
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9f513caaed34e660800000000000000
+      internalID: 7414118964679237532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_60
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 58
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb08dec2d2cab580800000000000000
+      internalID: -8810515510327768076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_61
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 59
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913c8f9d32caaf5f0800000000000000
+      internalID: -722075520258751719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_62
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 52
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d446360f79d4fe90800000000000000
+      internalID: -6992725181811243818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_63
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 52
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c06a1e39fd6fc900800000000000000
+      internalID: 706904583776657608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_64
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 59
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071340fa50c3e4940800000000000000
+      internalID: 5282225408060961136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_65
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 58
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614f7a68b19257680800000000000000
+      internalID: -8758048702152051690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_66
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 58
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2a26ea8207c3260800000000000000
+      internalID: 7078656034346279615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_67
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 58
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9aaa2456e767eb40800000000000000
+      internalID: 5469454511416978079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_68
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 56
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc262f55f21a5bb0800000000000000
+      internalID: -4946620395640443662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_69
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 59
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec86d8b469ef7e30800000000000000
+      internalID: 4503574771200855267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 29
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e530933dee0d900800000000000000
+      internalID: 707327732459200154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_71
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 29
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 880e676614cf8f850800000000000000
+      internalID: 6411151427384041608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_72
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 5
+        width: 12
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fcbae3db8acf370800000000000000
+      internalID: 8357740539246530313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_73
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61536498e8a90180800000000000000
+      internalID: -9148595451151036051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_74
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f927418bc57151790800000000000000
+      internalID: -7560110712478731617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_75
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02ed9d3092725da70800000000000000
+      internalID: 8851023699778330144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_76
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 8
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3582a72beedcf010800000000000000
+      internalID: 1224098300301575483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_77
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eac34bd0fbd7cac0800000000000000
+      internalID: -3834854730165400855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_78
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 6
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e7c01aad9215960800000000000000
+      internalID: 7588892866077556256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_79
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 7
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81a95ad373e7bb0a0800000000000000
+      internalID: -6864754431273625064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_80
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6082c48a43c0c770800000000000000
+      internalID: 8629111610864205933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_81
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 9
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432e568054c579f60800000000000000
+      internalID: 8040997111256703540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_82
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 23
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64aff9eaa5b28440800000000000000
+      internalID: 4936707887226397804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_83
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 6
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8baf8be0ccd12430800000000000000
+      internalID: 3756526285347597199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_84
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 6
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfadda99ff1c1a300800000000000000
+      internalID: 261703556903328508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stumblehill_32_48_85
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 8
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d924200ac6f46abb0800000000000000
+      internalID: -4925161814523493731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

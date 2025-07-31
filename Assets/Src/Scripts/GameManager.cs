@@ -1,14 +1,27 @@
 using TMPro;
 using UnityEngine;
 using MoreMountains.Tools;
+using UnityEngine.Rendering.PostProcessing;
 
+
+public enum GameState
+{
+    GAME_START,
+    GAME_COMBAT,
+    GAME_COMBAT_END,
+}
 
 public class GameManager : MonoBehaviour
 {
 
+
     public static GameManager instance;
 
     public static int gameScore = 0;
+
+    public static int wave = 0;
+
+    public static GameState gameState = GameState.GAME_START;
 
     public static bool gameIsPause { get; private set; } = false;
 
@@ -49,6 +62,12 @@ public class GameManager : MonoBehaviour
 
     public GameObject beenStruck;
 
+    EnemySpawner enemySpawner = null;
+
+    public float combatTime { get; private set; } = 120f;
+
+    public float timer { get; private set; } = 0;
+
     private void Awake()
     {
         if (!instance) instance = this;
@@ -60,7 +79,40 @@ public class GameManager : MonoBehaviour
         gameScore = 0;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
+        gameState = GameState.GAME_COMBAT;
+        enemySpawner = GetComponent<EnemySpawner>();
 
+        enemySpawner.enabled = false;
+        
+        if (gameState == GameState.GAME_COMBAT)
+            enemySpawner.enabled = true; // Note test codee
+    }
+
+    private void Update()
+    {
+        if (gameState == GameState.GAME_COMBAT)
+        {
+            timer += Time.deltaTime;
+            if (timer > combatTime) SwitchState();
+        }
+
+    }
+
+    public void SwitchState()
+    {
+        if (gameState == GameState.GAME_COMBAT_END)
+        {
+            wave++;
+            timer = 0;
+            enemySpawner.enabled = true;
+            enemySpawner.SetUp();
+            gameState = GameState.GAME_COMBAT;
+        }
+        else if (gameState == GameState.GAME_COMBAT)
+        {
+            enemySpawner.enabled = false;
+            gameState = GameState.GAME_COMBAT_END;
+        }
     }
 
     public static void AddScore(TextMeshProUGUI scoreText)

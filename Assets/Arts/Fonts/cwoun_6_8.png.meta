@@ -1,0 +1,1030 @@
+fileFormatVersion: 2
+guid: 735e5f695135942448003c72b424da8e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2639976237585733006
+    second: cwoun_6_8_0
+  - first:
+      213: -6994299094281803507
+    second: cwoun_6_8_1
+  - first:
+      213: -203914020318572285
+    second: cwoun_6_8_2
+  - first:
+      213: -5036991995822496618
+    second: cwoun_6_8_3
+  - first:
+      213: -8418793068331984359
+    second: cwoun_6_8_4
+  - first:
+      213: 5480821645972649436
+    second: cwoun_6_8_5
+  - first:
+      213: 1037756064123195028
+    second: cwoun_6_8_6
+  - first:
+      213: -1396913493475210327
+    second: cwoun_6_8_7
+  - first:
+      213: -708076442105830329
+    second: cwoun_6_8_8
+  - first:
+      213: -7588195948031897087
+    second: cwoun_6_8_9
+  - first:
+      213: -1748143206188988235
+    second: cwoun_6_8_10
+  - first:
+      213: 750939867849102367
+    second: cwoun_6_8_11
+  - first:
+      213: -4964805503019786071
+    second: cwoun_6_8_12
+  - first:
+      213: -669162753739895143
+    second: cwoun_6_8_13
+  - first:
+      213: 7271674935888121154
+    second: cwoun_6_8_14
+  - first:
+      213: 2676148701106097538
+    second: cwoun_6_8_15
+  - first:
+      213: 2433116868250206350
+    second: cwoun_6_8_16
+  - first:
+      213: 8644551969750893855
+    second: cwoun_6_8_17
+  - first:
+      213: -3392151915911405316
+    second: cwoun_6_8_18
+  - first:
+      213: 6856614292580454044
+    second: cwoun_6_8_19
+  - first:
+      213: 2223106176386934113
+    second: cwoun_6_8_20
+  - first:
+      213: -7627837594220877113
+    second: cwoun_6_8_21
+  - first:
+      213: -5379280694822596318
+    second: cwoun_6_8_22
+  - first:
+      213: -8950141635590640456
+    second: cwoun_6_8_23
+  - first:
+      213: 4648830306810126928
+    second: cwoun_6_8_24
+  - first:
+      213: -1181828346222505511
+    second: cwoun_6_8_25
+  - first:
+      213: 7492670859253398739
+    second: cwoun_6_8_26
+  - first:
+      213: -5120098775009532212
+    second: cwoun_6_8_27
+  - first:
+      213: 4579250589923248767
+    second: cwoun_6_8_28
+  - first:
+      213: 2250935381040849710
+    second: cwoun_6_8_29
+  - first:
+      213: -1044220167686842186
+    second: cwoun_6_8_30
+  - first:
+      213: 5135591855124661986
+    second: cwoun_6_8_31
+  - first:
+      213: -395701092310223701
+    second: cwoun_6_8_32
+  - first:
+      213: -2433964061507693794
+    second: cwoun_6_8_33
+  - first:
+      213: -5265874300165271771
+    second: cwoun_6_8_34
+  - first:
+      213: 3801593387306153783
+    second: cwoun_6_8_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cwoun_6_8_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27aea3f599bec5bd0800000000000000
+      internalID: -2639976237585733006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d092f78f7024fee90800000000000000
+      internalID: -6994299094281803507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3019036674d8b2df0800000000000000
+      internalID: -203914020318572285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694a3888772091ab0800000000000000
+      internalID: -5036991995822496618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a1d8c1f407a2b80800000000000000
+      internalID: -8418793068331984359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5b8759f3acf0c40800000000000000
+      internalID: 5480821645972649436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e029d54a9d66e00800000000000000
+      internalID: 1037756064123195028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 9
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9abc57f249a2d9ce0800000000000000
+      internalID: -1396913493475210327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744a57a3a386c26f0800000000000000
+      internalID: -708076442105830329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102108f3dff41b690800000000000000
+      internalID: -7588195948031897087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_10
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8c79a14095db7e0800000000000000
+      internalID: -1748143206188988235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_11
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1413d6c4dfdb6a00800000000000000
+      internalID: 750939867849102367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0e99d13b7791bb0800000000000000
+      internalID: -4964805503019786071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e49665508a6b6f0800000000000000
+      internalID: -669162753739895143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d09b3c3dd2ae460800000000000000
+      internalID: 7271674935888121154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_15
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d4d879017932520800000000000000
+      internalID: 2676148701106097538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_16
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 9
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80801586ea24c120800000000000000
+      internalID: 2433116868250206350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 17
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15c767373e97f770800000000000000
+      internalID: 8644551969750893855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0a0fb0ec7ace0d0800000000000000
+      internalID: -3392151915911405316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ecf170f56972f50800000000000000
+      internalID: 6856614292580454044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1652585f94f0ade10800000000000000
+      internalID: 2223106176386934113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca28104f1a742690800000000000000
+      internalID: -7627837594220877113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2219bfd65b4f855b0800000000000000
+      internalID: -5379280694822596318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_23
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcaf213a95bac380800000000000000
+      internalID: -8950141635590640456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052ec729886f38040800000000000000
+      internalID: 4648830306810126928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d19be5716d499fe0800000000000000
+      internalID: -1181828346222505511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_26
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc38b8d2705bf760800000000000000
+      internalID: 7492670859253398739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_27
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6e4a4aa41c1f8b0800000000000000
+      internalID: -5120098775009532212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_28
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a8fdd4624cc8f30800000000000000
+      internalID: 4579250589923248767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_29
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e236c479dcdec3f10800000000000000
+      internalID: 2250935381040849710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b81abd3a4f2281f0800000000000000
+      internalID: -1044220167686842186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_31
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6481c2599454740800000000000000
+      internalID: 5135591855124661986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_32
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba47d9bf3ff228af0800000000000000
+      internalID: -395701092310223701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_33
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1354cde492d83ed0800000000000000
+      internalID: -2433964061507693794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_34
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f4aca493bdbe6b0800000000000000
+      internalID: -5265874300165271771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cwoun_6_8_35
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7377bd64b09f1c430800000000000000
+      internalID: 3801593387306153783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,11 +2,17 @@ using UnityEngine;
 
 public class CoinPickUp : MonoBehaviour
 {
+
+    public void OnAniEnd()
+    {
+        Destroy(gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Coin"))
+        if (collision.CompareTag("CoinCollector"))
         {
-            collision.GetComponent<Animator>().SetTrigger("PickUp");
+            GetComponent<Animator>().SetTrigger("PickUp");
         }
 
     }

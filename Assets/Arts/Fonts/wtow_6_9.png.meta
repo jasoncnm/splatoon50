@@ -1,0 +1,1505 @@
+fileFormatVersion: 2
+guid: c715675f6ebae1446948dae8fbaadbdf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2592755087070746750
+    second: wtow_6_9_0
+  - first:
+      213: -5669275735134322445
+    second: wtow_6_9_1
+  - first:
+      213: 3112202136001440446
+    second: wtow_6_9_2
+  - first:
+      213: -5541088753572945277
+    second: wtow_6_9_3
+  - first:
+      213: 19148752812388140
+    second: wtow_6_9_4
+  - first:
+      213: -5307109116158653706
+    second: wtow_6_9_5
+  - first:
+      213: -8061437459772248775
+    second: wtow_6_9_6
+  - first:
+      213: 8556281401043092802
+    second: wtow_6_9_7
+  - first:
+      213: 1357822765296366865
+    second: wtow_6_9_8
+  - first:
+      213: 1101035677241355924
+    second: wtow_6_9_9
+  - first:
+      213: -662007928452416929
+    second: wtow_6_9_10
+  - first:
+      213: 5685225036396328505
+    second: wtow_6_9_11
+  - first:
+      213: 4749027935491569763
+    second: wtow_6_9_12
+  - first:
+      213: 8431840588366133721
+    second: wtow_6_9_13
+  - first:
+      213: 2858723100635451260
+    second: wtow_6_9_14
+  - first:
+      213: 6059702931027339911
+    second: wtow_6_9_15
+  - first:
+      213: 2441481979269210725
+    second: wtow_6_9_16
+  - first:
+      213: -2550945272852618837
+    second: wtow_6_9_17
+  - first:
+      213: 1428058183772908506
+    second: wtow_6_9_18
+  - first:
+      213: -8126000134176103012
+    second: wtow_6_9_19
+  - first:
+      213: 599084371708391114
+    second: wtow_6_9_20
+  - first:
+      213: 8358182343929432290
+    second: wtow_6_9_21
+  - first:
+      213: -6648210806531433405
+    second: wtow_6_9_22
+  - first:
+      213: -7740594287019563084
+    second: wtow_6_9_23
+  - first:
+      213: -8689296094100622461
+    second: wtow_6_9_24
+  - first:
+      213: 8853675381863126579
+    second: wtow_6_9_25
+  - first:
+      213: -7143383323046033134
+    second: wtow_6_9_26
+  - first:
+      213: 1888532861388465148
+    second: wtow_6_9_27
+  - first:
+      213: -6785062281025745820
+    second: wtow_6_9_28
+  - first:
+      213: 6292912553261023531
+    second: wtow_6_9_29
+  - first:
+      213: -7127097357444158324
+    second: wtow_6_9_30
+  - first:
+      213: -5733109812831801617
+    second: wtow_6_9_31
+  - first:
+      213: 3775394527722629611
+    second: wtow_6_9_32
+  - first:
+      213: 6624464849570078131
+    second: wtow_6_9_33
+  - first:
+      213: 4769565898169434862
+    second: wtow_6_9_34
+  - first:
+      213: -1941075485986208944
+    second: wtow_6_9_35
+  - first:
+      213: 2706938510504484224
+    second: wtow_6_9_36
+  - first:
+      213: 7726595483103201143
+    second: wtow_6_9_37
+  - first:
+      213: -6808074658322745791
+    second: wtow_6_9_38
+  - first:
+      213: 5579221258792619754
+    second: wtow_6_9_39
+  - first:
+      213: -2450969512914411538
+    second: wtow_6_9_40
+  - first:
+      213: 3762416869266042405
+    second: wtow_6_9_41
+  - first:
+      213: 8056183412386599703
+    second: wtow_6_9_42
+  - first:
+      213: 3334426024081140941
+    second: wtow_6_9_43
+  - first:
+      213: 774055144723165182
+    second: wtow_6_9_44
+  - first:
+      213: 4119430981260479911
+    second: wtow_6_9_45
+  - first:
+      213: 1862442077063791769
+    second: wtow_6_9_46
+  - first:
+      213: 1674942511189768496
+    second: wtow_6_9_47
+  - first:
+      213: 2473190378804364969
+    second: wtow_6_9_48
+  - first:
+      213: 2278527353292529041
+    second: wtow_6_9_49
+  - first:
+      213: 5928913275034492882
+    second: wtow_6_9_50
+  - first:
+      213: -6808382790877110206
+    second: wtow_6_9_51
+  - first:
+      213: 8166801653503739376
+    second: wtow_6_9_52
+  - first:
+      213: -4855490372488762056
+    second: wtow_6_9_53
+  - first:
+      213: -4092985616406413707
+    second: wtow_6_9_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wtow_6_9_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287af8d3cfea40cd0800000000000000
+      internalID: -2592755087070746750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0c39981cfa251b0800000000000000
+      internalID: -5669275735134322445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebae3918a53c03b20800000000000000
+      internalID: 3112202136001440446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3826f56f2291a13b0800000000000000
+      internalID: -5541088753572945277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f264170b7044000800000000000000
+      internalID: 19148752812388140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa402b806c5956b0800000000000000
+      internalID: -5307109116158653706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d6f377755002090800000000000000
+      internalID: -8061437459772248775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2458473e9940eb670800000000000000
+      internalID: 8556281401043092802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115bd696c94f7d210800000000000000
+      internalID: 1357822765296366865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_9
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ea00b6d1aa74f00800000000000000
+      internalID: 1101035677241355924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_10
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5af91aeb4310d6f0800000000000000
+      internalID: -662007928452416929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_11
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 18
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9367f8a8c0af5ee40800000000000000
+      internalID: 5685225036396328505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368b163febfe7e140800000000000000
+      internalID: 4749027935491569763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9b840675ae30570800000000000000
+      internalID: 8431840588366133721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f449c83893ca720800000000000000
+      internalID: 2858723100635451260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_15
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a2748c5b3681450800000000000000
+      internalID: 6059702931027339911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_16
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 27
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562ebd3bce2e1e120800000000000000
+      internalID: 2441481979269210725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba168223ac8399cd0800000000000000
+      internalID: -2550945272852618837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adbaf5a1a5b71d310800000000000000
+      internalID: 1428058183772908506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9528ad6ee5aa3f80800000000000000
+      internalID: -8126000134176103012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aceaa2edf00605800800000000000000
+      internalID: 599084371708391114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e80bd9ee8a3ef370800000000000000
+      internalID: 8358182343929432290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34cd7c4ce7fccb3a0800000000000000
+      internalID: -6648210806531433405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_23
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b7e7c3e182e39490800000000000000
+      internalID: -7740594287019563084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38371f28d3b696780800000000000000
+      internalID: -8689296094100622461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_25
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336929cd9d29eda70800000000000000
+      internalID: 8853675381863126579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_26
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 27
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219446707ba9ddc90800000000000000
+      internalID: -7143383323046033134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_27
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf326bda1aa653a10800000000000000
+      internalID: 1888532861388465148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_28
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 18
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46c0f80edcd96d1a0800000000000000
+      internalID: -6785062281025745820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_29
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 17
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2148bb30aae45750800000000000000
+      internalID: 6292912553261023531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_30
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 27
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c6ae1e6b6771d90800000000000000
+      internalID: -7127097357444158324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_31
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 27
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feeaad32007ef60b0800000000000000
+      internalID: -5733109812831801617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be96cdfe155e46430800000000000000
+      internalID: 3775394527722629611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd9fa9cea3deeb50800000000000000
+      internalID: 6624464849570078131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2c4350ae6e03240800000000000000
+      internalID: 4769565898169434862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_35
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 9
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053c297312aef05e0800000000000000
+      internalID: -1941075485986208944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_36
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08dd17bbb3af09520800000000000000
+      internalID: 2706938510504484224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_37
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 8
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777018597a16a3b60800000000000000
+      internalID: 7726595483103201143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_38
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 9
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14675524b2cd481a0800000000000000
+      internalID: -6808074658322745791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_39
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee44a5cc206d6d40800000000000000
+      internalID: 5579221258792619754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_40
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef9c6bb6386cfdd0800000000000000
+      internalID: -2450969512914411538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_41
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e2a8d553ac63430800000000000000
+      internalID: 3762416869266042405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_42
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 9
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71392bc41205dcf60800000000000000
+      internalID: 8056183412386599703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_43
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccac276dc2464e20800000000000000
+      internalID: 3334426024081140941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_44
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 6
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: effa9c19d0ffdba00800000000000000
+      internalID: 774055144723165182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_45
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad05cad6a82b2930800000000000000
+      internalID: 4119430981260479911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_46
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 6
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994c0229339b8d910800000000000000
+      internalID: 1862442077063791769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_47
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 6
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039baa6f6579e3710800000000000000
+      internalID: 1674942511189768496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_48
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 9
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a64c86cb89825220800000000000000
+      internalID: 2473190378804364969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_49
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 9
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d13004e84fe9f10800000000000000
+      internalID: 2278527353292529041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_50
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df578ef53bb74250800000000000000
+      internalID: 5928913275034492882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_51
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 9
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24023ee8ce3c381a0800000000000000
+      internalID: -6808382790877110206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_52
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 9
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5c92495de465170800000000000000
+      internalID: 8166801653503739376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_53
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 9
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d6a715b35dd9cb0800000000000000
+      internalID: -4855490372488762056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wtow_6_9_54
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 9
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57eff47744bc237c0800000000000000
+      internalID: -4092985616406413707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

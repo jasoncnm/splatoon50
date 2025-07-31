@@ -1,0 +1,1055 @@
+fileFormatVersion: 2
+guid: 251498f825978c344a12b48b0af207f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5446475639427732423
+    second: esa2_old_terminal_6_6_0
+  - first:
+      213: -4176706346778898594
+    second: esa2_old_terminal_6_6_1
+  - first:
+      213: 9194235239493443190
+    second: esa2_old_terminal_6_6_2
+  - first:
+      213: -6342123246729888192
+    second: esa2_old_terminal_6_6_3
+  - first:
+      213: -7314923899848546621
+    second: esa2_old_terminal_6_6_4
+  - first:
+      213: 1054542682215609403
+    second: esa2_old_terminal_6_6_5
+  - first:
+      213: -7639261197795815980
+    second: esa2_old_terminal_6_6_6
+  - first:
+      213: -415209186208006215
+    second: esa2_old_terminal_6_6_7
+  - first:
+      213: 7880304136772627831
+    second: esa2_old_terminal_6_6_8
+  - first:
+      213: 3664580511311865904
+    second: esa2_old_terminal_6_6_9
+  - first:
+      213: 6008006485070371102
+    second: esa2_old_terminal_6_6_10
+  - first:
+      213: 5175163017615367309
+    second: esa2_old_terminal_6_6_11
+  - first:
+      213: -6128233186009446381
+    second: esa2_old_terminal_6_6_12
+  - first:
+      213: 6031400184824846137
+    second: esa2_old_terminal_6_6_13
+  - first:
+      213: -4793307556679306824
+    second: esa2_old_terminal_6_6_14
+  - first:
+      213: -4759561305833725449
+    second: esa2_old_terminal_6_6_15
+  - first:
+      213: -7277338008506484563
+    second: esa2_old_terminal_6_6_16
+  - first:
+      213: -261489403641884396
+    second: esa2_old_terminal_6_6_17
+  - first:
+      213: -2150544942119311274
+    second: esa2_old_terminal_6_6_18
+  - first:
+      213: -8161165357166890464
+    second: esa2_old_terminal_6_6_19
+  - first:
+      213: 1951298870884934738
+    second: esa2_old_terminal_6_6_20
+  - first:
+      213: -5125823630147877824
+    second: esa2_old_terminal_6_6_21
+  - first:
+      213: 8014243588132482474
+    second: esa2_old_terminal_6_6_22
+  - first:
+      213: -2492899534642960592
+    second: esa2_old_terminal_6_6_23
+  - first:
+      213: -5770292883288959691
+    second: esa2_old_terminal_6_6_24
+  - first:
+      213: -3303800230066744641
+    second: esa2_old_terminal_6_6_25
+  - first:
+      213: -1607537335712854814
+    second: esa2_old_terminal_6_6_26
+  - first:
+      213: 3529905554407252847
+    second: esa2_old_terminal_6_6_27
+  - first:
+      213: -7241104887376765387
+    second: esa2_old_terminal_6_6_28
+  - first:
+      213: -5599081114166830991
+    second: esa2_old_terminal_6_6_29
+  - first:
+      213: 2594233403049265075
+    second: esa2_old_terminal_6_6_30
+  - first:
+      213: -8629707809605748205
+    second: esa2_old_terminal_6_6_31
+  - first:
+      213: -7899742014056249203
+    second: esa2_old_terminal_6_6_32
+  - first:
+      213: 6294710365334815133
+    second: esa2_old_terminal_6_6_33
+  - first:
+      213: 7792181788944154440
+    second: esa2_old_terminal_6_6_34
+  - first:
+      213: -3586189235040652476
+    second: esa2_old_terminal_6_6_35
+  - first:
+      213: -792606374138582471
+    second: esa2_old_terminal_6_6_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c671a334b3a64b0800000000000000
+      internalID: -5446475639427732423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5fcf1de4bb5906c0800000000000000
+      internalID: -4176706346778898594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e9267bc3c789f70800000000000000
+      internalID: 9194235239493443190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04efae452804cf7a0800000000000000
+      internalID: -6342123246729888192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6238e187b2c7a90800000000000000
+      internalID: -7314923899848546621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34f2f57bfc72ae00800000000000000
+      internalID: 1054542682215609403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd84f64a64ebf590800000000000000
+      internalID: -7639261197795815980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bfb79ce171ec3af0800000000000000
+      internalID: -415209186208006215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77daf5a5cd67c5d60800000000000000
+      internalID: 7880304136772627831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_9
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038209b2f843bd230800000000000000
+      internalID: 3664580511311865904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_10
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19dcdef01ab06350800000000000000
+      internalID: 6008006485070371102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_11
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cd3b7685fd1d740800000000000000
+      internalID: 5175163017615367309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_12
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3188527d26424faa0800000000000000
+      internalID: -6128233186009446381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937d5ba2386d3b350800000000000000
+      internalID: 6031400184824846137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b13fe85c20ca7db0800000000000000
+      internalID: -4793307556679306824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_15
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f12617a534a2fdb0800000000000000
+      internalID: -4759561305833725449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_16
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 4
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8b58463a3b10b90800000000000000
+      internalID: -7277338008506484563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4119567d5c00f5cf0800000000000000
+      internalID: -261489403641884396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658277be4cab722e0800000000000000
+      internalID: -2150544942119311274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022f7dce857bdbe80800000000000000
+      internalID: -8161165357166890464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254a7b11cf7641b10800000000000000
+      internalID: 1951298870884934738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 3
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0448bbfe09a6dd8b0800000000000000
+      internalID: -5125823630147877824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aada6160510583f60800000000000000
+      internalID: 8014243588132482474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_23
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037aed8c411776dd0800000000000000
+      internalID: -2492899534642960592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535d899e13dcbefa0800000000000000
+      internalID: -5770292883288959691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2940ee13b8622d0800000000000000
+      internalID: -3303800230066744641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_26
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec48ad6f41e0b9e0800000000000000
+      internalID: -1607537335712854814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_27
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f636f15466ebcf030800000000000000
+      internalID: 3529905554407252847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_28
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 12
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53e109e487d628b90800000000000000
+      internalID: -7241104887376765387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_29
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178dc7154611c42b0800000000000000
+      internalID: -5599081114166830991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b744350981900420800000000000000
+      internalID: 2594233403049265075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_31
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31af805287e1d3880800000000000000
+      internalID: -8629707809605748205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_32
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88c2fa2e7a7e5290800000000000000
+      internalID: -7899742014056249203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_33
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9140c9f9bd4b5750800000000000000
+      internalID: 6294710365334815133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_34
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84fb8436d04632c60800000000000000
+      internalID: 7792181788944154440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_35
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 0
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443721424eb4b3ec0800000000000000
+      internalID: -3586189235040652476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: esa2_old_terminal_6_6_36
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a62ceb3b81005f0800000000000000
+      internalID: -792606374138582471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

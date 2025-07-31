@@ -144,6 +144,14 @@ public abstract class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+    public void StartDie()
+    {
+        animator.SetBool("Die", true);
+        GetComponent<Collider2D>().enabled = false;
+        healthBar.gameObject.SetActive(false);
+
+        currentSpeed = 0;
+    }
 
 
     public virtual void Move(Vector2 direction)
@@ -159,12 +167,7 @@ public abstract class Enemy : MonoBehaviour
 
         if (health == 0)
         {
-            animator.SetBool("Die", true);
-            
-            currentSpeed = 0;
-            GetComponent<Collider2D>().enabled = false;
-            healthBar.gameObject.SetActive(false);
-
+            StartDie();
             DropCoins(1);
         }
 

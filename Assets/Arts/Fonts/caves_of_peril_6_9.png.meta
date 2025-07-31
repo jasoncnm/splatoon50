@@ -1,0 +1,1580 @@
+fileFormatVersion: 2
+guid: de8f45f88baaf1d4ea1fcf0b63b8437b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6199289730170901460
+    second: caves_of_peril_6_9_0
+  - first:
+      213: -1183903508349107787
+    second: caves_of_peril_6_9_1
+  - first:
+      213: 6653113102349919618
+    second: caves_of_peril_6_9_2
+  - first:
+      213: 5114096561136403121
+    second: caves_of_peril_6_9_3
+  - first:
+      213: 6368621513164567145
+    second: caves_of_peril_6_9_4
+  - first:
+      213: -3902076299005260873
+    second: caves_of_peril_6_9_5
+  - first:
+      213: -2830235266261560209
+    second: caves_of_peril_6_9_6
+  - first:
+      213: 5185457824556812468
+    second: caves_of_peril_6_9_7
+  - first:
+      213: 1827618907620117863
+    second: caves_of_peril_6_9_8
+  - first:
+      213: -6832881247381813482
+    second: caves_of_peril_6_9_9
+  - first:
+      213: 1784083858535783132
+    second: caves_of_peril_6_9_10
+  - first:
+      213: 2688001888921855645
+    second: caves_of_peril_6_9_11
+  - first:
+      213: 1507792047893788329
+    second: caves_of_peril_6_9_12
+  - first:
+      213: -8831156315715879360
+    second: caves_of_peril_6_9_13
+  - first:
+      213: 294832054998505331
+    second: caves_of_peril_6_9_14
+  - first:
+      213: 5338025149942020196
+    second: caves_of_peril_6_9_15
+  - first:
+      213: 4225301893485165114
+    second: caves_of_peril_6_9_16
+  - first:
+      213: -3949746694641369580
+    second: caves_of_peril_6_9_17
+  - first:
+      213: 5908762310476850442
+    second: caves_of_peril_6_9_18
+  - first:
+      213: 1572463492813553286
+    second: caves_of_peril_6_9_19
+  - first:
+      213: -6053066235159607696
+    second: caves_of_peril_6_9_20
+  - first:
+      213: -4312935813705400702
+    second: caves_of_peril_6_9_21
+  - first:
+      213: 7337439355207256798
+    second: caves_of_peril_6_9_22
+  - first:
+      213: 5786270086523419903
+    second: caves_of_peril_6_9_23
+  - first:
+      213: 4088151775415789144
+    second: caves_of_peril_6_9_24
+  - first:
+      213: 3706620564193011894
+    second: caves_of_peril_6_9_25
+  - first:
+      213: 6984953852646088087
+    second: caves_of_peril_6_9_26
+  - first:
+      213: -2756192626335189445
+    second: caves_of_peril_6_9_27
+  - first:
+      213: 7771078796077129768
+    second: caves_of_peril_6_9_28
+  - first:
+      213: -4028647529377687792
+    second: caves_of_peril_6_9_29
+  - first:
+      213: 5656519605406373696
+    second: caves_of_peril_6_9_30
+  - first:
+      213: -8384698135928816733
+    second: caves_of_peril_6_9_31
+  - first:
+      213: 1788784948494055591
+    second: caves_of_peril_6_9_32
+  - first:
+      213: -210042233861445598
+    second: caves_of_peril_6_9_33
+  - first:
+      213: -4028914654031217773
+    second: caves_of_peril_6_9_34
+  - first:
+      213: 7268871664163877153
+    second: caves_of_peril_6_9_35
+  - first:
+      213: 6261651608052177018
+    second: caves_of_peril_6_9_36
+  - first:
+      213: 8697602971541530406
+    second: caves_of_peril_6_9_37
+  - first:
+      213: -4123036682220826114
+    second: caves_of_peril_6_9_38
+  - first:
+      213: 352224683776034143
+    second: caves_of_peril_6_9_39
+  - first:
+      213: -7747109996419366207
+    second: caves_of_peril_6_9_40
+  - first:
+      213: 5165375251769384832
+    second: caves_of_peril_6_9_41
+  - first:
+      213: 5754968912176998939
+    second: caves_of_peril_6_9_42
+  - first:
+      213: 9063244836105717226
+    second: caves_of_peril_6_9_43
+  - first:
+      213: 3355017653586268597
+    second: caves_of_peril_6_9_44
+  - first:
+      213: 8308796476624095326
+    second: caves_of_peril_6_9_45
+  - first:
+      213: -9047467939438389747
+    second: caves_of_peril_6_9_46
+  - first:
+      213: 3897195275806440378
+    second: caves_of_peril_6_9_47
+  - first:
+      213: 4081578289644384923
+    second: caves_of_peril_6_9_48
+  - first:
+      213: -2434184027350795559
+    second: caves_of_peril_6_9_49
+  - first:
+      213: -6481427994584906664
+    second: caves_of_peril_6_9_50
+  - first:
+      213: -5029785487243522301
+    second: caves_of_peril_6_9_51
+  - first:
+      213: 3794855015135660778
+    second: caves_of_peril_6_9_52
+  - first:
+      213: -8737190663115749800
+    second: caves_of_peril_6_9_53
+  - first:
+      213: -2637074924240542099
+    second: caves_of_peril_6_9_54
+  - first:
+      213: 7109148755688104649
+    second: caves_of_peril_6_9_55
+  - first:
+      213: 2290724298232746598
+    second: caves_of_peril_6_9_56
+  - first:
+      213: 2394521202321687189
+    second: caves_of_peril_6_9_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d350921a2d480650800000000000000
+      internalID: 6199289730170901460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b14380280ee19fe0800000000000000
+      internalID: -1183903508349107787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 285601ced1b945c50800000000000000
+      internalID: 6653113102349919618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_3
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b205990abbe8f640800000000000000
+      internalID: 5114096561136403121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962b5191683e16850800000000000000
+      internalID: 6368621513164567145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb0257b74a09d9c0800000000000000
+      internalID: -3902076299005260873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_6
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6452b3450cf8b8d0800000000000000
+      internalID: -2830235266261560209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 18
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b88a7eea6276f740800000000000000
+      internalID: 5185457824556812468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d0c7d96b10d5910800000000000000
+      internalID: 1827618907620117863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_9
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617016925babc21a0800000000000000
+      internalID: -6832881247381813482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_10
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda988d11d652c810800000000000000
+      internalID: 1784083858535783132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_11
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 18
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9624c0f973bd4520800000000000000
+      internalID: 2688001888921855645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a63ed101e0cce410800000000000000
+      internalID: 1507792047893788329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ebecdce1e617580800000000000000
+      internalID: -8831156315715879360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37795922134771400800000000000000
+      internalID: 294832054998505331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_15
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46835608799741a40800000000000000
+      internalID: 5338025149942020196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_16
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 27
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3af7fd7fa943aa30800000000000000
+      internalID: 4225301893485165114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_17
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41eb021de4eaf29c0800000000000000
+      internalID: -3949746694641369580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a056032f304200250800000000000000
+      internalID: 5908762310476850442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_19
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68efb67273382d510800000000000000
+      internalID: 1572463492813553286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076866364503ffba0800000000000000
+      internalID: -6053066235159607696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e77057abf5524c0800000000000000
+      internalID: -4312935813705400702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda8918d732d3d560800000000000000
+      internalID: 7337439355207256798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_23
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc72b99cf5fc4050800000000000000
+      internalID: 5786270086523419903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 27
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8566a8931680cb830800000000000000
+      internalID: 4088151775415789144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_25
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8e1edb3cf807330800000000000000
+      internalID: 3706620564193011894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_26
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d5777658a8fe060800000000000000
+      internalID: 6984953852646088087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_27
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 27
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b367db6c86900c9d0800000000000000
+      internalID: -2756192626335189445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_28
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 18
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8206fb9fdfa68db60800000000000000
+      internalID: 7771078796077129768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_29
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 18
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017103eaa6e5718c0800000000000000
+      internalID: -4028647529377687792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_30
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 27
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04797419c9eff7e40800000000000000
+      internalID: 5656519605406373696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_31
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 27
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab351b287193ab80800000000000000
+      internalID: -8384698135928816733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_32
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 27
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8bd8aee6a03d810800000000000000
+      internalID: 1788784948494055591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228ebde73b7c51df0800000000000000
+      internalID: -210042233861445598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_34
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39b7a10e77b6618c0800000000000000
+      internalID: -4028914654031217773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_35
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121f364344830e460800000000000000
+      internalID: 7268871664163877153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_36
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78143d36fad5e650800000000000000
+      internalID: 6261651608052177018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_37
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 17
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6276d1c12d714b870800000000000000
+      internalID: 8697602971541530406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_38
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 17
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef192587bf708c6c0800000000000000
+      internalID: -4123036682220826114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_39
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 18
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f554895db7a53e400800000000000000
+      internalID: 352224683776034143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_40
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 18
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2cb83118cbc7490800000000000000
+      internalID: -7747109996419366207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_41
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08fde459c691fa740800000000000000
+      internalID: 5165375251769384832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_42
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 9
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ae9b70cb1cddf40800000000000000
+      internalID: 5754968912176998939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_43
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae58978c82d17cd70800000000000000
+      internalID: 9063244836105717226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b19c21c7ca6f8e20800000000000000
+      internalID: 3355017653586268597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e584234af56ce4370800000000000000
+      internalID: 8308796476624095326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_46
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d061a0938dfe07280800000000000000
+      internalID: -9047467939438389747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_47
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 9
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbf5c2847e951630800000000000000
+      internalID: 3897195275806440378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_48
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92333d44dda4a830800000000000000
+      internalID: 4081578289644384923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_49
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 5
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da73d3268a083ed0800000000000000
+      internalID: -2434184027350795559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_50
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8548e7934975d06a0800000000000000
+      internalID: -6481427994584906664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_51
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 27
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f4f609fbc923ab0800000000000000
+      internalID: -5029785487243522301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_52
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea454fb7880aa430800000000000000
+      internalID: 3794855015135660778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_53
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856402e22634fb680800000000000000
+      internalID: -8737190663115749800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_54
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d666d86045a376bd0800000000000000
+      internalID: -2637074924240542099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_55
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2233e9025c8a260800000000000000
+      internalID: 7109148755688104649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_56
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662d48acc994acf10800000000000000
+      internalID: 2290724298232746598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caves_of_peril_6_9_57
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 9
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5928687c85c0b3120800000000000000
+      internalID: 2394521202321687189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
