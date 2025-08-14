@@ -21,7 +21,7 @@ public class ChestItem : Interactable
 
     public void Drop()
     {
-        Transform gunTr = GameManager.instance.player.GetComponent<PlayerGunController>().gunTr;
+        Transform gunTr = GameManager.instance.player.GetComponent<PlayerGunController>().GunTr();
 
         Transform item = null;
 

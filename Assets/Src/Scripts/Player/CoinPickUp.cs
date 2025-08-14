@@ -13,6 +13,7 @@ public class CoinPickUp : MonoBehaviour
         if (collision.CompareTag("CoinCollector"))
         {
             GetComponent<Animator>().SetTrigger("PickUp");
+            GameManager.money++;
         }
 
     }

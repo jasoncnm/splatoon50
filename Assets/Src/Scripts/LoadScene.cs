@@ -17,7 +17,7 @@ public class LoadScene : MonoBehaviour
         }
         else if (scene == 1)
         {
-            if (GameManager.instance.playerHealth == 0)
+            if (GameManager.playerHealth == 0)
             {
                 SceneManager.LoadScene(2);
             }

@@ -14,6 +14,8 @@ public abstract class Enemy : MonoBehaviour
 
     [SerializeField] protected float initHealth, moveSpeed;
 
+    public int attackPower;
+
     [Header("Damage Flash Effects")]
 
     [ColorUsage(true, true)]
@@ -152,7 +154,6 @@ public abstract class Enemy : MonoBehaviour
 
         currentSpeed = 0;
     }
-
 
     public virtual void Move(Vector2 direction)
     {

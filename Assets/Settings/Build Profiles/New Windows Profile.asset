@@ -21,11 +21,11 @@ MonoBehaviour:
   m_OverrideGlobalSceneList: 1
   m_Scenes:
   - m_enabled: 1
-    m_path: Assets/FinalScenes/IntroScene.unity
+    m_path: Assets/Scenes/GameScenes/Menu.unity
   - m_enabled: 1
-    m_path: Assets/FinalScenes/GameScene.unity
+    m_path: Assets/Scenes/GameScenes/PreGameMenu.unity
   - m_enabled: 1
-    m_path: Assets/FinalScenes/EndScene.unity
+    m_path: Assets/Scenes/GameScenes/GamePlay.unity
   m_ScriptingDefines:
   - MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED
   m_PlayerSettingsYaml:

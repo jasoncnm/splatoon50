@@ -5,7 +5,7 @@ public class AssasinEnemy : EnemyAbstract
     {
         if (collision.CompareTag("Player"))
         {
-            GameManager.instance.OnPlayerHit(0.1f);
+            // GameManager.instance.OnPlayerHit(0.1f);
             Destroy(gameObject);
         }
     }

@@ -17,7 +17,6 @@ Basic Gameplay
  - Upgrade chance after [level up / defeating each wave]--(tbd: use level up for now)
  - Chest drop after defeating an mini boss/ boss
  - Single arena
- - Sunscreen spread around you when you shooting
 
 Game flow:
 state:

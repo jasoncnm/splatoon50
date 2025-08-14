@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "app.rive.rive-unity": "git@github.com:rive-app/rive-unity.git?path=package#v0.3.7",
     "com.unity.ai.navigation": "2.0.8",
     "com.unity.cinemachine": "3.1.4",
     "com.unity.collab-proxy": "2.8.2",

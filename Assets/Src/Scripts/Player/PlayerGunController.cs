@@ -4,37 +4,37 @@ using System.Collections.Generic;
 public class PlayerGunController : MonoBehaviour
 {
 
-    PlayerController playerController;
+    PlayerController playerController = null;
 
     MMF_Player playerShootFeedback;
 
-    public Transform gunTr;
+    Transform gunTr = null;
 
     public BulletSpawner bulletSpawner { get; private set; }
     public GunProperties gunProperties { get; private set; }
     
-    
+  
 
-    private void Awake()
+    private void Start()
     {
         Transform aim = transform.Find("Aim");
 
+        if (playerController == null) playerController = GetComponent<PlayerController>();
+
         for (int i = 0; i < aim.childCount; i++)
         {
-           aim.GetChild(i).gameObject.SetActive(false);
+            aim.GetChild(i).gameObject.SetActive(false);
         }
 
-
-        bulletSpawner = gunTr.GetComponent<BulletSpawner>();
-        gunProperties = gunTr.GetComponent<GunProperties>();
-
-        gunTr.gameObject.SetActive(true);
+        if (gunTr == null)
+        {
+            SetGun(GameManager.startGunName);
+        }
     }
-
 
     private void OnEnable()
     {
-        playerController = GetComponent<PlayerController>();
+        if (playerController == null) playerController = GetComponent<PlayerController>();
         playerShootFeedback = transform.GetComponentInChildren<MMF_Player>();
         playerController.shoot += OnPlayerShoot;
     }
@@ -55,7 +55,7 @@ public class PlayerGunController : MonoBehaviour
     public void SetGun(string name)
     {
 
-        gunTr.gameObject.SetActive(false);
+        if (gunTr) gunTr.gameObject.SetActive(false);
 
         gunTr = transform.Find("Aim").Find(name);
 
@@ -66,6 +66,11 @@ public class PlayerGunController : MonoBehaviour
 
         gunTr.gameObject.SetActive(true);
 
+    }
+
+    public Transform GunTr()
+    {
+        return gunTr;
     }
 
 }

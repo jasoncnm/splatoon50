@@ -81,18 +81,19 @@ public class Bullet : MonoBehaviour
             animator.SetBool("Hit", true);
         }
 
-        hit = true;
+        if (pierce < 0) hit = true;
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!hit) EvaluateCollision(collision);
+        //EvaluateCollision(collision);
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (!hit) EvaluateCollision(collision);
+        //if (!hit) EvaluateCollision(collision);
 
         // moveSpeed = 0;
     }

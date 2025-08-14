@@ -42,12 +42,12 @@ public class InputManager : MonoBehaviour
             }
         }
 
-        { // Start Next Wave
-            if ((GameManager.gameState == GameState.GAME_COMBAT_END) && Input.GetKeyDown(KeyCode.N))
-            {
-                GameManager.instance.SwitchState();
-            }
-        }
+        //{ // Start Next Wave
+        //    if ((GameManager.gameState == GameState.GAME_COMBAT_END) && Input.GetKeyDown(KeyCode.N))
+        //    {
+        //        GameManager.instance.SwitchState();
+        //    }
+        //}
     }
 
     private void LateUpdate()

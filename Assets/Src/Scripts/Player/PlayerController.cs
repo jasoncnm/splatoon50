@@ -32,12 +32,14 @@ public class PlayerController : MonoBehaviour
     float turnSmoothTime = 0.01f;
     float nextShootTime = 0f;
     float fireRate;
-    float rollSpeed;
     float triggerTimer = 0f;
     float fireDelay;
     float dashDelay = 1f;
     float nextDashTime = 0f;
+    float rollSpeed;
 
+    int health = 4;
+    int numOfHearts = 4;
 
     public PlayerState state { get; private set; }
     public Transform aim { get; private set; }
@@ -55,13 +57,13 @@ public class PlayerController : MonoBehaviour
 
 
     [Header("Player Movement")]
-    [SerializeField] float moveSpeed = 15f;
+    [SerializeField] float moveSpeed = 5f;
     [SerializeField] float acceleration = 10f;
-
+    [SerializeField] float shootingMoveSpeed = 2f;
+    [SerializeField] float startRollSpeed = 20f;
 
     [Header("Player Health")]
-    [SerializeField, Range(0, 10)] int health = 4;
-    [SerializeField, Range(0, 10)] int numOfHearts = 4;
+
     [SerializeField] Image[] hearts;
 
     [Header("Player Assets")]
@@ -95,7 +97,7 @@ public class PlayerController : MonoBehaviour
         if (state == PlayerState.Normal && Time.time > nextDashTime)
         {
             rollDir = lastMoveDir;
-            rollSpeed = 20f;
+            rollSpeed = startRollSpeed;
             state = PlayerState.Rollling;
 
             playerAnimator.SetTrigger("Dash");
@@ -104,13 +106,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        health--;
+        health -= damage;
+    }
+
+    public void UpgradeHealth()
+    {
+        if (numOfHearts < 10) numOfHearts++;
+
+        health = numOfHearts;
     }
 
     private void Start()
     {
+        health = numOfHearts = GameManager.playerHealth;
 
         interactIcon.gameObject.SetActive(false);
 
@@ -121,19 +131,19 @@ public class PlayerController : MonoBehaviour
         aim = transform.Find("Aim");
         rb2D = transform.GetComponent<Rigidbody2D>();
 
-        gunController = GetComponent<PlayerGunController>();
-        GunSetUp();
+        if (gunController == null) gunController = GetComponent<PlayerGunController>();
 
     }
 
     public void GunSetUp()
     {
+        if (gunController == null) gunController = GetComponent<PlayerGunController>();
         fireRate = gunController.gunProperties.fireRate;
         fireDelay = gunController.gunProperties.fireDelay;
 
-        gunEndPointTr = gunController.gunTr.Find("GunEndPoint");
+        gunEndPointTr = gunController.GunTr().Find("GunEndPoint");
     }
-
+        
     void FixedUpdateEnd()
     {
         contactNormal = Vector2.zero;
@@ -160,7 +170,7 @@ public class PlayerController : MonoBehaviour
 
         Rotate();
 
-        if (_Shooting)
+        if (_Shooting && (state != PlayerState.Rollling))
         {
             OnShoot();
         }
@@ -277,7 +287,9 @@ public class PlayerController : MonoBehaviour
 
                     targetdir = targetdir.normalized;
 
-                    Vector2 targetVelocity = targetdir * moveSpeed;
+                    float speed = _Shooting ? shootingMoveSpeed : moveSpeed;
+
+                    Vector2 targetVelocity = targetdir * speed;
 
                     rb2D.linearVelocity = targetVelocity;
                 }
@@ -313,7 +325,7 @@ public class PlayerController : MonoBehaviour
     {
 
         Transform playerGFX = transform.Find("GFX");
-        Transform gunGFX = gunController.gunTr.Find("GFX");
+        Transform gunGFX = gunController.GunTr().Find("GFX");
 
         aimDir = aimDir.normalized;
         rollDir = rollDir.normalized;
@@ -392,7 +404,7 @@ public class PlayerController : MonoBehaviour
 
     void OnDash()
     {
-        float rollSpeedDropMultiplier = 5f;
+        float rollSpeedDropMultiplier = 4f;
         rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
 
         float rollSpeedMinimum = 5f;
@@ -430,28 +442,25 @@ public class PlayerController : MonoBehaviour
 
         float damageRate = 1f;
 
-
-        if (collision.CompareTag("Enemies") && Time.time > nextDamageTime)
+        if (collision.TryGetComponent<Enemy>(out Enemy enemy))
         {
-            TakeDamage();
+            if (Time.time > nextDamageTime)
+            {
+                
+                TakeDamage(enemy.attackPower);
 
-            Vector3 dir = (collision.transform.position - transform.position).normalized;
-   
-            rollDir = -dir;
-            rollSpeed = 20f;
-            state = PlayerState.Rollling;
+                Vector3 dir = (collision.transform.position - transform.position).normalized;
 
-            nextDamageTime = Time.time + damageRate;
+                rollDir = -dir;
+                rollSpeed = startRollSpeed;
+                state = PlayerState.Rollling;
 
-            // playerAnimator.SetTrigger("Dash");
+                nextDamageTime = Time.time + damageRate;
 
+                // playerAnimator.SetTrigger("Dash");
+            }
         }
 
-        if (collision.CompareTag("PistolUpgrade"))
-        {
-            // Do something with game object
-            // Destroy(collision.gameObject);
-        }
 
     }
 

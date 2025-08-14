@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3047174073045537280
 Transform:
   m_ObjectHideFlags: 0
@@ -47,7 +47,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132bad90a99114b4eb826caac5d15105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1101569938003979892, guid: cf2fd31ddaae3b54d8e6d572417f6a77, type: 3}
   muzzleFlash: {fileID: 8264947774332705350}
 --- !u!114 &813582705194461402
 MonoBehaviour:
@@ -66,7 +65,9 @@ MonoBehaviour:
   damage: 90
   pierce: 1
   fallOffDistance: 5000
+  crits: 0
   spread: 0
+  elementalDamage: 0
 --- !u!1 &4307381547125067291
 GameObject:
   m_ObjectHideFlags: 0
