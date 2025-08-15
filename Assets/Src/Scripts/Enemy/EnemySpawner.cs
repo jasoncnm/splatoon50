@@ -42,11 +42,11 @@ public class EnemySpawner : MonoBehaviour
         CacheTileCenters();
         enemies = new List<GameObject>();
         indicators = new Transform[batchSize];
+
     }
 
     private void Start()
     {
-        enemyPrefabs = GameManager.instance.enemies;
         if (startOnAwake)
         {
             SetUp();
@@ -114,6 +114,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SetUp()
     {
+        if (enemyPrefabs == null) enemyPrefabs = GameManager.instance.enemies;
         if (spawnInterval > 0f)
             _loop = StartCoroutine(SpawnLoop());
     }

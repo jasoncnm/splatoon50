@@ -85,8 +85,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject beenStruck;
 
-    [Header("Wave End Page")]
-
+    [Header("Debug")]
+    public bool playOnAwake;
 
     EnemySpawner enemySpawner = null;
 
@@ -100,6 +100,8 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
+
+        if (playOnAwake) gameState = GameState.GAME_COMBAT;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
