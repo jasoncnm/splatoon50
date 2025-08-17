@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
 
+    PlayerGunController gunController;
     PlayerController playerController;
     CameraController camController;
 
@@ -11,6 +12,7 @@ public class InputManager : MonoBehaviour
     {
         playerController = GameManager.instance.player.GetComponent<PlayerController>();
         camController = Camera.main.GetComponent<CameraController>();
+        gunController = playerController.GetComponent<PlayerGunController>();
     }
 
     private void Update()
@@ -41,6 +43,14 @@ public class InputManager : MonoBehaviour
                 playerController.DashSetup();
             }
         }
+
+        { // Player Reload
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                gunController.Reload();
+            }
+        }
+
 
         //{ // Start Next Wave
         //    if ((GameManager.gameState == GameState.GAME_COMBAT_END) && Input.GetKeyDown(KeyCode.N))

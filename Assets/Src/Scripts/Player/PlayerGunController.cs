@@ -1,8 +1,15 @@
 using MoreMountains.Feedbacks;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
+using System.Collections;
 public class PlayerGunController : MonoBehaviour
 {
+
+    public UnityEvent shootEvent;
+    public UnityEvent setGunEvent;
+    public UnityEvent reloadStartEvent;
+    public UnityEvent reloadStopEvent;
 
     PlayerController playerController = null;
 
@@ -12,8 +19,13 @@ public class PlayerGunController : MonoBehaviour
 
     public BulletSpawner bulletSpawner { get; private set; }
     public GunProperties gunProperties { get; private set; }
-    
-  
+
+    public int bulletLeft { get; private set; }
+    public int maxBullet { get; private set; }
+
+    public float reloadTime { get; private set; }
+
+    public bool reloading { get; private set; } = false;
 
     private void Start()
     {
@@ -26,10 +38,9 @@ public class PlayerGunController : MonoBehaviour
             aim.GetChild(i).gameObject.SetActive(false);
         }
 
-        if (gunTr == null)
-        {
-            SetGun(GameManager.startGunName);
-        }
+  
+        SetGun(GameManager.startGunName);
+        
     }
 
     private void OnEnable()
@@ -47,9 +58,18 @@ public class PlayerGunController : MonoBehaviour
 
     void OnPlayerShoot(object sender, PlayerController.OnShootEventArgs args)
     {
-        playerShootFeedback?.PlayFeedbacks(args.gunEndPointPos);
-        bulletSpawner.SpawnBulllet(args.gunEndPointPos, args.shootDir);
-
+        if (bulletLeft > 0 && !reloading)
+        {
+            playerShootFeedback?.PlayFeedbacks(args.gunEndPointPos);
+            bulletSpawner.SpawnBulllet(args.gunEndPointPos, args.shootDir);
+            bulletLeft--;
+            shootEvent?.Invoke();
+        }
+        
+        if (bulletLeft == 0)
+        {
+            Reload();
+        }
     }
 
     public void SetGun(string name)
@@ -59,14 +79,40 @@ public class PlayerGunController : MonoBehaviour
 
         gunTr = transform.Find("Aim").Find(name);
 
+        gunTr.gameObject.SetActive(true);
+
         bulletSpawner = gunTr.GetComponent<BulletSpawner>();
         gunProperties = gunTr.GetComponent<GunProperties>();
 
         playerController.GunSetUp();
 
-        gunTr.gameObject.SetActive(true);
+        bulletLeft = maxBullet = gunProperties.bulletCapacity;
+
+        reloadTime = gunProperties.reloadTime;
+
+        setGunEvent?.Invoke();
+    }
+
+    IEnumerator Reloading()
+    {
+        reloading = true;
+
+        reloadStartEvent?.Invoke();
+
+        yield return new WaitForSeconds(reloadTime);
+
+        bulletLeft = maxBullet;
+
+        reloadStopEvent?.Invoke();
+        reloading = false;
 
     }
+
+    public void Reload()
+    {
+        if (!reloading) StartCoroutine(Reloading());
+    }
+
 
     public Transform GunTr()
     {

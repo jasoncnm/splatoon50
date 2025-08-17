@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
 
     EnemySpawner enemySpawner = null;
 
-    public float combatTime { get; private set; } = 10f;
+    public float combatTime { get; private set; } = 100f;
 
     public float timer { get; private set; } = 0;
 
@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
             {
                 enemySpawner.enabled = true; // Note test code
                 enemySpawner.SetUp();
-                player.GetComponent<PlayerGunController>().SetGun(startGunName);
+                // player.GetComponent<PlayerGunController>().SetGun(startGunName);
             }
             else
             {

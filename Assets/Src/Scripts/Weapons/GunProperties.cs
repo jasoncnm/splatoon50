@@ -22,6 +22,10 @@ public class GunProperties : MonoBehaviour
 
     public float spread = 0.0f;
 
+    public float reloadTime;
+
+    public int bulletCapacity;
+
     public ElementalDamage elementalDamage = ElementalDamage.NONE;
 
 }

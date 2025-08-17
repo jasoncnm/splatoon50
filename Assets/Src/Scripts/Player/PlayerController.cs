@@ -287,7 +287,7 @@ public class PlayerController : MonoBehaviour
 
                     targetdir = targetdir.normalized;
 
-                    float speed = _Shooting ? shootingMoveSpeed : moveSpeed;
+                    float speed = (_Shooting && !gunController.reloading) ? shootingMoveSpeed : moveSpeed;
 
                     Vector2 targetVelocity = targetdir * speed;
 

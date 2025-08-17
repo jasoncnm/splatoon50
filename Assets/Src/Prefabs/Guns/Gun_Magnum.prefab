@@ -67,6 +67,8 @@ MonoBehaviour:
   fallOffDistance: 5
   crits: 0
   spread: 0
+  reloadTime: 1
+  bulletCapacity: 6
   elementalDamage: 0
 --- !u!1 &4307381547125067291
 GameObject:
