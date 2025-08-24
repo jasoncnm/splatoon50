@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "app.rive.rive-unity": {
-      "version": "git@github.com:rive-app/rive-unity.git?path=package#v0.3.7",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "ee732016e79668aa3502ce9882100e6016875cef"
-    },
     "com.unity.2d.animation": {
       "version": "10.1.4",
       "depth": 1,

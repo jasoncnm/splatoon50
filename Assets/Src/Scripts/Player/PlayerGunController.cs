@@ -110,7 +110,7 @@ public class PlayerGunController : MonoBehaviour
 
     public void Reload()
     {
-        if (!reloading) StartCoroutine(Reloading());
+        if (!reloading && (bulletLeft < maxBullet)) StartCoroutine(Reloading());
     }
 
 
