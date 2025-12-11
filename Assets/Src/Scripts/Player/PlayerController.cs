@@ -106,6 +106,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public int GetHealth()
+    {
+        return health;
+    }
+
+
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -118,8 +124,14 @@ public class PlayerController : MonoBehaviour
         health = numOfHearts;
     }
 
+    public void UpgradeMoveSpeed()
+    {
+        if (moveSpeed < 10) moveSpeed += -0.5f;
+    }
+
     private void Start()
     {
+
         health = numOfHearts = GameManager.playerHealth;
 
         interactIcon.gameObject.SetActive(false);
@@ -151,7 +163,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (GameManager.gameIsPause) return;
+        if (GameManager.instance.gameIsPause) return;
 
         Move();
 
@@ -160,7 +172,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.gameIsPause) return;
+        if (GameManager.instance.gameIsPause) return;
 
 
         if (state == PlayerState.Rollling)

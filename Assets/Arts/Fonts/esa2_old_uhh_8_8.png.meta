@@ -211,6 +211,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -997,7 +1010,42 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      esa2_old_uhh_8_8_0: 1613077454259584921
+      esa2_old_uhh_8_8_1: 781518570941539613
+      esa2_old_uhh_8_8_10: 4858038806958067956
+      esa2_old_uhh_8_8_11: -5012606105816100086
+      esa2_old_uhh_8_8_12: -9051327478511697402
+      esa2_old_uhh_8_8_13: -644437640635094082
+      esa2_old_uhh_8_8_14: 276562799426767022
+      esa2_old_uhh_8_8_15: 5036883412914207340
+      esa2_old_uhh_8_8_16: 5502157590075303888
+      esa2_old_uhh_8_8_17: 816697262536874140
+      esa2_old_uhh_8_8_18: 6875940777008304056
+      esa2_old_uhh_8_8_19: 300715208692363966
+      esa2_old_uhh_8_8_2: -6805885516336693514
+      esa2_old_uhh_8_8_20: 909145182869436560
+      esa2_old_uhh_8_8_21: 8451790948400288455
+      esa2_old_uhh_8_8_22: 3144151719578551362
+      esa2_old_uhh_8_8_23: 623257630797338815
+      esa2_old_uhh_8_8_24: 2452498841688735764
+      esa2_old_uhh_8_8_25: -96300767717654525
+      esa2_old_uhh_8_8_26: -8754390842561285078
+      esa2_old_uhh_8_8_27: -7080427495075644197
+      esa2_old_uhh_8_8_28: 6039987498749916231
+      esa2_old_uhh_8_8_29: 1125084191826607900
+      esa2_old_uhh_8_8_3: 2676839596050428950
+      esa2_old_uhh_8_8_30: -7980618413981133319
+      esa2_old_uhh_8_8_31: -2321978774188964130
+      esa2_old_uhh_8_8_32: -1615540617045657760
+      esa2_old_uhh_8_8_33: 9188237145769967706
+      esa2_old_uhh_8_8_34: 1351602061789836005
+      esa2_old_uhh_8_8_4: 4580914266990428461
+      esa2_old_uhh_8_8_5: 1848780338041687925
+      esa2_old_uhh_8_8_6: 3319586465146264280
+      esa2_old_uhh_8_8_7: 5350722109429112043
+      esa2_old_uhh_8_8_8: -3316583731505926823
+      esa2_old_uhh_8_8_9: -7869293035319490271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

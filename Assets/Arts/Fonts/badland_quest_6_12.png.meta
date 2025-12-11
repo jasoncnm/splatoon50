@@ -223,6 +223,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1097,7 +1110,46 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      badland_quest_6_12_0: -8725370030690304434
+      badland_quest_6_12_1: 3584099516847729875
+      badland_quest_6_12_10: -3889237046654494515
+      badland_quest_6_12_11: 1197579804323879531
+      badland_quest_6_12_12: 2190675343350809398
+      badland_quest_6_12_13: 6530021344755014608
+      badland_quest_6_12_14: -1611029483468281930
+      badland_quest_6_12_15: -3864663899953595413
+      badland_quest_6_12_16: -6325294736509039257
+      badland_quest_6_12_17: -6059591545992555135
+      badland_quest_6_12_18: 5594147528725634761
+      badland_quest_6_12_19: 521934476306690651
+      badland_quest_6_12_2: -6421022780605595417
+      badland_quest_6_12_20: 3311813830518240992
+      badland_quest_6_12_21: 750751237742563881
+      badland_quest_6_12_22: 5280446657249298345
+      badland_quest_6_12_23: 1571869558340485397
+      badland_quest_6_12_24: -4610059035920384852
+      badland_quest_6_12_25: 3176426323554633674
+      badland_quest_6_12_26: -2117877770257723802
+      badland_quest_6_12_27: -3151166603884954063
+      badland_quest_6_12_28: 7549364060164866404
+      badland_quest_6_12_29: 3107984600199696172
+      badland_quest_6_12_3: -6907688500836028918
+      badland_quest_6_12_30: -5827248342818575644
+      badland_quest_6_12_31: 5539318032406849603
+      badland_quest_6_12_32: -6995960635783411593
+      badland_quest_6_12_33: 3045695760324394282
+      badland_quest_6_12_34: 8284667811007731416
+      badland_quest_6_12_35: 5890102466827143386
+      badland_quest_6_12_36: -2839720608969988447
+      badland_quest_6_12_37: 8458424306765694395
+      badland_quest_6_12_38: -5321429007734059710
+      badland_quest_6_12_4: -8652559394485069947
+      badland_quest_6_12_5: 4146605241489525556
+      badland_quest_6_12_6: -7392709525824874913
+      badland_quest_6_12_7: 2920441807150572932
+      badland_quest_6_12_8: -2790547552231875268
+      badland_quest_6_12_9: -6456229632062477551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

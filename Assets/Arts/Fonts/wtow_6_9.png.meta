@@ -271,6 +271,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1497,7 +1510,62 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wtow_6_9_0: -2592755087070746750
+      wtow_6_9_1: -5669275735134322445
+      wtow_6_9_10: -662007928452416929
+      wtow_6_9_11: 5685225036396328505
+      wtow_6_9_12: 4749027935491569763
+      wtow_6_9_13: 8431840588366133721
+      wtow_6_9_14: 2858723100635451260
+      wtow_6_9_15: 6059702931027339911
+      wtow_6_9_16: 2441481979269210725
+      wtow_6_9_17: -2550945272852618837
+      wtow_6_9_18: 1428058183772908506
+      wtow_6_9_19: -8126000134176103012
+      wtow_6_9_2: 3112202136001440446
+      wtow_6_9_20: 599084371708391114
+      wtow_6_9_21: 8358182343929432290
+      wtow_6_9_22: -6648210806531433405
+      wtow_6_9_23: -7740594287019563084
+      wtow_6_9_24: -8689296094100622461
+      wtow_6_9_25: 8853675381863126579
+      wtow_6_9_26: -7143383323046033134
+      wtow_6_9_27: 1888532861388465148
+      wtow_6_9_28: -6785062281025745820
+      wtow_6_9_29: 6292912553261023531
+      wtow_6_9_3: -5541088753572945277
+      wtow_6_9_30: -7127097357444158324
+      wtow_6_9_31: -5733109812831801617
+      wtow_6_9_32: 3775394527722629611
+      wtow_6_9_33: 6624464849570078131
+      wtow_6_9_34: 4769565898169434862
+      wtow_6_9_35: -1941075485986208944
+      wtow_6_9_36: 2706938510504484224
+      wtow_6_9_37: 7726595483103201143
+      wtow_6_9_38: -6808074658322745791
+      wtow_6_9_39: 5579221258792619754
+      wtow_6_9_4: 19148752812388140
+      wtow_6_9_40: -2450969512914411538
+      wtow_6_9_41: 3762416869266042405
+      wtow_6_9_42: 8056183412386599703
+      wtow_6_9_43: 3334426024081140941
+      wtow_6_9_44: 774055144723165182
+      wtow_6_9_45: 4119430981260479911
+      wtow_6_9_46: 1862442077063791769
+      wtow_6_9_47: 1674942511189768496
+      wtow_6_9_48: 2473190378804364969
+      wtow_6_9_49: 2278527353292529041
+      wtow_6_9_5: -5307109116158653706
+      wtow_6_9_50: 5928913275034492882
+      wtow_6_9_51: -6808382790877110206
+      wtow_6_9_52: 8166801653503739376
+      wtow_6_9_53: -4855490372488762056
+      wtow_6_9_54: -4092985616406413707
+      wtow_6_9_6: -8061437459772248775
+      wtow_6_9_7: 8556281401043092802
+      wtow_6_9_8: 1357822765296366865
+      wtow_6_9_9: 1101035677241355924
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -280,6 +280,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1572,7 +1585,65 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      caves_of_peril_6_9_0: 6199289730170901460
+      caves_of_peril_6_9_1: -1183903508349107787
+      caves_of_peril_6_9_10: 1784083858535783132
+      caves_of_peril_6_9_11: 2688001888921855645
+      caves_of_peril_6_9_12: 1507792047893788329
+      caves_of_peril_6_9_13: -8831156315715879360
+      caves_of_peril_6_9_14: 294832054998505331
+      caves_of_peril_6_9_15: 5338025149942020196
+      caves_of_peril_6_9_16: 4225301893485165114
+      caves_of_peril_6_9_17: -3949746694641369580
+      caves_of_peril_6_9_18: 5908762310476850442
+      caves_of_peril_6_9_19: 1572463492813553286
+      caves_of_peril_6_9_2: 6653113102349919618
+      caves_of_peril_6_9_20: -6053066235159607696
+      caves_of_peril_6_9_21: -4312935813705400702
+      caves_of_peril_6_9_22: 7337439355207256798
+      caves_of_peril_6_9_23: 5786270086523419903
+      caves_of_peril_6_9_24: 4088151775415789144
+      caves_of_peril_6_9_25: 3706620564193011894
+      caves_of_peril_6_9_26: 6984953852646088087
+      caves_of_peril_6_9_27: -2756192626335189445
+      caves_of_peril_6_9_28: 7771078796077129768
+      caves_of_peril_6_9_29: -4028647529377687792
+      caves_of_peril_6_9_3: 5114096561136403121
+      caves_of_peril_6_9_30: 5656519605406373696
+      caves_of_peril_6_9_31: -8384698135928816733
+      caves_of_peril_6_9_32: 1788784948494055591
+      caves_of_peril_6_9_33: -210042233861445598
+      caves_of_peril_6_9_34: -4028914654031217773
+      caves_of_peril_6_9_35: 7268871664163877153
+      caves_of_peril_6_9_36: 6261651608052177018
+      caves_of_peril_6_9_37: 8697602971541530406
+      caves_of_peril_6_9_38: -4123036682220826114
+      caves_of_peril_6_9_39: 352224683776034143
+      caves_of_peril_6_9_4: 6368621513164567145
+      caves_of_peril_6_9_40: -7747109996419366207
+      caves_of_peril_6_9_41: 5165375251769384832
+      caves_of_peril_6_9_42: 5754968912176998939
+      caves_of_peril_6_9_43: 9063244836105717226
+      caves_of_peril_6_9_44: 3355017653586268597
+      caves_of_peril_6_9_45: 8308796476624095326
+      caves_of_peril_6_9_46: -9047467939438389747
+      caves_of_peril_6_9_47: 3897195275806440378
+      caves_of_peril_6_9_48: 4081578289644384923
+      caves_of_peril_6_9_49: -2434184027350795559
+      caves_of_peril_6_9_5: -3902076299005260873
+      caves_of_peril_6_9_50: -6481427994584906664
+      caves_of_peril_6_9_51: -5029785487243522301
+      caves_of_peril_6_9_52: 3794855015135660778
+      caves_of_peril_6_9_53: -8737190663115749800
+      caves_of_peril_6_9_54: -2637074924240542099
+      caves_of_peril_6_9_55: 7109148755688104649
+      caves_of_peril_6_9_56: 2290724298232746598
+      caves_of_peril_6_9_57: 2394521202321687189
+      caves_of_peril_6_9_6: -2830235266261560209
+      caves_of_peril_6_9_7: 5185457824556812468
+      caves_of_peril_6_9_8: 1827618907620117863
+      caves_of_peril_6_9_9: -6832881247381813482
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

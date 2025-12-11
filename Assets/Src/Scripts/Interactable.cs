@@ -1,9 +1,12 @@
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
 
     Transform interactIcon = null;
+    float lifeTime = 15f;
 
     public virtual void ReadyToInteract(Transform interactIcon)
     {
@@ -15,4 +18,14 @@ public abstract class Interactable : MonoBehaviour
     {
         interactIcon.GetComponent<Animator>().SetTrigger("Open");
     }
+
+    public virtual void Update()
+    {
+        lifeTime -= Time.deltaTime;
+        if (lifeTime < 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }

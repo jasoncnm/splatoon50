@@ -364,6 +364,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2272,7 +2285,93 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stumblehill_32_48_0: 8136723383329218825
+      stumblehill_32_48_1: 6734438317990269707
+      stumblehill_32_48_10: -1171201481126877147
+      stumblehill_32_48_11: -4601055897399853550
+      stumblehill_32_48_12: -4293657974470162151
+      stumblehill_32_48_13: 2760978004190603354
+      stumblehill_32_48_14: -7808172616594268627
+      stumblehill_32_48_15: -4412528732287637152
+      stumblehill_32_48_16: 9016334750757460859
+      stumblehill_32_48_17: 1326870272859576161
+      stumblehill_32_48_18: 2681563518939224691
+      stumblehill_32_48_19: 2792246701296806783
+      stumblehill_32_48_2: -8913929363291252264
+      stumblehill_32_48_20: 2457855826414030848
+      stumblehill_32_48_21: 5910842525087993119
+      stumblehill_32_48_22: -7187196200932159342
+      stumblehill_32_48_23: 3017138255240701316
+      stumblehill_32_48_24: -7294294190507784226
+      stumblehill_32_48_25: 1858437606724376932
+      stumblehill_32_48_26: -1594015678327724533
+      stumblehill_32_48_27: 2226656353270592182
+      stumblehill_32_48_28: 7457664784209627836
+      stumblehill_32_48_29: -5549426412773178497
+      stumblehill_32_48_3: 4635194812607324787
+      stumblehill_32_48_30: -5946470034662989285
+      stumblehill_32_48_31: -8661058946290127776
+      stumblehill_32_48_32: 1432443754618465089
+      stumblehill_32_48_33: -1883393628850216199
+      stumblehill_32_48_34: 2098341112924573334
+      stumblehill_32_48_35: -8311131029448607070
+      stumblehill_32_48_36: 8121380172606208514
+      stumblehill_32_48_37: 2320717281083198354
+      stumblehill_32_48_38: -6421657293328131579
+      stumblehill_32_48_39: -48230503529606263
+      stumblehill_32_48_4: 8771088700823357257
+      stumblehill_32_48_40: 5516977909013343435
+      stumblehill_32_48_41: 8556126399010253871
+      stumblehill_32_48_42: 3432174930293983677
+      stumblehill_32_48_43: 1042294538805688899
+      stumblehill_32_48_44: 1521366739548803634
+      stumblehill_32_48_45: -4542238175664677239
+      stumblehill_32_48_46: 257501231538486309
+      stumblehill_32_48_47: -2202180571270610823
+      stumblehill_32_48_48: 2576356956963036108
+      stumblehill_32_48_49: 8115670972640131082
+      stumblehill_32_48_5: 2461131666976775551
+      stumblehill_32_48_50: -5146949828335387442
+      stumblehill_32_48_51: 1301483280922685363
+      stumblehill_32_48_52: -3375494469627542711
+      stumblehill_32_48_53: -5794862708825060589
+      stumblehill_32_48_54: 3010777679797331001
+      stumblehill_32_48_55: 2654417462377709741
+      stumblehill_32_48_56: 8024537790846299920
+      stumblehill_32_48_57: 7614513837974600935
+      stumblehill_32_48_58: 499409227934546770
+      stumblehill_32_48_59: 7414118964679237532
+      stumblehill_32_48_6: 1832860962249224583
+      stumblehill_32_48_60: -8810515510327768076
+      stumblehill_32_48_61: -722075520258751719
+      stumblehill_32_48_62: -6992725181811243818
+      stumblehill_32_48_63: 706904583776657608
+      stumblehill_32_48_64: 5282225408060961136
+      stumblehill_32_48_65: -8758048702152051690
+      stumblehill_32_48_66: 7078656034346279615
+      stumblehill_32_48_67: 5469454511416978079
+      stumblehill_32_48_68: -4946620395640443662
+      stumblehill_32_48_69: 4503574771200855267
+      stumblehill_32_48_7: 3978210366615675819
+      stumblehill_32_48_70: 707327732459200154
+      stumblehill_32_48_71: 6411151427384041608
+      stumblehill_32_48_72: 8357740539246530313
+      stumblehill_32_48_73: -9148595451151036051
+      stumblehill_32_48_74: -7560110712478731617
+      stumblehill_32_48_75: 8851023699778330144
+      stumblehill_32_48_76: 1224098300301575483
+      stumblehill_32_48_77: -3834854730165400855
+      stumblehill_32_48_78: 7588892866077556256
+      stumblehill_32_48_79: -6864754431273625064
+      stumblehill_32_48_8: -679019354215014563
+      stumblehill_32_48_80: 8629111610864205933
+      stumblehill_32_48_81: 8040997111256703540
+      stumblehill_32_48_82: 4936707887226397804
+      stumblehill_32_48_83: 3756526285347597199
+      stumblehill_32_48_84: 261703556903328508
+      stumblehill_32_48_85: -4925161814523493731
+      stumblehill_32_48_9: -6207902769983233811
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

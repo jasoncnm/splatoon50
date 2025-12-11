@@ -17,13 +17,13 @@ public class CombatEndMenu : MonoBehaviour
     {
         if (GameManager.gameState == GameState.GAME_COMBAT_END)
         {
-            GameManager.Pause(frame.gameObject);
+            GameManager.instance.Pause(frame.gameObject);
         }
     }
 
     public void NextWave()
     {
-        GameManager.UnPause(frame.gameObject);
+        GameManager.instance.UnPause(frame.gameObject);
         GameManager.instance.SwitchState();
     }
 

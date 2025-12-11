@@ -283,6 +283,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1597,7 +1610,66 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      esa2_old_8_16_0: 8928146279629320622
+      esa2_old_8_16_1: 8203090955600297268
+      esa2_old_8_16_10: -8459306411745797096
+      esa2_old_8_16_11: 6854465561982047035
+      esa2_old_8_16_12: -8753272331217015291
+      esa2_old_8_16_13: 8982188348165944415
+      esa2_old_8_16_14: 2344281917946041231
+      esa2_old_8_16_15: -184607432759033140
+      esa2_old_8_16_16: 1677104910356037723
+      esa2_old_8_16_17: 7888563075204600199
+      esa2_old_8_16_18: -4210862067046853141
+      esa2_old_8_16_19: -8962317629321238578
+      esa2_old_8_16_2: 4710382463514390307
+      esa2_old_8_16_20: 5087068341702101278
+      esa2_old_8_16_21: -4121811336663736059
+      esa2_old_8_16_22: 4392708188005530613
+      esa2_old_8_16_23: 3535353111431416768
+      esa2_old_8_16_24: 5389233953824287097
+      esa2_old_8_16_25: -4448346047348063063
+      esa2_old_8_16_26: -8553620877143444690
+      esa2_old_8_16_27: -6163409433125997906
+      esa2_old_8_16_28: -3357697457155512687
+      esa2_old_8_16_29: -3316638372524113424
+      esa2_old_8_16_3: -7618118760629897593
+      esa2_old_8_16_30: -6477969192091808960
+      esa2_old_8_16_31: -3923693158875410915
+      esa2_old_8_16_32: -3127996640541729095
+      esa2_old_8_16_33: 7184831007004636063
+      esa2_old_8_16_34: 1270871020291462565
+      esa2_old_8_16_35: -6388362675742448270
+      esa2_old_8_16_36: 3281738327952605765
+      esa2_old_8_16_37: 7909656839877372090
+      esa2_old_8_16_38: 6716187504129613458
+      esa2_old_8_16_39: 5769320216872910585
+      esa2_old_8_16_4: -4033989341127113458
+      esa2_old_8_16_40: -373640128514493285
+      esa2_old_8_16_41: -3107498926621757855
+      esa2_old_8_16_42: -3547218653886314199
+      esa2_old_8_16_43: 4096728192363602637
+      esa2_old_8_16_44: 3849849692759367970
+      esa2_old_8_16_45: -3562047942052563765
+      esa2_old_8_16_46: 6622230069429168581
+      esa2_old_8_16_47: -38926710083271136
+      esa2_old_8_16_48: 2745206370981233054
+      esa2_old_8_16_49: 5404597990129273096
+      esa2_old_8_16_5: 4975727470564868195
+      esa2_old_8_16_50: 6434780472722495792
+      esa2_old_8_16_51: 2069829942499085608
+      esa2_old_8_16_52: -6128450780734145796
+      esa2_old_8_16_53: -3150324344709565236
+      esa2_old_8_16_54: -3818216776658335037
+      esa2_old_8_16_55: -2018656918946621977
+      esa2_old_8_16_56: 3772704444927531811
+      esa2_old_8_16_57: -2951566446304120851
+      esa2_old_8_16_58: 4968782701618133739
+      esa2_old_8_16_6: 696620773559048029
+      esa2_old_8_16_7: 4549501552194377643
+      esa2_old_8_16_8: -7706439413536363449
+      esa2_old_8_16_9: 472630841946956456
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -217,6 +217,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1047,7 +1060,44 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      esa2_old_terminal_6_6_0: -5446475639427732423
+      esa2_old_terminal_6_6_1: -4176706346778898594
+      esa2_old_terminal_6_6_10: 6008006485070371102
+      esa2_old_terminal_6_6_11: 5175163017615367309
+      esa2_old_terminal_6_6_12: -6128233186009446381
+      esa2_old_terminal_6_6_13: 6031400184824846137
+      esa2_old_terminal_6_6_14: -4793307556679306824
+      esa2_old_terminal_6_6_15: -4759561305833725449
+      esa2_old_terminal_6_6_16: -7277338008506484563
+      esa2_old_terminal_6_6_17: -261489403641884396
+      esa2_old_terminal_6_6_18: -2150544942119311274
+      esa2_old_terminal_6_6_19: -8161165357166890464
+      esa2_old_terminal_6_6_2: 9194235239493443190
+      esa2_old_terminal_6_6_20: 1951298870884934738
+      esa2_old_terminal_6_6_21: -5125823630147877824
+      esa2_old_terminal_6_6_22: 8014243588132482474
+      esa2_old_terminal_6_6_23: -2492899534642960592
+      esa2_old_terminal_6_6_24: -5770292883288959691
+      esa2_old_terminal_6_6_25: -3303800230066744641
+      esa2_old_terminal_6_6_26: -1607537335712854814
+      esa2_old_terminal_6_6_27: 3529905554407252847
+      esa2_old_terminal_6_6_28: -7241104887376765387
+      esa2_old_terminal_6_6_29: -5599081114166830991
+      esa2_old_terminal_6_6_3: -6342123246729888192
+      esa2_old_terminal_6_6_30: 2594233403049265075
+      esa2_old_terminal_6_6_31: -8629707809605748205
+      esa2_old_terminal_6_6_32: -7899742014056249203
+      esa2_old_terminal_6_6_33: 6294710365334815133
+      esa2_old_terminal_6_6_34: 7792181788944154440
+      esa2_old_terminal_6_6_35: -3586189235040652476
+      esa2_old_terminal_6_6_36: -792606374138582471
+      esa2_old_terminal_6_6_4: -7314923899848546621
+      esa2_old_terminal_6_6_5: 1054542682215609403
+      esa2_old_terminal_6_6_6: -7639261197795815980
+      esa2_old_terminal_6_6_7: -415209186208006215
+      esa2_old_terminal_6_6_8: 7880304136772627831
+      esa2_old_terminal_6_6_9: 3664580511311865904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

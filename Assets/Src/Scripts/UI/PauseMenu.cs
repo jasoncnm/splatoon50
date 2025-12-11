@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
     {
         menuItems = transform.Find("MenuItems");
         menuItems.gameObject.SetActive(false);
-        GameManager.UnPause(menuItems.gameObject);
+        GameManager.instance.UnPause(menuItems.gameObject);
     }
     private void Update()
     {
@@ -21,13 +21,13 @@ public class PauseMenu : MonoBehaviour
             {
                 _GameIsPause = true;    
                 GameManager.gameState = GameState.GAME_PAUSE;
-                GameManager.Pause(menuItems.gameObject);
+                GameManager.instance.Pause(menuItems.gameObject);
             }
             else if (GameManager.gameState == GameState.GAME_PAUSE)
             {
                 _GameIsPause = false;
                 GameManager.gameState = GameState.GAME_COMBAT;
-                GameManager.UnPause(menuItems.gameObject);
+                GameManager.instance.UnPause(menuItems.gameObject);
             }
         }
     }

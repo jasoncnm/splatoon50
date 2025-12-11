@@ -31,8 +31,9 @@ public class EnemySpawner : MonoBehaviour
     private Coroutine _loop;
 
 
-    Vector3[] enemiesPos;
     Transform[] indicators;
+    Transform[] enemyBuffer;
+    Vector3[] enemiesPos;
     List<GameObject> enemies;
 
 
@@ -57,13 +58,19 @@ public class EnemySpawner : MonoBehaviour
         //     SpawnBatch();
     }
 
+    void Update()
+    {
+        if (enemyBuffer == null)
+            enemyBuffer = GetEnemiesKind(batchSize);
+        if (enemiesPos == null)
+            enemiesPos = GetSpawnBatchLocations(enemyBuffer);
+    }
+    
     private IEnumerator SpawnLoop()
     {
         while (true)
         {
-
-            Transform[] enemyBuffer = GetEnemiesKind(batchSize);
-            enemiesPos = GetSpawnBatchLocations(enemyBuffer);
+            yield return new WaitUntil(() => enemiesPos != null);
 
             for (int i = 0; i < batchSize; i++)
             {
@@ -86,6 +93,9 @@ public class EnemySpawner : MonoBehaviour
                 Transform tr = Instantiate(pf, enemiesPos[i], Quaternion.identity);
                 enemies.Add(tr.gameObject);
             }
+
+            enemyBuffer = null;
+            enemiesPos = null;
 
         }
     }

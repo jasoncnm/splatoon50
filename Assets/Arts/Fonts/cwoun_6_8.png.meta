@@ -214,6 +214,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1022,7 +1035,43 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cwoun_6_8_0: -2639976237585733006
+      cwoun_6_8_1: -6994299094281803507
+      cwoun_6_8_10: -1748143206188988235
+      cwoun_6_8_11: 750939867849102367
+      cwoun_6_8_12: -4964805503019786071
+      cwoun_6_8_13: -669162753739895143
+      cwoun_6_8_14: 7271674935888121154
+      cwoun_6_8_15: 2676148701106097538
+      cwoun_6_8_16: 2433116868250206350
+      cwoun_6_8_17: 8644551969750893855
+      cwoun_6_8_18: -3392151915911405316
+      cwoun_6_8_19: 6856614292580454044
+      cwoun_6_8_2: -203914020318572285
+      cwoun_6_8_20: 2223106176386934113
+      cwoun_6_8_21: -7627837594220877113
+      cwoun_6_8_22: -5379280694822596318
+      cwoun_6_8_23: -8950141635590640456
+      cwoun_6_8_24: 4648830306810126928
+      cwoun_6_8_25: -1181828346222505511
+      cwoun_6_8_26: 7492670859253398739
+      cwoun_6_8_27: -5120098775009532212
+      cwoun_6_8_28: 4579250589923248767
+      cwoun_6_8_29: 2250935381040849710
+      cwoun_6_8_3: -5036991995822496618
+      cwoun_6_8_30: -1044220167686842186
+      cwoun_6_8_31: 5135591855124661986
+      cwoun_6_8_32: -395701092310223701
+      cwoun_6_8_33: -2433964061507693794
+      cwoun_6_8_34: -5265874300165271771
+      cwoun_6_8_35: 3801593387306153783
+      cwoun_6_8_4: -8418793068331984359
+      cwoun_6_8_5: 5480821645972649436
+      cwoun_6_8_6: 1037756064123195028
+      cwoun_6_8_7: -1396913493475210327
+      cwoun_6_8_8: -708076442105830329
+      cwoun_6_8_9: -7588195948031897087
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

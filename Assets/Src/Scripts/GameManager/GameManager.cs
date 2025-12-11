@@ -5,14 +5,6 @@ using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 
 
-public enum GameState
-{
-    GAME_START,
-    GAME_COMBAT,
-    GAME_COMBAT_END,
-    GAME_PAUSE,
-}
-
 public enum Upgrades
 {
     MAX_HP,
@@ -23,33 +15,32 @@ public enum Upgrades
     FIRE_RATE,
 }
 
+public enum GameState
+{
+    GAME_START,
+    GAME_COMBAT,
+    GAME_COMBAT_END,
+    GAME_PAUSE,
+}
+
 public class GameManager : MonoBehaviour
 {
 
-    public static GameManager instance;
-
-    public static int experience = 0;
-
-    public static int wave = 0;
-
-    public static int money = 0;
-
-    public static int musicVolume = 50;
-
-    public static int SFXVolume = 50;
-
+    public static GameManager instance { get; private set;  }
     public static GameState gameState = GameState.GAME_START;
 
-    public static string startGunName = "Gun_Pistol";
-
-    public static bool gameIsPause { get; private set; } = false;
-
+    public static int experience = 0;
+    public static int money = 0;
+    public static int musicVolume = 50;
+    public static int SFXVolume = 50;
     public static int playerHealth = 1;
-
+    public static string startGunName = "Gun_Magnum";
+    public bool gameIsPause { get; private set; } = false;
+    public float combatTime = 50f;
+    public int wave = 0;
 
 
     [Header("Player Stats")]
-
     public Transform player;
 
     [Header("Enemies")]
@@ -64,6 +55,8 @@ public class GameManager : MonoBehaviour
 
     public Transform[] guns;
 
+    [Header("Chest")]
+    public Transform chest;
 
     [Header("Bullets")]
 
@@ -85,12 +78,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject beenStruck;
 
-    [Header("Debug")]
-    public bool playOnAwake;
 
     EnemySpawner enemySpawner = null;
-
-    public float combatTime { get; private set; } = 100f;
 
     public float timer { get; private set; } = 0;
 
@@ -100,26 +89,65 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
         }
-
-        if (playOnAwake) gameState = GameState.GAME_COMBAT;
+        else if (instance != this)
+        {
+            Destroy(this);
+        }
     }
-
+ 
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (SceneManager.GetActiveScene().name == "GamePlay")
+        {
+            gameState = GameState.GAME_COMBAT;
+        }
 
         if (gameState == GameState.GAME_START)
         {
-            wave = 0;
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
+            InitGame();
         }
-        else
+        else if (gameState == GameState.GAME_COMBAT)
         {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Confined;
+            InitGameplay();
+        }
+    }
+    
+    private void Update()
+    {
+
+        if (gameState == GameState.GAME_COMBAT)
+        {
+            timer += Time.deltaTime;
+            if (timer > combatTime) SwitchState();
         }
 
+        if (player && player.GetComponent<PlayerController>().GetHealth() <= 0)
+        {
+            enemySpawner.enabled = false;
+            LoadStartMenu();
+        }
+
+
+        if (gameState == GameState.GAME_COMBAT_END)
+        {
+
+        }
+    }
+
+    void InitGame()
+    {
+        wave = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        gameState = GameState.GAME_START;
+    }
+    
+    void InitGameplay()
+    {
+
+        player = GameObject.Find("Player").transform;
 
         if (TryGetComponent<EnemySpawner>(out enemySpawner))
         {
@@ -127,29 +155,16 @@ public class GameManager : MonoBehaviour
             {
                 enemySpawner.enabled = true; // Note test code
                 enemySpawner.SetUp();
-                // player.GetComponent<PlayerGunController>().SetGun(startGunName);
             }
             else
             {
                 enemySpawner.enabled = false;
             }
-                
-        }
-
-    }
-
-    private void Update()
-    {
-        if (gameState == GameState.GAME_COMBAT)
-        {
-            timer += Time.deltaTime;
-            if (timer > combatTime) SwitchState();
-        }
-
-        if (gameState  == GameState.GAME_COMBAT_END)
-        {
 
         }
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void SwitchState()
@@ -161,6 +176,8 @@ public class GameManager : MonoBehaviour
             enemySpawner.enabled = true;
             enemySpawner.SetUp();
             gameState = GameState.GAME_COMBAT;
+            // Spawn chest
+            Transform item = Instantiate(chest, player.transform.position, Quaternion.identity);
         }
         else if (gameState == GameState.GAME_COMBAT)
         {
@@ -169,24 +186,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public static void AddScore(TextMeshProUGUI scoreText)
+    public void AddScore(TextMeshProUGUI scoreText)
     {
 
     }
-  
-    //public void OnPlayerHit(float damageAmount)
-    //{
-    //    float amount = (playerHealth - damageAmount);
-    //    playerHealth = amount;
-    //    playerHealth = Mathf.Clamp(playerHealth, 0f, 1f);
 
-    //    //if (healthBar.TryGetComponent<MMProgressBar>(out MMProgressBar bar))
-    //    //{
-    //    //    bar.UpdateBar01(playerHealth);
-    //    //}
-    //}
 
-    public static void Pause(GameObject pauseMenu)
+    public void Pause(GameObject pauseMenu)
     {
         pauseMenu.SetActive(true);
 
@@ -196,7 +202,7 @@ public class GameManager : MonoBehaviour
         gameIsPause = true;
     }
 
-    public static void UnPause(GameObject pauseMenu)
+    public void UnPause(GameObject pauseMenu)
     {
         pauseMenu.SetActive(false);
 
@@ -206,67 +212,28 @@ public class GameManager : MonoBehaviour
         gameIsPause = false;
     }
 
-    //public void SwitchWeapon(int index)
-    //{
-    //    PlayerGunController gunController = player.GetComponent<PlayerGunController>();
-    //    switch (index)
-    //    {
-    //        case 0:
-    //            {
-    //                gunController.SetGun("Gun_Pistol");
-    //                break;
-    //            }
-    //        case 1:
-    //            {
-    //                gunController.SetGun("Gun_AR");
-    //                break;
-    //            }
-    //        case 2:
-    //            {
-    //                gunController.SetGun("Gun_Magnum");
-    //                break;
-    //            }
-    //        case 3:
-    //            {
-    //                gunController.SetGun("Gun_SMG");
-    //                break;
-    //            }
-    //        case 4:
-    //            {
-    //                gunController.SetGun("Gun_Sniper");
-    //                break;
-    //            }
-    //        case 5:
-    //            {
-    //                gunController.SetGun("Gun_Gatling");
-    //                break;
-    //            }
-    //    }
-
-    //}
-
-    public void LoadPreGameScene()
-    {
-        gameState = GameState.GAME_START;
-        SceneManager.LoadScene(1);
-    }
-
-    public void LoadGameScene()
-    {
-        gameState = GameState.GAME_COMBAT;
-        SceneManager.LoadScene(2);
-    }
-
-    public void LoadStartMenu()
-    {
-        gameState = GameState.GAME_START;
-        SceneManager.LoadScene(0);
-    }
 
     public void GameOver()
     {
         Application.Quit();
     }
 
+    public void LoadPreGameScene()
+    {
+        GameManager.gameState = GameState.GAME_START;
+        SceneManager.LoadScene(1);
+    }
+
+    public void LoadGameScene()
+    {
+        GameManager.gameState = GameState.GAME_COMBAT;
+        SceneManager.LoadScene(2);
+    }
+
+    public void LoadStartMenu()
+    {
+        GameManager.gameState = GameState.GAME_START;
+        SceneManager.LoadScene(0);
+    }
 }
 

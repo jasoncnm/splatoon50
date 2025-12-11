@@ -113,6 +113,28 @@ public class PlayerGunController : MonoBehaviour
         if (!reloading && (bulletLeft < maxBullet)) StartCoroutine(Reloading());
     }
 
+    public void UpgradeDamage()
+    {
+        gunTr.GetComponent<GunProperties>().damage += 5;
+    }
+
+    public void UpgradeCrits()
+    {
+        gunTr.GetComponent<GunProperties>().crits += 0.1f;
+        if (gunTr.GetComponent<GunProperties>().crits > 100) gunTr.GetComponent<GunProperties>().crits = 100;
+    }
+
+    public void UpgradePierce()
+    {
+        gunTr.GetComponent<GunProperties>().pierce++;
+    }
+
+    public void UpgradeFirerate()
+    {
+        ref float firerate = ref gunTr.GetComponent<GunProperties>().fireRate;
+        if (firerate > 0.1f) firerate -= 0.01f;
+    }
+
 
     public Transform GunTr()
     {
