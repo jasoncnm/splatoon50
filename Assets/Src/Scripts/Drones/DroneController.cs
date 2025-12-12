@@ -4,6 +4,7 @@ public class DroneController : MonoBehaviour
 {
     [SerializeField] Vector2 offset;
 
+    Transform player;
     [SerializeField] float moveSpeed = 1f, detectRange;
 
     BulletSpawner spawner;
@@ -14,6 +15,7 @@ public class DroneController : MonoBehaviour
 
     private void Start()
     {
+        player = FindAnyObjectByType<PlayerController>().transform;
         spawner = GetComponentInChildren<BulletSpawner>();
         gunProperties = GetComponentInChildren<GunProperties>();
         fireRate = gunProperties.fireRate;
@@ -23,7 +25,7 @@ public class DroneController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (GameManager.instance != null)
+        if (transform != null)
         {
             Gizmos.DrawWireSphere(transform.position, detectRange);
         }
@@ -73,7 +75,7 @@ public class DroneController : MonoBehaviour
 
     void FollowPlayer()
     {
-        Vector2 targetPosition = (Vector2)GameManager.instance.player.position + offset;
+        Vector2 targetPosition = (Vector2)player.position + offset;
 
         Vector2 moveDir = (targetPosition - (Vector2)transform.position).normalized;
 

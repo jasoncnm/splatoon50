@@ -72,7 +72,7 @@ public class EnemyBehavior : MonoBehaviour
     private void Start()
     {
         data = new AIData();
-        data.target = GameManager.instance.player;
+        data.target = FindAnyObjectByType<PlayerController>().transform;
         data.currentTarget = data.target;
 
         InvokeRepeating("Detect", 0, detectionDelay);

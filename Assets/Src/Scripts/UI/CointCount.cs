@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CointCount : MonoBehaviour
 {
+    public GlobalGameStateSO gameGlobal;
     TextMeshProUGUI text;
 
     private void Start()
@@ -12,7 +13,7 @@ public class CointCount : MonoBehaviour
 
     private void Update()
     {
-        text.text = GameManager.money.ToString();
+        text.text = gameGlobal.money.ToString();
     }
 
 }

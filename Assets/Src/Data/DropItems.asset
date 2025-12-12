@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f76b573a5539ee4c954e199d270ee05, type: 3}
+  m_Name: DropItems
+  m_EditorClassIdentifier: Assembly-CSharp::DropItemsSO
+  coin: {fileID: 5308073703943503837, guid: 0ac25f6b544a63b4ab358d629968ca63, type: 3}
+  pistolUpgrades:
+  - {fileID: 2571974279881271816, guid: d25678cbb7ce80a48870927398a6e1b0, type: 3}
+  - {fileID: 2880175898141289110, guid: e718b1e45d3d1c24583b7a2a23d0f4f6, type: 3}
+  - {fileID: 7411351786718164503, guid: e9c2baf44c234c64ea9afb775c7dfa16, type: 3}
+  - {fileID: 6016466820673664902, guid: 320155a8a5693cb4b85deecc42348e3f, type: 3}
+  guns:
+  - {fileID: 3047174073045537280, guid: 177b8e2a4074c8045a32fd8e2b6ec8d5, type: 3}
+  - {fileID: 3047174073045537280, guid: c8eed4f6e50aebe4a9f539ca3c6e1eb9, type: 3}
+  - {fileID: 3047174073045537280, guid: 1c40860884312984c8d70a217ff6d15f, type: 3}
+  - {fileID: 3047174073045537280, guid: 54f660432049c3f4c8f33fa8591b7363, type: 3}
+  - {fileID: 3047174073045537280, guid: d8837953729a16d4b86909cdddf9e32a, type: 3}
+  - {fileID: 3047174073045537280, guid: c19ad9e41968db84d93233385d3cc176, type: 3}
+  - {fileID: 3047174073045537280, guid: b9a2c551feb1d5045ad3f017bb677c7b, type: 3}
+  chest: {fileID: 1430373357210569731, guid: 82525455733faf244a70c7b6d7399fee, type: 3}

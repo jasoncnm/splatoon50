@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 public class UpgradeUI : MonoBehaviour
 {
+    public GlobalGameStateSO gameGlobal;
     public int maxPoint;
     public int cost;
     public TextMeshProUGUI text;
@@ -21,9 +22,9 @@ public class UpgradeUI : MonoBehaviour
     public void AddPoint()
     {
 
-        if (GameManager.money < cost) return;
+        if (gameGlobal.money < cost) return;
 
-        GameManager.money -= cost;
+        gameGlobal.money -= cost;
 
         currentPoint++;
 

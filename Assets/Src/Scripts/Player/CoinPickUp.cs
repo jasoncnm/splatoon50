@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CoinPickUp : MonoBehaviour
 {
-
+    public GlobalGameStateSO gameGlobal;
     public void OnAniEnd()
     {
         Destroy(gameObject);
@@ -13,8 +13,7 @@ public class CoinPickUp : MonoBehaviour
         if (collision.CompareTag("CoinCollector"))
         {
             GetComponent<Animator>().SetTrigger("PickUp");
-            GameManager.money++;
+            gameGlobal.money++;
         }
-
     }
 }

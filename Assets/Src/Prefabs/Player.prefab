@@ -711,9 +711,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f48480e9574dbe40b5dfe86d86b47c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   moveSpeed: 5
   acceleration: 10
+  shootingMoveSpeed: 2
+  startRollSpeed: 20
+  hearts: []
   interactIcon: {fileID: 6836242281557187369}
+  fullHeart: {fileID: 0}
+  emptyHeart: {fileID: 0}
 --- !u!114 &2797753039272715505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,7 +732,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc7226bd9152df4082fdc771217a34a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunTr: {fileID: 2435810987475361496}
+  gameGlobal: {fileID: 0}
+  shootEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  setGunEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  reloadStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  reloadStopEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7950047962680805576
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +780,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3242487775582818860
 SpriteRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -780,6 +799,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -801,9 +822,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
+  m_MaskInteraction: 2
   m_Sprite: {fileID: 7996344238942486243, guid: f097059c11d10dc48adb00224236cf0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -813,7 +836,6 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 2
   m_SpriteSortPoint: 1
 --- !u!95 &7489267091980186292
 Animator:

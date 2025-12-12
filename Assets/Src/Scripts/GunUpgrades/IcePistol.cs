@@ -17,7 +17,7 @@ public class IcePistol : Interactable
     {
         base.Interact();
         GetComponent<Animator>().SetTrigger("PickUp");
-        GameManager.instance.player.GetComponent<PlayerGunController>().gunProperties.elementalDamage = ElementalDamage.ICE;
+        base.player.GetComponent<PlayerGunController>().SetGunElemental(ElementalDamage.ICE);
     }
 
 }

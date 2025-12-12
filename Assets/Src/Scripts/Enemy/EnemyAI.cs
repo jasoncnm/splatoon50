@@ -12,11 +12,12 @@ public class EnemyNavigator : MonoBehaviour
 
     public bool isChasing { get; private set; } = false;
 
+    
 
     private void Start()
     {
 
-        target = GameManager.instance.player;
+        target = FindAnyObjectByType<PlayerController>().transform;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;

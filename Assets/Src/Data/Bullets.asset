@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 040253e16dbb0214cb8c94882efc7dba, type: 3}
+  m_Name: Bullets
+  m_EditorClassIdentifier: Assembly-CSharp::BulletsSO
+  normalBullet: {fileID: 1101569938003979892, guid: cf2fd31ddaae3b54d8e6d572417f6a77, type: 3}
+  fireBullet: {fileID: 1101569938003979892, guid: 6b1080554c6e4dd43800fe3af8e58314, type: 3}
+  lightingBullet: {fileID: 1101569938003979892, guid: ecf9ca9954ebc704bbf9120191ef7070, type: 3}
+  iceBullet: {fileID: 1101569938003979892, guid: 7e7b61fe6cfad5e4fb0a0c7eb17fcc0b, type: 3}
+  poisonBullet: {fileID: 1101569938003979892, guid: 76032db0aca3017498e73f9371068164, type: 3}
+  bombBullet: {fileID: 1101569938003979892, guid: b54e1b89dd0c09845b7f5b5998a19515, type: 3}

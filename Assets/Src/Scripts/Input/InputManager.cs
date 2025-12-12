@@ -10,7 +10,7 @@ public class InputManager : MonoBehaviour
 
     private void Start()
     {
-        playerController = GameManager.instance.player.GetComponent<PlayerController>();
+        playerController = FindAnyObjectByType<PlayerController>();
         camController = Camera.main.GetComponent<CameraController>();
         gunController = playerController.GetComponent<PlayerGunController>();
     }

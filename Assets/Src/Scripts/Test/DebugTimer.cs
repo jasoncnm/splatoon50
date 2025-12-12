@@ -5,6 +5,7 @@ using UnityEngine;
 public class DebugTimer : MonoBehaviour
 {
 
+    public GlobalGameStateSO gameGlobal;
     TextMeshProUGUI text;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,7 +17,7 @@ public class DebugTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float timeleft = GameManager.instance.combatTime - GameManager.instance.timer;
+        float timeleft = gameGlobal.combatTime - gameGlobal.timer;
 
         TimeSpan time = TimeSpan.FromSeconds(timeleft);
 

@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class CombatEndMenu : MonoBehaviour
 {
-
+    public GlobalGameStateSO gameGlobal;
     Transform frame;
+
+    GameManager gm;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        gm = FindAnyObjectByType<GameManager>();
         frame = transform.Find("Frame");
         frame.gameObject.SetActive(false);
     }
@@ -15,16 +18,17 @@ public class CombatEndMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.gameState == GameState.GAME_COMBAT_END)
+        if (gameGlobal.gameState == GameState.GAME_COMBAT_END)
         {
-            GameManager.instance.Pause(frame.gameObject);
+
+            gm.Pause(frame.gameObject);
         }
     }
 
     public void NextWave()
     {
-        GameManager.instance.UnPause(frame.gameObject);
-        GameManager.instance.SwitchState();
+        gm.UnPause(frame.gameObject);
+        gm.SwitchState();
     }
 
 }

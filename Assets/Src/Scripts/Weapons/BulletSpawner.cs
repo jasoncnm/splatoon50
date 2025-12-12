@@ -3,15 +3,9 @@ using UnityEngine.UIElements;
 
 public class BulletSpawner : MonoBehaviour
 {
-
+    public BulletsSO bullets;
 
     [SerializeField] Transform muzzleFlash;
-
-    GameManager gm;
-    private void Start()
-    {
-        gm = GameManager.instance;
-    }
 
     public void SpawnBulllet(Vector3 pos, Vector3 dir)
     {
@@ -30,23 +24,23 @@ public class BulletSpawner : MonoBehaviour
 
         Quaternion rot = Quaternion.AngleAxis(angle, new Vector3(0, 0, 1));
 
-        Transform bullet = gm.normalBullet;
+        Transform bullet = bullets.normalBullet;
 
         switch (gp.elementalDamage)
         {
             case ElementalDamage.FIRE:
                 {
-                    bullet = gm.fireBullet;
+                    bullet = bullets.fireBullet;
                     break;
                 }
             case ElementalDamage.ICE:
                 {
-                    bullet = gm.iceBullet;
+                    bullet = bullets.iceBullet;
                     break;
                 }
             case ElementalDamage.LIGHTING:
                 {
-                    bullet = gm.lightingBullet;
+                    bullet = bullets.lightingBullet;
                     break;
                 }
             case ElementalDamage.POSION:
@@ -56,7 +50,7 @@ public class BulletSpawner : MonoBehaviour
                 }
             case ElementalDamage.NONE:
                 {
-                    bullet = gm.normalBullet;
+                    bullet = bullets.normalBullet;
                     break;
                 }
         }

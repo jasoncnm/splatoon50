@@ -1,4 +1,5 @@
 
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -6,6 +7,7 @@ using UnityEngine.UI;
 public class GunClassButton : MonoBehaviour, IPointerEnterHandler, ISelectHandler
 {
 
+    public GlobalGameStateSO gameGlobal;
     public enum GunClass
     {
         PISTOL, AR, MAGNUM, SMG, SNIPER, NONE
@@ -48,32 +50,32 @@ public class GunClassButton : MonoBehaviour, IPointerEnterHandler, ISelectHandle
         {
             case GunClass.PISTOL:
                 {
-                    GameManager.startGunName = "Gun_Pistol";
-                    GameManager.playerHealth = 3;
+                    gameGlobal.startGunName = "Gun_Pistol";
+                    gameGlobal.playerHealth = 3;
                     break;
                 }
             case GunClass.AR:
                 {
-                    GameManager.startGunName = "Gun_AR";
-                    GameManager.playerHealth = 5;
+                    gameGlobal.startGunName = "Gun_AR";
+                    gameGlobal.playerHealth = 5;
                     break;
                 }
             case GunClass.MAGNUM:
                 {
-                    GameManager.startGunName = "Gun_Magnum";
-                    GameManager.playerHealth = 3;
+                    gameGlobal.startGunName = "Gun_Magnum";
+                    gameGlobal.playerHealth = 3;
                     break;
                 }
             case GunClass.SMG:
                 {
-                    GameManager.startGunName = "Gun_SMG";
-                    GameManager.playerHealth = 2;
+                    gameGlobal.startGunName = "Gun_SMG";
+                    gameGlobal.playerHealth = 2;
                     break;
                 }
             case GunClass.SNIPER:
                 {
-                    GameManager.startGunName = "Gun_Sniper";
-                    GameManager.playerHealth = 2;
+                    gameGlobal.startGunName = "Gun_Sniper";
+                    gameGlobal.playerHealth = 2;
                     break;
                 }
         }

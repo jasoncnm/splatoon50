@@ -16,7 +16,7 @@ public class FirePistol : Interactable
         base.Interact();
         GetComponent<Animator>().SetTrigger("PickUp");
 
-        GameManager.instance.player.GetComponent<PlayerGunController>().gunProperties.elementalDamage = ElementalDamage.FIRE;
+        player.GetComponent<PlayerGunController>().SetGunElemental(ElementalDamage.FIRE);
 
     }
 

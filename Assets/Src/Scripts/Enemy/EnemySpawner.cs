@@ -8,6 +8,9 @@ using UnityEngine.Assertions;
 
 public class EnemySpawner : MonoBehaviour
 {
+
+    public EnemiesSO enemiesList;
+
     [Header("Scene references")]
     [SerializeField] private Tilemap groundTilemap;
     [Tooltip("If left null, Camera.main is used.")]
@@ -36,7 +39,6 @@ public class EnemySpawner : MonoBehaviour
     Vector3[] enemiesPos;
     List<GameObject> enemies;
 
-
     private void Awake()
     {
         if (targetCamera == null) targetCamera = Camera.main;
@@ -44,18 +46,6 @@ public class EnemySpawner : MonoBehaviour
         enemies = new List<GameObject>();
         indicators = new Transform[batchSize];
 
-    }
-
-    private void Start()
-    {
-        if (startOnAwake)
-        {
-            SetUp();
-        }
-
-        //    _loop = StartCoroutine(SpawnLoop());
-        // else if (startOnAwake)
-        //     SpawnBatch();
     }
 
     void Update()
@@ -124,7 +114,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SetUp()
     {
-        if (enemyPrefabs == null) enemyPrefabs = GameManager.instance.enemies;
+        if (enemyPrefabs == null) enemyPrefabs = enemiesList.enemies;
         if (spawnInterval > 0f)
             _loop = StartCoroutine(SpawnLoop());
     }

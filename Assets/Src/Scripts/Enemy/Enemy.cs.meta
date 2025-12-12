@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: d1e000be474922c40affad165b048bf1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - healthBar: {instanceID: 0}
+  - effects: {fileID: 11400000, guid: 5e954c828b4bcd1458aed9443a449544, type: 2}
+  - dropItems: {fileID: 11400000, guid: 3ad2cc0ab7440404ba43181c5517cd54, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

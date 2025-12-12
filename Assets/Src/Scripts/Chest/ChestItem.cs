@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class ChestItem : Interactable
 {
-
+    public DropItemsSO dropItems;
+ 
     [SerializeField] Animator chestAnimator;
 
 
@@ -12,7 +13,6 @@ public class ChestItem : Interactable
 
     }
 
-
     public override void Interact()
     {
         base.Interact();
@@ -21,15 +21,16 @@ public class ChestItem : Interactable
 
     public void Drop()
     {
-        Transform gunTr = GameManager.instance.player.GetComponent<PlayerGunController>().GunTr();
-
+ 
         Transform item = null;
+
+        Transform gunTr = GameObject.FindAnyObjectByType<PlayerGunController>().GunTr();
 
         if (gunTr.name == "Gun_Pistol")
         {
-            int index = Random.Range(0, GameManager.instance.pistolUpgrades.Length);
+            int index = Random.Range(0, dropItems.pistolUpgrades.Length);
 
-            item = Instantiate(GameManager.instance.pistolUpgrades[index]);
+            item = Instantiate(dropItems.pistolUpgrades[index]);
 
         }
 

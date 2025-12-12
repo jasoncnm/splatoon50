@@ -3,20 +3,21 @@ using UnityEngine;
 
 public class SFXValue : MonoBehaviour
 {
+    public GlobalGameStateSO gameGlobal;
     [SerializeField] TextMeshProUGUI text;
 
     private void Start()
     {
-        text.text = "SFX Volume: " + GameManager.SFXVolume + "%";
+        text.text = "SFX Volume: " + gameGlobal.SFXVolume + "%";
     }
 
     public void Value()
     {
-        GameManager.SFXVolume += 25;
+        gameGlobal.SFXVolume += 25;
 
-        if (GameManager.SFXVolume > 100) GameManager.SFXVolume = 0;
+        if (gameGlobal.SFXVolume > 100) gameGlobal.SFXVolume = 0;
 
-        text.text = "SFX Volume: " + GameManager.SFXVolume + "%";
+        text.text = "SFX Volume: " + gameGlobal.SFXVolume + "%";
     }
 
 }

@@ -1010,6 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ada1c70a89321744b17490f4508437e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
 --- !u!1 &246305222
 GameObject:
   m_ObjectHideFlags: 0
@@ -10662,6 +10663,14 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 3961091727307624914, guid: ac6d69cf8bc3970499e801ad18e03cd3, type: 3}
+      propertyPath: startOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3961091727307624914, guid: ac6d69cf8bc3970499e801ad18e03cd3, type: 3}
+      propertyPath: targetCamera
+      value: 
+      objectReference: {fileID: 871024345}
+    - target: {fileID: 3961091727307624914, guid: ac6d69cf8bc3970499e801ad18e03cd3, type: 3}
       propertyPath: groundTilemap
       value: 
       objectReference: {fileID: 246305225}
@@ -10862,6 +10871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668994c700bba6b4e95dce8cd5034ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   maxPoint: 5
   cost: 10
   text: {fileID: 262993866}
@@ -11787,6 +11797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668994c700bba6b4e95dce8cd5034ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   maxPoint: 5
   cost: 10
   text: {fileID: 1388302510}
@@ -14776,6 +14787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668994c700bba6b4e95dce8cd5034ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   maxPoint: 5
   cost: 10
   text: {fileID: 1227922178}
@@ -15811,6 +15823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a207593854d0bc14ca23e8963c5e9e0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
 --- !u!1 &1021349669
 GameObject:
   m_ObjectHideFlags: 0
@@ -16038,6 +16051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668994c700bba6b4e95dce8cd5034ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   maxPoint: 5
   cost: 10
   text: {fileID: 1932305741}
@@ -18396,6 +18410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01060ede717fc1548842e8f3990662a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
 --- !u!1 &1341620086
 GameObject:
   m_ObjectHideFlags: 0
@@ -18904,6 +18919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674066f0c7065044a95de2dc2faae3b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
 --- !u!1001 &1501204115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24660,6 +24676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9930acd067762a45b721b1d6c6148be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
 --- !u!114 &1728367649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26581,6 +26598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668994c700bba6b4e95dce8cd5034ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   maxPoint: 5
   cost: 10
   text: {fileID: 1997960206}
@@ -27259,6 +27277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 668994c700bba6b4e95dce8cd5034ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   maxPoint: 5
   cost: 10
   text: {fileID: 1997362624}
@@ -27613,6 +27632,10 @@ PrefabInstance:
       propertyPath: gunTr
       value: 
       objectReference: {fileID: 673151999}
+    - target: {fileID: 2797753039272715505, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
+      propertyPath: gameGlobal
+      value: 
+      objectReference: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
     - target: {fileID: 2797753039272715505, guid: 0bf14ca82761edf4a8d1563687266c72, type: 3}
       propertyPath: shootEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1

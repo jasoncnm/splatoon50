@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132bad90a99114b4eb826caac5d15105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1101569938003979892, guid: cf2fd31ddaae3b54d8e6d572417f6a77, type: 3}
+  bullets: {fileID: 11400000, guid: 9e3977400659f58449ba3b01515b7153, type: 2}
   muzzleFlash: {fileID: 0}
 --- !u!114 &2064508492347988940
 MonoBehaviour:
@@ -64,4 +64,8 @@ MonoBehaviour:
   damage: 30
   pierce: 0
   fallOffDistance: 5
+  crits: 0
   spread: 0
+  reloadTime: 0
+  bulletCapacity: 0
+  elementalDamage: 0

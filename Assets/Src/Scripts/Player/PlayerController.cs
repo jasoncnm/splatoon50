@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public GlobalGameStateSO gameGlobal;
     public enum PlayerState
     {
         Normal, Rollling,
@@ -132,7 +134,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
 
-        health = numOfHearts = GameManager.playerHealth;
+        health = numOfHearts = gameGlobal.playerHealth;
 
         interactIcon.gameObject.SetActive(false);
 
@@ -163,7 +165,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (GameManager.instance.gameIsPause) return;
+        if (gameGlobal.gameState != GameState.GAME_COMBAT) return;
 
         Move();
 
@@ -172,9 +174,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.instance.gameIsPause) return;
-
-
+        if (gameGlobal.gameState != GameState.GAME_COMBAT) return;
+       
         if (state == PlayerState.Rollling)
         {
             OnDash();

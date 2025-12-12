@@ -4,9 +4,15 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-
+    protected Transform player;
     Transform interactIcon = null;
     float lifeTime = 15f;
+
+    public virtual void Start()
+    {
+        player = FindAnyObjectByType<PlayerController>().transform;
+    }
+
 
     public virtual void ReadyToInteract(Transform interactIcon)
     {

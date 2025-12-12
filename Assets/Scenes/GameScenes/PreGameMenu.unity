@@ -788,6 +788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5949161626f8e884f986b966f7225021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   gunClasses:
   - {fileID: 1333838603}
   - {fileID: 1768229404}
@@ -1421,23 +1422,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef07ec9bea0239c4d9c36ef40829c789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  gameState: 0
-  combatTime: 50
-  wave: 0
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
+  dropItems: {fileID: 11400000, guid: 3ad2cc0ab7440404ba43181c5517cd54, type: 2}
   player: {fileID: 0}
-  enemies: []
-  coin: {fileID: 0}
-  pistolUpgrades: []
-  guns: []
-  chest: {fileID: 0}
-  normalBullet: {fileID: 0}
-  fireBullet: {fileID: 0}
-  lightingBullet: {fileID: 0}
-  iceBullet: {fileID: 0}
-  poisonBullet: {fileID: 0}
-  bombBullet: {fileID: 0}
-  chainLightingEffect: {fileID: 0}
-  beenStruck: {fileID: 0}
   playOnAwake: 0
 --- !u!4 &1284262681
 Transform:
@@ -1903,6 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5949161626f8e884f986b966f7225021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   gunClasses:
   - {fileID: 1333838603}
   - {fileID: 1768229404}
@@ -2186,6 +2174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5949161626f8e884f986b966f7225021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   gunClasses:
   - {fileID: 1333838603}
   - {fileID: 1768229404}
@@ -2759,6 +2748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5949161626f8e884f986b966f7225021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   gunClasses:
   - {fileID: 1333838603}
   - {fileID: 1768229404}
@@ -2899,6 +2889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5949161626f8e884f986b966f7225021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
   gunClasses:
   - {fileID: 1333838603}
   - {fileID: 1768229404}
@@ -3056,6 +3047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9930acd067762a45b721b1d6c6148be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

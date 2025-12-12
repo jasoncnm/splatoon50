@@ -14,7 +14,7 @@ public class PoisonPistol : Interactable
     {
         base.Interact();
         GetComponent<Animator>().SetTrigger("PickUp");
-        GameManager.instance.player.GetComponent<PlayerGunController>().gunProperties.elementalDamage = ElementalDamage.POSION;
+        player.GetComponent<PlayerGunController>().SetGunElemental(ElementalDamage.POSION);
     }
 
 }

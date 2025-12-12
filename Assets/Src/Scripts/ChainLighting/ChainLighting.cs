@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ChainLighting : MonoBehaviour
 {
+    public GameEffectsSO effets;
 
     public static int amountToChain;
 
@@ -18,11 +19,6 @@ public class ChainLighting : MonoBehaviour
     
     ParticleSystem particle;
 
-    GameManager gm;
-
-
-
-    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,7 +33,6 @@ public class ChainLighting : MonoBehaviour
 
         singleSpawns = 1;
 
-        gm = GameManager.instance;
     }
 
 
@@ -55,10 +50,10 @@ public class ChainLighting : MonoBehaviour
 
             endObject = collision.gameObject;
 
-            GameObject obj = Instantiate(gm.chainLightingEffect, collision.transform.position, Quaternion.identity);
+            GameObject obj = Instantiate(effets.chainLightingEffect, collision.transform.position, Quaternion.identity);
             obj.transform.parent = collision.transform;
  
-            Instantiate(gm.beenStruck, collision.transform);
+            Instantiate(effets.beenStruck, collision.transform);
 
             endObject.GetComponent<Enemy>().TakeDamage(damage, ElementalDamage.NONE);
          

@@ -8,6 +8,10 @@ using Random = UnityEngine.Random;
 
 public abstract class Enemy : MonoBehaviour
 {
+
+    [SerializeField] GameEffectsSO effects;
+    [SerializeField] DropItemsSO dropItems;
+
     [Header("Enemy Stats")]
 
     [SerializeField] Slider healthBar;
@@ -23,13 +27,10 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField, Range(0f, 1f)] float flashTime = 0.25f;
     [SerializeField] AnimationCurve flashCurve;
 
-
     float health, maxHealth;
 
     bool effectStart = false;
     bool effectEnd = false;
-
-    protected GameManager gm;
 
     protected float currentSpeed;
 
@@ -80,8 +81,8 @@ public abstract class Enemy : MonoBehaviour
 
                     if (!transform.GetComponentInChildren<LightingStruck>()) // && !transform.GetComponentInChildren<ChainLighting>())
                     {
-                        Instantiate(gm.beenStruck, transform);
-                        GameObject obj = Instantiate(gm.chainLightingEffect, transform.position, Quaternion.identity);
+                        Instantiate(effects.beenStruck, transform);
+                        GameObject obj = Instantiate(effects.chainLightingEffect, transform.position, Quaternion.identity);
                         obj.transform.parent = transform;
 
                         ChainLighting.damage = 10;
@@ -130,7 +131,6 @@ public abstract class Enemy : MonoBehaviour
     public virtual void Start()
     {
 
-        gm = GameManager.instance;
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         material = spriteRenderer.material;
@@ -240,7 +240,7 @@ public abstract class Enemy : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             Vector3 offset = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0) * 0.5f;
-            Transform drop = Instantiate(GameManager.instance.coin);    
+            Transform drop = Instantiate(dropItems.coin);    
             drop.position = transform.position + offset;
         }
     }

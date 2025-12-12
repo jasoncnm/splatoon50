@@ -6,6 +6,7 @@ public class DebugGameState : MonoBehaviour
 
     TextMeshProUGUI text;
 
+    public GlobalGameStateSO gameGlobal;
 
     private void Start()
     {
@@ -15,15 +16,15 @@ public class DebugGameState : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.gameState == GameState.GAME_COMBAT)
+        if (gameGlobal.gameState == GameState.GAME_COMBAT)
         {
-            text.text = "Combating (Wave " + GameManager.instance.wave + ")";
+            text.text = "Combating (Wave " + gameGlobal.wave + ")";
         }
-        else if (GameManager.gameState == GameState.GAME_COMBAT_END)
+        else if (gameGlobal.gameState == GameState.GAME_COMBAT_END)
         {
             text.text = "Combat Ended \n Next Wave (N)";
         }
-        else if (GameManager.gameState == GameState.GAME_START)
+        else if (gameGlobal.gameState == GameState.GAME_START)
         {
             text.text = "In Menu";
         }

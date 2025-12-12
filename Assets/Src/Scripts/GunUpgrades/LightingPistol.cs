@@ -3,7 +3,6 @@ using UnityEngine;
 public class LightingPistol : Interactable
 {
 
-
     public override void ReadyToInteract(Transform interactIcon)
     {
         base.ReadyToInteract(interactIcon);
@@ -15,8 +14,7 @@ public class LightingPistol : Interactable
     {
         base.Interact();
         GetComponent<Animator>().SetTrigger("PickUp");
-
-        GameManager.instance.player.GetComponent<PlayerGunController>().gunProperties.elementalDamage = ElementalDamage.LIGHTING;
+        player.GetComponent<PlayerGunController>().SetGunElemental(ElementalDamage.LIGHTING);
     }
 
 }

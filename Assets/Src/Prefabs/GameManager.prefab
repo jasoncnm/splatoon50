@@ -58,34 +58,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef07ec9bea0239c4d9c36ef40829c789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameState: 0
-  combatTime: 50
-  wave: 0
+  gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
+  dropItems: {fileID: 11400000, guid: 3ad2cc0ab7440404ba43181c5517cd54, type: 2}
   player: {fileID: 0}
-  enemies:
-  - {fileID: 7205156856316230011, guid: ffdd8d6381287694a8a0dd70c8af6fee, type: 3}
-  coin: {fileID: 5308073703943503837, guid: 0ac25f6b544a63b4ab358d629968ca63, type: 3}
-  pistolUpgrades:
-  - {fileID: 2571974279881271816, guid: d25678cbb7ce80a48870927398a6e1b0, type: 3}
-  - {fileID: 2880175898141289110, guid: e718b1e45d3d1c24583b7a2a23d0f4f6, type: 3}
-  - {fileID: 7411351786718164503, guid: e9c2baf44c234c64ea9afb775c7dfa16, type: 3}
-  - {fileID: 6016466820673664902, guid: 320155a8a5693cb4b85deecc42348e3f, type: 3}
-  guns:
-  - {fileID: 3047174073045537280, guid: c8eed4f6e50aebe4a9f539ca3c6e1eb9, type: 3}
-  - {fileID: 3047174073045537280, guid: 1c40860884312984c8d70a217ff6d15f, type: 3}
-  - {fileID: 3047174073045537280, guid: 54f660432049c3f4c8f33fa8591b7363, type: 3}
-  - {fileID: 3047174073045537280, guid: d8837953729a16d4b86909cdddf9e32a, type: 3}
-  - {fileID: 3047174073045537280, guid: c19ad9e41968db84d93233385d3cc176, type: 3}
-  - {fileID: 3047174073045537280, guid: b9a2c551feb1d5045ad3f017bb677c7b, type: 3}
-  chest: {fileID: 1430373357210569731, guid: 82525455733faf244a70c7b6d7399fee, type: 3}
-  normalBullet: {fileID: 1101569938003979892, guid: cf2fd31ddaae3b54d8e6d572417f6a77, type: 3}
-  fireBullet: {fileID: 1101569938003979892, guid: 6b1080554c6e4dd43800fe3af8e58314, type: 3}
-  lightingBullet: {fileID: 1101569938003979892, guid: ecf9ca9954ebc704bbf9120191ef7070, type: 3}
-  iceBullet: {fileID: 1101569938003979892, guid: 7e7b61fe6cfad5e4fb0a0c7eb17fcc0b, type: 3}
-  poisonBullet: {fileID: 1101569938003979892, guid: 76032db0aca3017498e73f9371068164, type: 3}
-  bombBullet: {fileID: 1101569938003979892, guid: b54e1b89dd0c09845b7f5b5998a19515, type: 3}
-  chainLightingEffect: {fileID: 5711753336704833679, guid: 840d3d6b43615b446b63bc654b7cbeca, type: 3}
-  beenStruck: {fileID: 1459312979380544662, guid: 946e8e14908c6414cac8e9bcc6e24107, type: 3}
   playOnAwake: 0
 --- !u!114 &3961091727307624914
 MonoBehaviour:
@@ -99,6 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdc1714ae17c6dd428475d19c1374406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemiesList: {fileID: 11400000, guid: 5092979b12957c24d903888e8c83097c, type: 2}
   groundTilemap: {fileID: 0}
   targetCamera: {fileID: 0}
   batchSize: 2

@@ -6,6 +6,8 @@ using System.Collections;
 public class PlayerGunController : MonoBehaviour
 {
 
+    public GlobalGameStateSO gameGlobal;
+
     public UnityEvent shootEvent;
     public UnityEvent setGunEvent;
     public UnityEvent reloadStartEvent;
@@ -39,7 +41,7 @@ public class PlayerGunController : MonoBehaviour
         }
 
   
-        SetGun(GameManager.startGunName);
+        SetGun(gameGlobal.startGunName);
         
     }
 
@@ -106,6 +108,11 @@ public class PlayerGunController : MonoBehaviour
         reloadStopEvent?.Invoke();
         reloading = false;
 
+    }
+
+    public void SetGunElemental(ElementalDamage elementD)
+    {
+        gunProperties.elementalDamage = elementD;
     }
 
     public void Reload()
