@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: de442bf90b2975748a6e3d7f8c2f3254
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dropItems: {instanceID: 0}
+  - chestAnimator: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

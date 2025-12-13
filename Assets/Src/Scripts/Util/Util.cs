@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class Util : MonoBehaviour
 {
+    public enum GunClass
+    {
+        PISTOL = 0, AR = 1, MAGNUM = 2, SMG = 3, SNIPER = 4, NONE = 5
+    }
+
     public static Vector3 GetMouseWorldPosition()
     {
         return Camera.main.ScreenToWorldPoint(Input.mousePosition);

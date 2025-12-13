@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - gameGlobal: {fileID: 11400000, guid: 4d824d637e23256479d448771f5b561a, type: 2}
+  - gameGlobal: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

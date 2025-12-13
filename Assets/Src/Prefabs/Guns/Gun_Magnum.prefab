@@ -61,12 +61,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15f05507685d6345ae38e095b56db5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 2
   fireDelay: 0
   fireRate: 0.6
   damage: 60
   pierce: 0
   fallOffDistance: 5
-  crits: 0
+  crits: 0.3
   spread: 0
   reloadTime: 1
   bulletCapacity: 6

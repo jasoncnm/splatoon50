@@ -1,7 +1,6 @@
+using NUnit.Framework;
 using TMPro;
 using UnityEngine;
-using MoreMountains.Tools;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 
 
@@ -25,22 +24,39 @@ public enum GameState
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance { get ; private set; }
 
     public GlobalGameStateSO gameGlobal;
     public DropItemsSO dropItems;
 
+    public int wave = 0;
+    public float timer = 0;
 
-    public Transform player = null;
+    public bool gameIsPause = false;
 
     [Header("Debug")]
     public bool playOnAwake;
 
     EnemySpawner enemySpawner = null;
+    PlayerController playerController = null;
 
+    private void Awake()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            instance = this;
+        }
+
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
         if (playOnAwake)
         {
             gameGlobal.gameState = GameState.GAME_COMBAT;
@@ -60,11 +76,11 @@ public class GameManager : MonoBehaviour
 
         if (gameGlobal.gameState == GameState.GAME_COMBAT)
         {
-            gameGlobal.timer += Time.deltaTime;
-            if (gameGlobal.timer > gameGlobal.combatTime) SwitchState();
+            timer += Time.deltaTime;
+            if (timer > gameGlobal.combatTime) SwitchState();
         }
 
-        if (player && player.GetComponent<PlayerController>().GetHealth() <= 0)
+        if (playerController != null && playerController.GetHealth() <= 0)
         {
             enemySpawner.enabled = false;
             LoadStartMenu();
@@ -79,7 +95,7 @@ public class GameManager : MonoBehaviour
 
     void InitGame()
     {
-        gameGlobal.wave = 0;
+        wave = 0;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         gameGlobal.gameState = GameState.GAME_START;
@@ -87,7 +103,10 @@ public class GameManager : MonoBehaviour
     
     public void InitGameplay()
     {
-    
+        
+        if (playerController == null) playerController = FindAnyObjectByType<PlayerController>();
+        Assert.IsTrue(playerController != null, "Failed to find player controller component!");
+
         if (TryGetComponent<EnemySpawner>(out enemySpawner))
         {
             if (gameGlobal.gameState == GameState.GAME_COMBAT)
@@ -110,13 +129,13 @@ public class GameManager : MonoBehaviour
     {
         if (gameGlobal.gameState == GameState.GAME_COMBAT_END)
         {
-            gameGlobal.wave++;
-            gameGlobal.timer = 0;
+            wave++;
+            timer = 0;
             enemySpawner.enabled = true;
             enemySpawner.SetUp();
             gameGlobal.gameState = GameState.GAME_COMBAT;
             // Spawn chest
-            Transform item = Instantiate(dropItems.chest, player.transform.position, Quaternion.identity);
+            Transform item = Instantiate(dropItems.chest, playerController.transform.position, Quaternion.identity);
         }
         else if (gameGlobal.gameState == GameState.GAME_COMBAT)
         {
@@ -125,12 +144,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddScore(TextMeshProUGUI scoreText)
-    {
-
-    }
-
-
     public void Pause(GameObject pauseMenu)
     {
         pauseMenu.SetActive(true);
@@ -138,7 +151,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         Cursor.visible = true;
 
-        gameGlobal.gameIsPause = true;
+        gameIsPause = true;
     }
 
     public void UnPause(GameObject pauseMenu)
@@ -148,7 +161,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         Cursor.visible = false;
 
-        gameGlobal.gameIsPause = false;
+        gameIsPause = false;
     }
 
 

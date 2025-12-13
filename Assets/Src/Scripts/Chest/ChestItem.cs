@@ -26,7 +26,7 @@ public class ChestItem : Interactable
 
         Transform gunTr = GameObject.FindAnyObjectByType<PlayerGunController>().GunTr();
 
-        if (gunTr.name == "Gun_Pistol")
+        if (gunTr.GetComponent<GunProperties>().type == Util.GunClass.PISTOL)
         {
             int index = Random.Range(0, dropItems.pistolUpgrades.Length);
 

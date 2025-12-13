@@ -18,7 +18,7 @@ public class DebugGameState : MonoBehaviour
     {
         if (gameGlobal.gameState == GameState.GAME_COMBAT)
         {
-            text.text = "Combating (Wave " + gameGlobal.wave + ")";
+            text.text = "Combating (Wave " + GameManager.instance.wave + ")";
         }
         else if (gameGlobal.gameState == GameState.GAME_COMBAT_END)
         {

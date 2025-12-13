@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: fdc1714ae17c6dd428475d19c1374406
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemiesList: {instanceID: 0}
+  - groundTilemap: {instanceID: 0}
+  - targetCamera: {instanceID: 0}
+  - indicator: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

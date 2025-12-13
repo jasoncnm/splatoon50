@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08c0db91b03f8e54a9c85c893edd3c57, type: 3}
   m_Name: GlobalGameData
   m_EditorClassIdentifier: Assembly-CSharp::GlobalGameStateSO
-  gameState: 2
+  gameState: 3
   experience: 0
-  money: 17
+  money: 19
   musicVolume: 25
   SFXVolume: 25
   wave: 0
   playerHealth: 2
   combatTime: 50
   timer: 0
-  startGunName: Gun_SMG
   gameIsPause: 1

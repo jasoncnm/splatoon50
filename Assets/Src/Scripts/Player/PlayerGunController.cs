@@ -7,6 +7,7 @@ public class PlayerGunController : MonoBehaviour
 {
 
     public GlobalGameStateSO gameGlobal;
+    public GunsSO gunData;
 
     public UnityEvent shootEvent;
     public UnityEvent setGunEvent;
@@ -17,6 +18,7 @@ public class PlayerGunController : MonoBehaviour
 
     MMF_Player playerShootFeedback;
 
+    Transform aim;
     Transform gunTr = null;
 
     public BulletSpawner bulletSpawner { get; private set; }
@@ -31,7 +33,7 @@ public class PlayerGunController : MonoBehaviour
 
     private void Start()
     {
-        Transform aim = transform.Find("Aim");
+        aim = transform.Find("Aim");
 
         if (playerController == null) playerController = GetComponent<PlayerController>();
 
@@ -39,9 +41,8 @@ public class PlayerGunController : MonoBehaviour
         {
             aim.GetChild(i).gameObject.SetActive(false);
         }
-
-  
-        SetGun(gameGlobal.startGunName);
+          
+        SetGun();
         
     }
 
@@ -74,13 +75,13 @@ public class PlayerGunController : MonoBehaviour
         }
     }
 
-    public void SetGun(string name)
+    public void SetGun()
     {
 
-        if (gunTr) gunTr.gameObject.SetActive(false);
+        if (gunTr != null) gunTr.gameObject.SetActive(false);
 
-        gunTr = transform.Find("Aim").Find(name);
-
+        gunTr = Instantiate(gunData.guns[gunData.selectedGunIndex], aim);
+        
         gunTr.gameObject.SetActive(true);
 
         bulletSpawner = gunTr.GetComponent<BulletSpawner>();

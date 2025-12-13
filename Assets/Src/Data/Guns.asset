@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9371065bef66bf4899712f3f0cc3d55, type: 3}
+  m_Name: Guns
+  m_EditorClassIdentifier: Assembly-CSharp::GunsSO
+  selectedGunIndex: 1
+  guns:
+  - {fileID: 3047174073045537280, guid: d8837953729a16d4b86909cdddf9e32a, type: 3}
+  - {fileID: 3047174073045537280, guid: c8eed4f6e50aebe4a9f539ca3c6e1eb9, type: 3}
+  - {fileID: 3047174073045537280, guid: 54f660432049c3f4c8f33fa8591b7363, type: 3}
+  - {fileID: 3047174073045537280, guid: c19ad9e41968db84d93233385d3cc176, type: 3}
+  - {fileID: 3047174073045537280, guid: b9a2c551feb1d5045ad3f017bb677c7b, type: 3}

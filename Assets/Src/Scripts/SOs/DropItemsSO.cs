@@ -6,10 +6,9 @@ public class DropItemsSO : ScriptableObject
 {
     public Transform coin;
 
+    public Transform chest;
+
     public Transform[] pistolUpgrades;
 
-    public Transform[] guns;
-
-    public Transform chest;
 }
 

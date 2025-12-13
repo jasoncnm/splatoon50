@@ -17,7 +17,7 @@ public class DebugTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float timeleft = gameGlobal.combatTime - gameGlobal.timer;
+        float timeleft = gameGlobal.combatTime - GameManager.instance.timer;
 
         TimeSpan time = TimeSpan.FromSeconds(timeleft);
 

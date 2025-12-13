@@ -4,9 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
+  - effects: {instanceID: 0}
+  - dropItems: {instanceID: 0}
   - healthBar: {instanceID: 0}
-  - effects: {fileID: 11400000, guid: 5e954c828b4bcd1458aed9443a449544, type: 2}
-  - dropItems: {fileID: 11400000, guid: 3ad2cc0ab7440404ba43181c5517cd54, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

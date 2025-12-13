@@ -12,6 +12,7 @@ public enum ElementalDamage
 
 public class GunProperties : MonoBehaviour
 {
+    public Util.GunClass type = Util.GunClass.NONE;
 
     public float fireDelay = 0.0f;
 
