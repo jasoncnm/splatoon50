@@ -29,6 +29,7 @@ public class UITabGroup : MonoBehaviour
 
     private void Update()
     {
+#if false
         if (Input.GetKeyDown(KeyCode.Q))
         {
             if (selectedTab.transform.GetSiblingIndex() > 0)
@@ -44,6 +45,7 @@ public class UITabGroup : MonoBehaviour
                 SetActive(selectedTab.transform.GetSiblingIndex() + 1);
             }
         }
+#endif
     }
 
     void SetActive(int index)

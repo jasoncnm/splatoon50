@@ -90,6 +90,14 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        if (GameManager.instance != null)
+            spawnInterval -= GameManager.instance.wave * 0.2f;
+
+        spawnInterval = Mathf.Clamp(spawnInterval, 1.0f, spawnInterval + 1);
+    }
+
     private void OnDisable()
     {
         if (_loop != null) StopCoroutine(_loop);

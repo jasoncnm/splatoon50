@@ -165,7 +165,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (gameGlobal.gameState != GameState.GAME_COMBAT) return;
+        if (gameGlobal.gameState != GameState.GAME_COMBAT)
+        {
+            GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            return;
+        }
+
 
         Move();
 
@@ -174,8 +179,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (gameGlobal.gameState != GameState.GAME_COMBAT) return;
-       
+
         if (state == PlayerState.Rollling)
         {
             OnDash();

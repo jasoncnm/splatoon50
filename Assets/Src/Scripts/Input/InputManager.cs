@@ -17,6 +17,12 @@ public class InputManager : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.instance.gameGlobal.gameState != GameState.GAME_COMBAT)
+        {
+            playerController.OnShootEnd();
+            return;
+        }
+
         { // Player Movement Input
             float h = Input.GetAxisRaw("Horizontal");
             float v = Input.GetAxisRaw("Vertical");
@@ -27,7 +33,6 @@ public class InputManager : MonoBehaviour
         { // Player Fire Input
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-
                 playerController.OnShootStart();
             }
 

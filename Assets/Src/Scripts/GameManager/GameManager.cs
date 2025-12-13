@@ -77,7 +77,10 @@ public class GameManager : MonoBehaviour
         if (gameGlobal.gameState == GameState.GAME_COMBAT)
         {
             timer += Time.deltaTime;
-            if (timer > gameGlobal.combatTime) SwitchState();
+            if (timer > gameGlobal.combatTime)
+            {
+               SwitchState();
+            }
         }
 
         if (playerController != null && playerController.GetHealth() <= 0)
@@ -134,11 +137,12 @@ public class GameManager : MonoBehaviour
             enemySpawner.enabled = true;
             enemySpawner.SetUp();
             gameGlobal.gameState = GameState.GAME_COMBAT;
-            // Spawn chest
-            Transform item = Instantiate(dropItems.chest, playerController.transform.position, Quaternion.identity);
         }
         else if (gameGlobal.gameState == GameState.GAME_COMBAT)
         {
+            // Spawn chest
+            Transform item = Instantiate(dropItems.chest, playerController.transform.position, Quaternion.identity);
+
             enemySpawner.enabled = false;
             gameGlobal.gameState = GameState.GAME_COMBAT_END;
         }

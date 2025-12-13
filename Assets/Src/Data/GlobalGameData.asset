@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GlobalGameStateSO
   gameState: 3
   experience: 0
-  money: 19
+  money: 21
   musicVolume: 25
   SFXVolume: 25
-  wave: 0
   playerHealth: 2
   combatTime: 50
-  timer: 0
-  gameIsPause: 1
