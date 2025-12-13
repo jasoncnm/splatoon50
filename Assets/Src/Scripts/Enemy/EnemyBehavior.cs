@@ -126,7 +126,7 @@ public class EnemyBehavior : MonoBehaviour
             // Update Danger Map
             foreach (Collider2D collider in data.obstacles)
             {
-                if (collider.transform.name == transform.name) continue;
+                if (collider.gameObject == this.gameObject) continue;
 
 
                 Vector2 directionToObstacle = collider.ClosestPoint(transform.position) - (Vector2)(transform.position);

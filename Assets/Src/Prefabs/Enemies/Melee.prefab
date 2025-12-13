@@ -496,15 +496,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ef5fa2beacc78428955503fe30d4ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacleDectionRadius: 4
-  obstacleColliderThreshold: 2
+  obstacleDectionRadius: 3
+  obstacleColliderThreshold: 1
   detectionDelay: 0.05
   targetRechedThreshold: 0.5
   obstacleDectionMask:
     serializedVersion: 2
     m_Bits: 768
-  showDetectGizmos: 0
-  showTargetGizmos: 0
+  showDetectGizmos: 1
+  showTargetGizmos: 1
   showDangerGizmos: 1
   showInterestGizmos: 1
 --- !u!114 &7875172595741274966
@@ -519,6 +519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460e7dd4a13854641a84fdbc87ff080c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effects: {fileID: 11400000, guid: 5e954c828b4bcd1458aed9443a449544, type: 2}
+  dropItems: {fileID: 11400000, guid: 3ad2cc0ab7440404ba43181c5517cd54, type: 2}
   healthBar: {fileID: 2536166870543429877}
   initHealth: 100
   moveSpeed: 3
@@ -549,8 +551,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  effects: {fileID: 11400000, guid: 5e954c828b4bcd1458aed9443a449544, type: 2}
-  dropItems: {fileID: 11400000, guid: 3ad2cc0ab7440404ba43181c5517cd54, type: 2}
 --- !u!1 &8312015747232005854
 GameObject:
   m_ObjectHideFlags: 0
