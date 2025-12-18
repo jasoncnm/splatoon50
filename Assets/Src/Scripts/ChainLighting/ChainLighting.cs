@@ -9,7 +9,7 @@ public class ChainLighting : MonoBehaviour
 
     public static float damage;
 
-    new CircleCollider2D coll;
+    CircleCollider2D coll;
 
     Animator animator;
 
