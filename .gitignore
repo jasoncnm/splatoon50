@@ -77,3 +77,5 @@ crashlytics-build.properties
 
 .obsidian/
 /.obsidian
+
+*.mp4
