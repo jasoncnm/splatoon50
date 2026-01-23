@@ -1,3 +1,5 @@
 # A top-down arcade shooter made using Unity 
 
-link https://www.youtube.com/watch?v=La4JWlv-k88
+
+[![Watch the video](https://img.youtube.com/vi/La4JWlv-k88/hqdefault.jpg)](https://www.youtube.com/embed/La4JWlv-k88)
+
