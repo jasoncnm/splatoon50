@@ -56,8 +56,6 @@ public class BulletSpawner : MonoBehaviour
         }
 
         // Test
-        // bullet = gm.bombBullet;
-
 
         Transform tr = Instantiate(bullet, pos, rot);
 

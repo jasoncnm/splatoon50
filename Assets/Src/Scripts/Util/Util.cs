@@ -4,7 +4,7 @@ public class Util : MonoBehaviour
 {
     public enum GunClass
     {
-        PISTOL = 0, AR = 1, MAGNUM = 2, SMG = 3, SNIPER = 4, NONE = 5
+        PISTOL = 0, AR = 1, MAGNUM = 2, SMG = 3, SNIPER = 4, NONE,
     }
 
     public static Vector3 GetMouseWorldPosition()
